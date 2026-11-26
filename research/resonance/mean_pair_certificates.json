@@ -1,0 +1,2664 @@
+{
+  "date": "2026-11-26",
+  "claim": "No closed binary mean tie on any integer recurrent second-moment cycle",
+  "scope": "Finite selected player counts; not an all-N or full-word periodicity theorem",
+  "method": "Exact arbitrary-precision integer difference constraints with a strict common-order witness",
+  "caps": {
+    "base_blocks": 100000,
+    "permutation_order": 100000
+  },
+  "selected": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260
+  ],
+  "certified_count": 237,
+  "not_established_count": 21,
+  "results": [
+    {
+      "n": 3,
+      "base_preperiod_blocks": 3,
+      "base_period_blocks": 3,
+      "permutation_order": 3,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 4,
+      "base_preperiod_blocks": 3,
+      "base_period_blocks": 4,
+      "permutation_order": 4,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        1
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            1,
+            2
+          ],
+          "excluded_by": "mean_interval",
+          "sum_lower": 1,
+          "sum_upper": 1
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "base_preperiod_blocks": 3,
+      "base_period_blocks": 5,
+      "permutation_order": 5,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        2
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            2,
+            3
+          ],
+          "excluded_by": "positive_cycle",
+          "vertex": 3,
+          "positive_closed_walk_weight": 1
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "base_preperiod_blocks": 14,
+      "base_period_blocks": 6,
+      "permutation_order": 6,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        2
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            2,
+            3
+          ],
+          "excluded_by": "positive_cycle",
+          "vertex": 3,
+          "positive_closed_walk_weight": 1
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "base_preperiod_blocks": 6,
+      "base_period_blocks": 6,
+      "permutation_order": 6,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        3
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            3,
+            4
+          ],
+          "excluded_by": "mean_interval",
+          "sum_lower": 1,
+          "sum_upper": 5
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "base_preperiod_blocks": 10,
+      "base_period_blocks": 2,
+      "permutation_order": 8,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        4
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            4,
+            5
+          ],
+          "excluded_by": "positive_cycle",
+          "vertex": 4,
+          "positive_closed_walk_weight": 1
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "base_preperiod_blocks": 8,
+      "base_period_blocks": 9,
+      "permutation_order": 9,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 10,
+      "base_preperiod_blocks": 20,
+      "base_period_blocks": 10,
+      "permutation_order": 10,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 11,
+      "base_preperiod_blocks": 13,
+      "base_period_blocks": 2,
+      "permutation_order": 30,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 12,
+      "base_preperiod_blocks": 17,
+      "base_period_blocks": 6,
+      "permutation_order": 12,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 13,
+      "base_preperiod_blocks": 13,
+      "base_period_blocks": 9,
+      "permutation_order": 9,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 14,
+      "base_preperiod_blocks": 21,
+      "base_period_blocks": 14,
+      "permutation_order": 14,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 15,
+      "base_preperiod_blocks": 25,
+      "base_period_blocks": 15,
+      "permutation_order": 15,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 16,
+      "base_preperiod_blocks": 27,
+      "base_period_blocks": 16,
+      "permutation_order": 16,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 17,
+      "base_preperiod_blocks": 36,
+      "base_period_blocks": 66,
+      "permutation_order": 66,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 18,
+      "base_preperiod_blocks": 44,
+      "base_period_blocks": 18,
+      "permutation_order": 18,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        10
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            10,
+            11
+          ],
+          "excluded_by": "positive_cycle",
+          "vertex": 11,
+          "positive_closed_walk_weight": 2
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "base_preperiod_blocks": 29,
+      "base_period_blocks": 52,
+      "permutation_order": 52,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 20,
+      "base_preperiod_blocks": 39,
+      "base_period_blocks": 18,
+      "permutation_order": 18,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 21,
+      "base_preperiod_blocks": 23,
+      "base_period_blocks": 21,
+      "permutation_order": 21,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 22,
+      "base_preperiod_blocks": 51,
+      "base_period_blocks": 12,
+      "permutation_order": 60,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 23,
+      "base_preperiod_blocks": 20,
+      "base_period_blocks": 23,
+      "permutation_order": 23,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 24,
+      "base_preperiod_blocks": 101,
+      "base_period_blocks": 24,
+      "permutation_order": 24,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 25,
+      "base_preperiod_blocks": 28,
+      "base_period_blocks": 15,
+      "permutation_order": 15,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 26,
+      "base_preperiod_blocks": 45,
+      "base_period_blocks": 22,
+      "permutation_order": 22,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 27,
+      "base_preperiod_blocks": 41,
+      "base_period_blocks": 18,
+      "permutation_order": 18,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 28,
+      "base_preperiod_blocks": 47,
+      "base_period_blocks": 48,
+      "permutation_order": 48,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 29,
+      "base_preperiod_blocks": 30,
+      "base_period_blocks": 13,
+      "permutation_order": 39,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 30,
+      "base_preperiod_blocks": 60,
+      "base_period_blocks": 30,
+      "permutation_order": 30,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 31,
+      "base_preperiod_blocks": 73,
+      "base_period_blocks": 22,
+      "permutation_order": 198,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 32,
+      "base_preperiod_blocks": 74,
+      "base_period_blocks": 32,
+      "permutation_order": 32,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 33,
+      "base_preperiod_blocks": 83,
+      "base_period_blocks": 33,
+      "permutation_order": 33,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 34,
+      "base_preperiod_blocks": 77,
+      "base_period_blocks": 144,
+      "permutation_order": 144,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 35,
+      "base_preperiod_blocks": 68,
+      "base_period_blocks": 26,
+      "permutation_order": 234,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 36,
+      "base_preperiod_blocks": 56,
+      "base_period_blocks": 18,
+      "permutation_order": 18,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 37,
+      "base_preperiod_blocks": 67,
+      "base_period_blocks": 112,
+      "permutation_order": 112,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 38,
+      "base_preperiod_blocks": 86,
+      "base_period_blocks": 24,
+      "permutation_order": 24,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 39,
+      "base_preperiod_blocks": 101,
+      "base_period_blocks": 33,
+      "permutation_order": 33,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 40,
+      "base_preperiod_blocks": 50,
+      "base_period_blocks": 32,
+      "permutation_order": 32,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        23
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            23,
+            24
+          ],
+          "excluded_by": "mean_interval",
+          "sum_lower": 8,
+          "sum_upper": 74
+        }
+      ]
+    },
+    {
+      "n": 41,
+      "base_preperiod_blocks": 68,
+      "base_period_blocks": 148,
+      "permutation_order": 148,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 42,
+      "base_preperiod_blocks": 84,
+      "base_period_blocks": 42,
+      "permutation_order": 42,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 43,
+      "base_preperiod_blocks": 123,
+      "base_period_blocks": 378,
+      "permutation_order": 378,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 44,
+      "base_preperiod_blocks": 120,
+      "base_period_blocks": 30,
+      "permutation_order": 210,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 45,
+      "base_preperiod_blocks": 55,
+      "base_period_blocks": 45,
+      "permutation_order": 45,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 46,
+      "base_preperiod_blocks": 203,
+      "base_period_blocks": 36,
+      "permutation_order": 180,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 47,
+      "base_preperiod_blocks": 91,
+      "base_period_blocks": 41,
+      "permutation_order": 246,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 48,
+      "base_preperiod_blocks": 202,
+      "base_period_blocks": 48,
+      "permutation_order": 48,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 49,
+      "base_preperiod_blocks": 134,
+      "base_period_blocks": 130,
+      "permutation_order": 130,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 50,
+      "base_preperiod_blocks": 77,
+      "base_period_blocks": 50,
+      "permutation_order": 50,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 51,
+      "base_preperiod_blocks": 81,
+      "base_period_blocks": 45,
+      "permutation_order": 90,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 52,
+      "base_preperiod_blocks": 93,
+      "base_period_blocks": 72,
+      "permutation_order": 72,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 53,
+      "base_preperiod_blocks": 138,
+      "base_period_blocks": 26,
+      "permutation_order": 702,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        31
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            31,
+            32
+          ],
+          "excluded_by": "positive_cycle",
+          "vertex": 31,
+          "positive_closed_walk_weight": 1
+        }
+      ]
+    },
+    {
+      "n": 54,
+      "base_preperiod_blocks": 116,
+      "base_period_blocks": 54,
+      "permutation_order": 54,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 55,
+      "base_preperiod_blocks": 125,
+      "base_period_blocks": 35,
+      "permutation_order": 140,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 56,
+      "base_preperiod_blocks": 107,
+      "base_period_blocks": 36,
+      "permutation_order": 180,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 57,
+      "base_preperiod_blocks": 78,
+      "base_period_blocks": 57,
+      "permutation_order": 57,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 58,
+      "base_preperiod_blocks": 107,
+      "base_period_blocks": 34,
+      "permutation_order": 408,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 59,
+      "base_preperiod_blocks": 91,
+      "base_period_blocks": 59,
+      "permutation_order": 59,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 60,
+      "base_preperiod_blocks": 168,
+      "base_period_blocks": 60,
+      "permutation_order": 60,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 61,
+      "base_preperiod_blocks": 64,
+      "base_period_blocks": 888,
+      "permutation_order": 888,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 62,
+      "base_preperiod_blocks": 99,
+      "base_period_blocks": 60,
+      "permutation_order": 60,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 63,
+      "base_preperiod_blocks": 65,
+      "base_period_blocks": 108,
+      "permutation_order": 108,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 64,
+      "base_preperiod_blocks": 413,
+      "base_period_blocks": 510,
+      "permutation_order": 510,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 65,
+      "base_preperiod_blocks": 70,
+      "base_period_blocks": 58,
+      "permutation_order": 406,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 66,
+      "base_preperiod_blocks": 209,
+      "base_period_blocks": 66,
+      "permutation_order": 66,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 67,
+      "base_preperiod_blocks": 161,
+      "base_period_blocks": 925,
+      "permutation_order": 925,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 68,
+      "base_preperiod_blocks": 333,
+      "base_period_blocks": 76,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 69,
+      "base_preperiod_blocks": 131,
+      "base_period_blocks": 117,
+      "permutation_order": 234,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 70,
+      "base_preperiod_blocks": 257,
+      "base_period_blocks": 38,
+      "permutation_order": 608,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 71,
+      "base_preperiod_blocks": 167,
+      "base_period_blocks": 1188,
+      "permutation_order": 1188,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 72,
+      "base_preperiod_blocks": 168,
+      "base_period_blocks": 54,
+      "permutation_order": 54,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 73,
+      "base_preperiod_blocks": 313,
+      "base_period_blocks": 920,
+      "permutation_order": 920,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 74,
+      "base_preperiod_blocks": 142,
+      "base_period_blocks": 420,
+      "permutation_order": 420,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 75,
+      "base_preperiod_blocks": 233,
+      "base_period_blocks": 75,
+      "permutation_order": 75,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 76,
+      "base_preperiod_blocks": 79,
+      "base_period_blocks": 520,
+      "permutation_order": 520,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 77,
+      "base_preperiod_blocks": 100,
+      "base_period_blocks": 494,
+      "permutation_order": 5928,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 78,
+      "base_preperiod_blocks": 309,
+      "base_period_blocks": 72,
+      "permutation_order": 72,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 79,
+      "base_preperiod_blocks": 169,
+      "base_period_blocks": 2288,
+      "permutation_order": 2288,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 80,
+      "base_preperiod_blocks": 166,
+      "base_period_blocks": 80,
+      "permutation_order": 80,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 81,
+      "base_preperiod_blocks": 136,
+      "base_period_blocks": 81,
+      "permutation_order": 81,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 82,
+      "base_preperiod_blocks": 330,
+      "base_period_blocks": 42,
+      "permutation_order": 840,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 83,
+      "base_preperiod_blocks": 106,
+      "base_period_blocks": 12597,
+      "permutation_order": 12597,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 84,
+      "base_preperiod_blocks": 152,
+      "base_period_blocks": 60,
+      "permutation_order": 120,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 85,
+      "base_preperiod_blocks": 289,
+      "base_period_blocks": 1551,
+      "permutation_order": 7755,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 86,
+      "base_preperiod_blocks": 182,
+      "base_period_blocks": 86,
+      "permutation_order": 86,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 87,
+      "base_preperiod_blocks": 113,
+      "base_period_blocks": 756,
+      "permutation_order": 756,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 88,
+      "base_preperiod_blocks": 223,
+      "base_period_blocks": 88,
+      "permutation_order": 88,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 89,
+      "base_preperiod_blocks": 326,
+      "base_period_blocks": 59,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 90,
+      "base_preperiod_blocks": 276,
+      "base_period_blocks": 48,
+      "permutation_order": 336,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 91,
+      "base_preperiod_blocks": 201,
+      "base_period_blocks": 53,
+      "permutation_order": 2014,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 92,
+      "base_preperiod_blocks": 192,
+      "base_period_blocks": 4080,
+      "permutation_order": 4080,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 93,
+      "base_preperiod_blocks": 231,
+      "base_period_blocks": 168,
+      "permutation_order": 1512,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 94,
+      "base_preperiod_blocks": 239,
+      "base_period_blocks": 94,
+      "permutation_order": 94,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 95,
+      "base_preperiod_blocks": 282,
+      "base_period_blocks": 176,
+      "permutation_order": 2992,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 96,
+      "base_preperiod_blocks": 241,
+      "base_period_blocks": 96,
+      "permutation_order": 96,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 97,
+      "base_preperiod_blocks": 206,
+      "base_period_blocks": 912,
+      "permutation_order": 2736,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 98,
+      "base_preperiod_blocks": 185,
+      "base_period_blocks": 62,
+      "permutation_order": 1116,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 99,
+      "base_preperiod_blocks": 241,
+      "base_period_blocks": 1980,
+      "permutation_order": 1980,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 100,
+      "base_preperiod_blocks": 163,
+      "base_period_blocks": 100,
+      "permutation_order": 100,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 101,
+      "base_preperiod_blocks": 238,
+      "base_period_blocks": 270,
+      "permutation_order": 4320,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 102,
+      "base_preperiod_blocks": 194,
+      "base_period_blocks": 102,
+      "permutation_order": 102,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 103,
+      "base_preperiod_blocks": 239,
+      "base_period_blocks": 180,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 104,
+      "base_preperiod_blocks": 146,
+      "base_period_blocks": 104,
+      "permutation_order": 104,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 105,
+      "base_preperiod_blocks": 256,
+      "base_period_blocks": 102,
+      "permutation_order": 102,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 106,
+      "base_preperiod_blocks": 138,
+      "base_period_blocks": 102,
+      "permutation_order": 204,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 107,
+      "base_preperiod_blocks": 217,
+      "base_period_blocks": 4370,
+      "permutation_order": 48070,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 108,
+      "base_preperiod_blocks": 170,
+      "base_period_blocks": 168,
+      "permutation_order": 168,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 109,
+      "base_preperiod_blocks": 135,
+      "base_period_blocks": 318,
+      "permutation_order": 318,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 110,
+      "base_preperiod_blocks": 211,
+      "base_period_blocks": 108,
+      "permutation_order": 108,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 111,
+      "base_preperiod_blocks": 151,
+      "base_period_blocks": 111,
+      "permutation_order": 111,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 112,
+      "base_preperiod_blocks": 212,
+      "base_period_blocks": 112,
+      "permutation_order": 112,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 113,
+      "base_preperiod_blocks": 282,
+      "base_period_blocks": 301,
+      "permutation_order": 2709,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 114,
+      "base_preperiod_blocks": 149,
+      "base_period_blocks": 114,
+      "permutation_order": 114,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 115,
+      "base_preperiod_blocks": 673,
+      "base_period_blocks": 24,
+      "permutation_order": 2184,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 116,
+      "base_preperiod_blocks": 192,
+      "base_period_blocks": 116,
+      "permutation_order": 116,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 117,
+      "base_preperiod_blocks": 246,
+      "base_period_blocks": 378,
+      "permutation_order": 378,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 118,
+      "base_preperiod_blocks": 754,
+      "base_period_blocks": 66,
+      "permutation_order": 1716,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 119,
+      "base_preperiod_blocks": 304,
+      "base_period_blocks": 60,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 120,
+      "base_preperiod_blocks": 214,
+      "base_period_blocks": 120,
+      "permutation_order": 120,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 121,
+      "base_preperiod_blocks": 128,
+      "base_period_blocks": 121,
+      "permutation_order": 121,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 122,
+      "base_preperiod_blocks": 169,
+      "base_period_blocks": 920,
+      "permutation_order": 1840,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 123,
+      "base_preperiod_blocks": 303,
+      "base_period_blocks": 123,
+      "permutation_order": 123,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 124,
+      "base_preperiod_blocks": 319,
+      "base_period_blocks": 4284,
+      "permutation_order": 21420,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 125,
+      "base_preperiod_blocks": 260,
+      "base_period_blocks": 231,
+      "permutation_order": 3465,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 126,
+      "base_preperiod_blocks": 283,
+      "base_period_blocks": 72,
+      "permutation_order": 216,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 127,
+      "base_preperiod_blocks": 344,
+      "base_period_blocks": 440,
+      "permutation_order": 7480,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 128,
+      "base_preperiod_blocks": 248,
+      "base_period_blocks": 58,
+      "permutation_order": 2030,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 129,
+      "base_preperiod_blocks": 974,
+      "base_period_blocks": 81,
+      "permutation_order": 1296,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 130,
+      "base_preperiod_blocks": 463,
+      "base_period_blocks": 2052,
+      "permutation_order": 2052,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 131,
+      "base_preperiod_blocks": 242,
+      "base_period_blocks": 114,
+      "permutation_order": 1938,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 132,
+      "base_preperiod_blocks": 1008,
+      "base_period_blocks": 132,
+      "permutation_order": 132,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 133,
+      "base_preperiod_blocks": 872,
+      "base_period_blocks": 2820,
+      "permutation_order": 36660,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 134,
+      "base_preperiod_blocks": 445,
+      "base_period_blocks": 2520,
+      "permutation_order": 2520,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 135,
+      "base_preperiod_blocks": 321,
+      "base_period_blocks": 1428,
+      "permutation_order": 1428,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 136,
+      "base_preperiod_blocks": 564,
+      "base_period_blocks": 2214,
+      "permutation_order": 2214,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 137,
+      "base_preperiod_blocks": 277,
+      "base_period_blocks": 97,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 138,
+      "base_preperiod_blocks": 901,
+      "base_period_blocks": 780,
+      "permutation_order": 780,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 139,
+      "base_preperiod_blocks": 279,
+      "base_period_blocks": 790,
+      "permutation_order": 3950,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 140,
+      "base_preperiod_blocks": 277,
+      "base_period_blocks": 140,
+      "permutation_order": 140,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 141,
+      "base_preperiod_blocks": 325,
+      "base_period_blocks": 141,
+      "permutation_order": 141,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 142,
+      "base_preperiod_blocks": 576,
+      "base_period_blocks": 130,
+      "permutation_order": 780,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 143,
+      "base_preperiod_blocks": 227,
+      "base_period_blocks": 143,
+      "permutation_order": 143,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 144,
+      "base_preperiod_blocks": 317,
+      "base_period_blocks": 144,
+      "permutation_order": 144,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 145,
+      "base_preperiod_blocks": 348,
+      "base_period_blocks": 1568,
+      "permutation_order": 3136,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 146,
+      "base_preperiod_blocks": 247,
+      "base_period_blocks": 1456,
+      "permutation_order": 1456,
+      "status": "certified",
+      "real_mean_pair_ranks": [
+        87
+      ],
+      "isolation_cases": [
+        {
+          "pair_ranks": [
+            87,
+            88
+          ],
+          "excluded_by": "mean_interval",
+          "sum_lower": 134,
+          "sum_upper": 372
+        }
+      ]
+    },
+    {
+      "n": 147,
+      "base_preperiod_blocks": 1072,
+      "base_period_blocks": 129,
+      "permutation_order": 774,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 148,
+      "base_preperiod_blocks": 274,
+      "base_period_blocks": 96,
+      "permutation_order": 1248,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 149,
+      "base_preperiod_blocks": 647,
+      "base_period_blocks": 170,
+      "permutation_order": 10370,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 150,
+      "base_preperiod_blocks": 676,
+      "base_period_blocks": 150,
+      "permutation_order": 150,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 151,
+      "base_preperiod_blocks": 630,
+      "base_period_blocks": 116,
+      "permutation_order": 4060,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 152,
+      "base_preperiod_blocks": 454,
+      "base_period_blocks": 152,
+      "permutation_order": 152,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 153,
+      "base_preperiod_blocks": 642,
+      "base_period_blocks": 6732,
+      "permutation_order": 6732,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 154,
+      "base_preperiod_blocks": 416,
+      "base_period_blocks": 12710,
+      "permutation_order": 12710,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 155,
+      "base_preperiod_blocks": 244,
+      "base_period_blocks": 25705,
+      "permutation_order": 25705,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 156,
+      "base_preperiod_blocks": 486,
+      "base_period_blocks": 156,
+      "permutation_order": 156,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 157,
+      "base_preperiod_blocks": 522,
+      "base_period_blocks": 448,
+      "permutation_order": 29120,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 158,
+      "base_preperiod_blocks": 306,
+      "base_period_blocks": 150,
+      "permutation_order": 600,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 159,
+      "base_preperiod_blocks": 280,
+      "base_period_blocks": 159,
+      "permutation_order": 159,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 160,
+      "base_preperiod_blocks": 355,
+      "base_period_blocks": 60,
+      "permutation_order": 300,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 161,
+      "base_preperiod_blocks": 1395,
+      "base_period_blocks": 5460,
+      "permutation_order": 5460,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 162,
+      "base_preperiod_blocks": 246,
+      "base_period_blocks": 162,
+      "permutation_order": 162,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 163,
+      "base_preperiod_blocks": 169,
+      "base_period_blocks": 153,
+      "permutation_order": 1530,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 164,
+      "base_preperiod_blocks": 216,
+      "base_period_blocks": 520,
+      "permutation_order": 520,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 165,
+      "base_preperiod_blocks": 318,
+      "base_period_blocks": 150,
+      "permutation_order": 150,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 166,
+      "base_preperiod_blocks": 1736,
+      "base_period_blocks": 92,
+      "permutation_order": 3404,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 167,
+      "base_preperiod_blocks": 863,
+      "base_period_blocks": 113,
+      "permutation_order": 5763,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 168,
+      "base_preperiod_blocks": 307,
+      "base_period_blocks": 168,
+      "permutation_order": 168,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 169,
+      "base_preperiod_blocks": 1120,
+      "base_period_blocks": 1416,
+      "permutation_order": 60888,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 170,
+      "base_preperiod_blocks": 2515,
+      "base_period_blocks": 3068,
+      "permutation_order": 3068,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 171,
+      "base_preperiod_blocks": 595,
+      "base_period_blocks": 147,
+      "permutation_order": 1176,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 172,
+      "base_preperiod_blocks": 1648,
+      "base_period_blocks": 1800,
+      "permutation_order": 1800,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 173,
+      "base_preperiod_blocks": 296,
+      "base_period_blocks": 173,
+      "permutation_order": 173,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 174,
+      "base_preperiod_blocks": 492,
+      "base_period_blocks": 174,
+      "permutation_order": 174,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 175,
+      "base_preperiod_blocks": 614,
+      "base_period_blocks": 1818,
+      "permutation_order": 50904,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 176,
+      "base_preperiod_blocks": 230,
+      "base_period_blocks": 176,
+      "permutation_order": 176,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 177,
+      "base_preperiod_blocks": 321,
+      "base_period_blocks": 177,
+      "permutation_order": 177,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 178,
+      "base_preperiod_blocks": 261,
+      "base_period_blocks": 2688,
+      "permutation_order": 2688,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 179,
+      "base_preperiod_blocks": 332,
+      "base_period_blocks": 3276,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 180,
+      "base_preperiod_blocks": 685,
+      "base_period_blocks": 180,
+      "permutation_order": 180,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 181,
+      "base_preperiod_blocks": 613,
+      "base_period_blocks": 86,
+      "permutation_order": 4042,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 182,
+      "base_preperiod_blocks": 1184,
+      "base_period_blocks": 3456,
+      "permutation_order": 3456,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 183,
+      "base_preperiod_blocks": 425,
+      "base_period_blocks": 183,
+      "permutation_order": 183,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 184,
+      "base_preperiod_blocks": 192,
+      "base_period_blocks": 1320,
+      "permutation_order": 1320,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 185,
+      "base_preperiod_blocks": 1502,
+      "base_period_blocks": 3648,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 186,
+      "base_preperiod_blocks": 440,
+      "base_period_blocks": 186,
+      "permutation_order": 186,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 187,
+      "base_preperiod_blocks": 362,
+      "base_period_blocks": 6090,
+      "permutation_order": 6090,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 188,
+      "base_preperiod_blocks": 445,
+      "base_period_blocks": 8932,
+      "permutation_order": 8932,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 189,
+      "base_preperiod_blocks": 395,
+      "base_period_blocks": 1590,
+      "permutation_order": 1590,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 190,
+      "base_preperiod_blocks": 328,
+      "base_period_blocks": 190,
+      "permutation_order": 190,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 191,
+      "base_preperiod_blocks": 570,
+      "base_period_blocks": 171,
+      "permutation_order": 3420,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 192,
+      "base_preperiod_blocks": 337,
+      "base_period_blocks": 192,
+      "permutation_order": 192,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 193,
+      "base_preperiod_blocks": 366,
+      "base_period_blocks": 78958,
+      "permutation_order": 78958,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 194,
+      "base_preperiod_blocks": 712,
+      "base_period_blocks": 4392,
+      "permutation_order": 4392,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 195,
+      "base_preperiod_blocks": 447,
+      "base_period_blocks": 195,
+      "permutation_order": 195,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 196,
+      "base_preperiod_blocks": 213,
+      "base_period_blocks": 168,
+      "permutation_order": 168,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 197,
+      "base_preperiod_blocks": 918,
+      "base_period_blocks": 66,
+      "permutation_order": 8646,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 198,
+      "base_preperiod_blocks": 499,
+      "base_period_blocks": 198,
+      "permutation_order": 198,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 199,
+      "base_preperiod_blocks": 739,
+      "base_period_blocks": 119,
+      "permutation_order": 9520,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 200,
+      "base_preperiod_blocks": 310,
+      "base_period_blocks": 200,
+      "permutation_order": 200,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 201,
+      "base_preperiod_blocks": 849,
+      "base_period_blocks": 108,
+      "permutation_order": 3780,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 202,
+      "base_preperiod_blocks": 257,
+      "base_period_blocks": 1980,
+      "permutation_order": 1980,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 203,
+      "base_preperiod_blocks": 477,
+      "base_period_blocks": 191,
+      "permutation_order": 2292,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 204,
+      "base_preperiod_blocks": 2039,
+      "base_period_blocks": 6,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 205,
+      "base_preperiod_blocks": 613,
+      "base_period_blocks": 880,
+      "permutation_order": 2640,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 206,
+      "base_preperiod_blocks": 1573,
+      "base_period_blocks": 68,
+      "permutation_order": 40256,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 207,
+      "base_preperiod_blocks": 337,
+      "base_period_blocks": 138,
+      "permutation_order": 138,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 208,
+      "base_preperiod_blocks": 330,
+      "base_period_blocks": 182,
+      "permutation_order": 182,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 209,
+      "base_preperiod_blocks": 338,
+      "base_period_blocks": 5559,
+      "permutation_order": 272391,
+      "status": "not_established",
+      "reason": "permutation_order_cap"
+    },
+    {
+      "n": 210,
+      "base_preperiod_blocks": 938,
+      "base_period_blocks": 210,
+      "permutation_order": 210,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 211,
+      "base_preperiod_blocks": 591,
+      "base_period_blocks": 23,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 212,
+      "base_preperiod_blocks": 662,
+      "base_period_blocks": 14300,
+      "permutation_order": 14300,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 213,
+      "base_preperiod_blocks": 448,
+      "base_period_blocks": 213,
+      "permutation_order": 213,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 214,
+      "base_preperiod_blocks": 458,
+      "base_period_blocks": 214,
+      "permutation_order": 214,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 215,
+      "base_preperiod_blocks": 269,
+      "base_period_blocks": 215,
+      "permutation_order": 215,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 216,
+      "base_preperiod_blocks": 619,
+      "base_period_blocks": 216,
+      "permutation_order": 216,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 217,
+      "base_preperiod_blocks": 580,
+      "base_period_blocks": 824,
+      "permutation_order": 2472,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 218,
+      "base_preperiod_blocks": 714,
+      "base_period_blocks": 7544,
+      "permutation_order": 7544,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 219,
+      "base_preperiod_blocks": 366,
+      "base_period_blocks": 141,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 220,
+      "base_preperiod_blocks": 732,
+      "base_period_blocks": 180,
+      "permutation_order": 360,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 221,
+      "base_preperiod_blocks": 590,
+      "base_period_blocks": 1242,
+      "permutation_order": 110538,
+      "status": "not_established",
+      "reason": "permutation_order_cap"
+    },
+    {
+      "n": 222,
+      "base_preperiod_blocks": 486,
+      "base_period_blocks": 222,
+      "permutation_order": 222,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 223,
+      "base_preperiod_blocks": 386,
+      "base_period_blocks": 20904,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 224,
+      "base_preperiod_blocks": 416,
+      "base_period_blocks": 224,
+      "permutation_order": 224,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 225,
+      "base_preperiod_blocks": 421,
+      "base_period_blocks": 216,
+      "permutation_order": 216,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 226,
+      "base_preperiod_blocks": 1085,
+      "base_period_blocks": 546,
+      "permutation_order": 10374,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 227,
+      "base_preperiod_blocks": 523,
+      "base_period_blocks": 51,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 228,
+      "base_preperiod_blocks": 663,
+      "base_period_blocks": 228,
+      "permutation_order": 228,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 229,
+      "base_preperiod_blocks": 277,
+      "base_period_blocks": 224,
+      "permutation_order": 19040,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 230,
+      "base_preperiod_blocks": 384,
+      "base_period_blocks": 230,
+      "permutation_order": 230,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 231,
+      "base_preperiod_blocks": 2066,
+      "base_period_blocks": 690,
+      "permutation_order": 15180,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 232,
+      "base_preperiod_blocks": 1914,
+      "base_period_blocks": 152,
+      "permutation_order": 1520,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 233,
+      "base_preperiod_blocks": 1072,
+      "base_period_blocks": 786,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 234,
+      "base_preperiod_blocks": 1245,
+      "base_period_blocks": 1488,
+      "permutation_order": 1488,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 235,
+      "base_preperiod_blocks": 963,
+      "base_period_blocks": 336,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 236,
+      "base_preperiod_blocks": 762,
+      "base_period_blocks": 188,
+      "permutation_order": 2256,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 237,
+      "base_preperiod_blocks": 429,
+      "base_period_blocks": 237,
+      "permutation_order": 237,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 238,
+      "base_preperiod_blocks": 686,
+      "base_period_blocks": 16848,
+      "permutation_order": 16848,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 239,
+      "base_preperiod_blocks": 586,
+      "base_period_blocks": 186,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 240,
+      "base_preperiod_blocks": 710,
+      "base_period_blocks": 288,
+      "permutation_order": 288,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 241,
+      "base_preperiod_blocks": 429,
+      "base_period_blocks": 136,
+      "permutation_order": 14280,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 242,
+      "base_preperiod_blocks": 311,
+      "base_period_blocks": 242,
+      "permutation_order": 242,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 243,
+      "base_preperiod_blocks": 663,
+      "base_period_blocks": 2814,
+      "permutation_order": 2814,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 244,
+      "base_preperiod_blocks": 593,
+      "base_period_blocks": 90636,
+      "permutation_order": 90636,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 245,
+      "base_preperiod_blocks": 325,
+      "base_period_blocks": 245,
+      "permutation_order": 245,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 246,
+      "base_preperiod_blocks": 943,
+      "base_period_blocks": 2184,
+      "permutation_order": 2184,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 247,
+      "base_preperiod_blocks": 1086,
+      "base_period_blocks": 26117,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 248,
+      "base_preperiod_blocks": 3632,
+      "base_period_blocks": 6438,
+      "permutation_order": 6438,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 249,
+      "base_preperiod_blocks": 981,
+      "base_period_blocks": 150,
+      "permutation_order": 4950,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 250,
+      "base_preperiod_blocks": 355,
+      "base_period_blocks": 250,
+      "permutation_order": 250,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 251,
+      "base_preperiod_blocks": 306,
+      "base_period_blocks": 3625,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 252,
+      "base_preperiod_blocks": 920,
+      "base_period_blocks": 252,
+      "permutation_order": 252,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 253,
+      "base_preperiod_blocks": 1701,
+      "base_period_blocks": 70,
+      "permutation_order": 11830,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 254,
+      "base_preperiod_blocks": 326,
+      "base_period_blocks": 254,
+      "permutation_order": 254,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 255,
+      "base_preperiod_blocks": 801,
+      "base_period_blocks": 204,
+      "permutation_order": 204,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 256,
+      "base_preperiod_blocks": 1173,
+      "base_period_blocks": 104,
+      "permutation_order": 1976,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 257,
+      "base_preperiod_blocks": 3465,
+      "base_period_blocks": 59,
+      "status": "not_established",
+      "reason": "ambiguous_common_order_witness"
+    },
+    {
+      "n": 258,
+      "base_preperiod_blocks": 990,
+      "base_period_blocks": 258,
+      "permutation_order": 258,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 259,
+      "base_preperiod_blocks": 341,
+      "base_period_blocks": 206,
+      "permutation_order": 10918,
+      "status": "certified",
+      "real_mean_pair_ranks": [],
+      "isolation_cases": []
+    },
+    {
+      "n": 260,
+      "status": "not_established",
+      "reason": "base_orbit_cap",
+      "examined_blocks": 100000
+    }
+  ],
+  "provenance": "Every result was reproduced by mean_pair_certificates.py using arbitrary-precision Python integers and an explicit reachability mask."
+}

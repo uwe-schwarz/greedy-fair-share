@@ -1,0 +1,74 @@
+{
+  "n": 8,
+  "start_blocks": 110,
+  "period_blocks": 16,
+  "components": [
+    {
+      "slots": [
+        0,
+        3,
+        4
+      ],
+      "size": 3,
+      "iterations": [
+        {
+          "potential_integration": 1,
+          "is_coboundary": false,
+          "first_defect": {
+            "edge": [
+              125,
+              0
+            ],
+            "rank_polynomial_vector": [
+              72,
+              -24,
+              -24,
+              -120,
+              -24,
+              72,
+              -24,
+              72
+            ],
+            "first_nonzero_germ_coefficient": [
+              4,
+              9408
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slots": [
+        5,
+        7
+      ],
+      "size": 2,
+      "iterations": [
+        {
+          "potential_integration": 1,
+          "is_coboundary": false,
+          "first_defect": {
+            "edge": [
+              122,
+              5
+            ],
+            "rank_polynomial_vector": [
+              -8,
+              -8,
+              24,
+              -8,
+              24,
+              -8,
+              -8,
+              -8
+            ],
+            "first_nonzero_germ_coefficient": [
+              4,
+              -1472
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

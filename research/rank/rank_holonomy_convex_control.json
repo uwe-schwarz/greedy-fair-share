@@ -1,0 +1,123 @@
+{
+  "period_blocks": 6,
+  "constraint_count": 7,
+  "components": [
+    {
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "size": 6,
+      "rank_count_holonomy_zero": false,
+      "x_holonomy_zero": true,
+      "first_rank_defects": [
+        {
+          "from_wire": 2,
+          "to_wire": 3,
+          "where": {
+            "kind": "wrap",
+            "phase": 6,
+            "slots": [
+              2,
+              3
+            ]
+          },
+          "rank_count_defect": [
+            0,
+            -6,
+            12,
+            0,
+            -6,
+            0
+          ]
+        },
+        {
+          "from_wire": 1,
+          "to_wire": 4,
+          "where": {
+            "kind": "wrap",
+            "phase": 6,
+            "slots": [
+              1,
+              4
+            ]
+          },
+          "rank_count_defect": [
+            0,
+            6,
+            -12,
+            0,
+            6,
+            0
+          ]
+        },
+        {
+          "from_wire": 3,
+          "to_wire": 2,
+          "where": {
+            "kind": "wrap",
+            "phase": 6,
+            "slots": [
+              2,
+              3
+            ]
+          },
+          "rank_count_defect": [
+            0,
+            6,
+            -12,
+            0,
+            6,
+            0
+          ]
+        },
+        {
+          "from_wire": 4,
+          "to_wire": 1,
+          "where": {
+            "kind": "wrap",
+            "phase": 6,
+            "slots": [
+              1,
+              4
+            ]
+          },
+          "rank_count_defect": [
+            0,
+            -6,
+            12,
+            0,
+            -6,
+            0
+          ]
+        }
+      ],
+      "first_x_defects": [],
+      "closed_constraints_checked": 9,
+      "centered_rank_totals": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  ],
+  "all_rank_count_holonomy_zero": false,
+  "all_x_holonomy_zero": true,
+  "n": 6,
+  "weights": [
+    27,
+    18,
+    10,
+    5,
+    2,
+    0
+  ],
+  "lower_start_blocks": 62
+}

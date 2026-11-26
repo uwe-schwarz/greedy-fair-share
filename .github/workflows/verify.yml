@@ -20,3 +20,26 @@ jobs:
           persist-credentials: false
       - name: Verify every infinite-tail certificate
         run: python3 fair_share_verify.py fair_share_certificates.json
+
+  structural:
+    name: Structural proofs for N = 3..64
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Reconstruct every structural certificate and the N=2 control
+        run: |
+          python3 research/structure_certificates.py --range 2 64 --cap 1000000 > structural_actual.jsonl
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          expected=json.loads(Path('research/structure_verification.json').read_text())['cases']
+          actual=[json.loads(line) for line in Path('structural_actual.jsonl').read_text().splitlines()]
+          assert actual==expected, 'Structural results differ from the recorded exact certificates'
+          assert actual[0]['n']==2 and not actual[0]['all_components_separated']
+          assert all(row['all_components_separated'] for row in actual[1:])
+          print('Verified all 62 positive cases and the negative control.')
+          PY

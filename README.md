@@ -16,6 +16,8 @@ English is the canonical language for the documentation. The [full proof](fair_s
 - **Arithmetic criterion for closed two-player groups:** a nonmonomial parity ratio bounds their required comparison depth. A tie away from the global mean is a simpler sufficient test. The [exact experiments](research/STRUCTURE_EXPERIMENTS.md) establish this criterion for 54 components, covering all 988 of their tie phases. This proves those components' eventual periodicity, not the full sequences for their player counts.
 - **Arithmetic criterion for interacting groups of any size:** [integer graph charges](research/NETWORK_CHARGES.md) are conserved under all compatible routing. Distinct initial charges exclude all future ties at the next moment. This is the criterion used in the new structural proofs, including a component of size 56 for `N = 60`.
 - **General restriction on period lengths:** if an eventual period exists, every prime factor of its least individual-turn period is at most `N`. At separating depth `d`, that least period divides `2N · lcm(1,…,N)^d`. See [PERIOD_BOUND.md](PERIOD_BOUND.md).
+- **No complete return to equal second moments:** for every `N > 2`, the canonical sequence never regains the initial all-equal second-moment state at a positive paired-block boundary. The [proof](research/BINARY_RESONANCE.md#21-exactly-when-the-complete-zero-state-can-return) uses the common recurrent sorting permutation. This excludes a complete reset, but leaves proper subsets of players to be handled.
+- **A further conditional separation theorem:** exact [rank-count invariants](research/RANK_RIGIDITY.md) give conserved values at prime-power roots of unity. A nonzero value bounds comparison depth; small unresolved classes can then be treated by the binary criterion. See [cyclotomic separation](research/CYCLOTOMIC_SEPARATION.md). The uniform canonical hypotheses remain unproved.
 - **Not established:** eventual periodicity for every integer `N > 2`, or guaranteed termination of a search for certificates.
 - **Verification level:** a mathematical soundness argument plus an executable Python checker using arbitrary-precision integers. No Lean formalization is included.
 
@@ -24,7 +26,7 @@ These certificates establish infinite continuations. Observing many equal finite
 ## Run the verifier
 
 Python 3 is sufficient; there are no third-party dependencies.
-GitHub Actions runs the full verifier on pushes and pull requests.
+GitHub Actions runs the full word-certificate verifier and reproduces all structural certificates through N=64 on pushes and pull requests.
 
 ```sh
 # Small, fully documented example
@@ -117,11 +119,17 @@ The complete derivation, including the initial degree-four tie for `N = 3`, is i
 | [research/STRUCTURE_PROOFS.md](research/STRUCTURE_PROOFS.md) | Exact eventual-periodicity proofs for N=3,...,64 and the structural checker's soundness. |
 | [research/INTERACTING_COMPONENTS.md](research/INTERACTING_COMPONENTS.md) | Exact two-gate models, reusable drift and residue lemmas, and counterexamples to overly broad extensions. |
 | [research/BINARY_RESONANCE.md](research/BINARY_RESONANCE.md) | A common recurrent affine permutation, the period-two occupancy exclusion, and remaining binary obstacles. |
+| [research/RANK_RIGIDITY.md](research/RANK_RIGIDITY.md) and [research/RANK_RIGIDITY_CHECKS.md](research/RANK_RIGIDITY_CHECKS.md) | The rank-count rigidity conjecture, its proved consequences, independent graph checks, and exact counterexamples to stronger versions. |
+| [research/CYCLOTOMIC_SEPARATION.md](research/CYCLOTOMIC_SEPARATION.md) | A root-of-unity depth bound and a conditional reduction of interacting groups to closed pairs. |
+| [research/TERMINAL_COMPONENTS.md](research/TERMINAL_COMPONENTS.md) | A necessary flat-generating-function condition for an infinite-depth obstruction, with examples explaining why it is insufficient. |
+| [research/FORCING_IDENTITIES.md](research/FORCING_IDENTITIES.md) | Exact quadratic-weight identities and a conditional change of coordinates for unresolved comparison networks. |
+| [research/RECIPROCAL_FORCING.md](research/RECIPROCAL_FORCING.md) | A positive polynomial rank-force basis and the simpler exact integer `(a,b,c)` recurrence through degree four, with limits of curvature and energy arguments. |
+| [research/rank/README.md](research/rank/README.md) | Reproduction commands for the rank and cyclotomic experiments. |
 
 ## Continuing the work
 
 The current main target is to prove that, for each fixed `N ≥ 3`, some finite degree `d(N)` eventually resolves every comparison. The [general reduction](FINITE_DEPTH.md) proves that this is equivalent to the desired periodicity. Degree four remains a stronger sufficient conjecture, but the reduction now works at every fixed degree.
 
-The charge criterion now handles interacting groups of arbitrary size. The missing universal step is to prove that the **canonical** history forces sufficient charge separation, at degree four or after finitely many refinements. The special origin is material: explicit altered prefixes and formal initial states defeat several broader versions of the claim. The [research log](RESEARCH_LOG.md) records these failed routes and the current arithmetic target.
+The charge criterion now handles interacting groups of arbitrary size. The missing universal step is to prove that the **canonical** history forces sufficient charge separation, at degree four or after finitely many refinements. A second possible route is to prove rank-count rigidity and show that its cyclotomic signature classes eventually reduce to nonresonant pairs. Neither route's all-N hypotheses are established. The special origin is material: explicit altered prefixes and formal initial states defeat several broader versions of the claim. The [research log](RESEARCH_LOG.md) records these failed routes and the current arithmetic target.
 
 Lean would be useful for formally verifying the certificate criterion and its connection to the original greedy rule. It is not required to reproduce the current results, and formalizing the existing finite cases would not prove the universal conjecture. See [next steps](NEXT_STEPS.md).

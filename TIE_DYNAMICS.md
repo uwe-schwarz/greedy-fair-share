@@ -4,6 +4,8 @@ Date: 2026-11-26. English is the canonical version of this research note.
 
 **Extension:** [FINITE_DEPTH.md](FINITE_DEPTH.md) now proves the corresponding normal form at every fixed moment degree, and proves that eventual periodicity is equivalent to eventual separation at some finite degree. This note retains the detailed degree-three and degree-four calculations.
 
+**Simpler coordinates:** [RECIPROCAL_FORCING.md](research/RECIPROCAL_FORCING.md) gives an equivalent integer update through degree four: `a' = a + binom(N-r,2)`, `b' = b + a`, and `c' = c + 4N^2 b + binom(N-r+1,4)`. It proves the exact triangular conversion between these coordinates and the original age moments. The formulas below remain valid in their original gauges.
+
 **Result established here:** for every N >= 2, the unlabelled moment dynamics through degree four has an eventual polynomial form with finitely many repeating phases, after the stated common normalizations. Consequently, if comparisons are eventually strict through degree four, the labelled greedy sequence is eventually periodic.
 
 **Not established:** eventual strictness through degree four for every N >= 3, or the original universal periodicity conjecture. The separation condition below is sufficient; it is not claimed to be necessary.

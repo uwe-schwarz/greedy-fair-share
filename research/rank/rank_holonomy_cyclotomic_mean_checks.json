@@ -1,0 +1,316 @@
+[
+  {
+    "n": 4,
+    "start_blocks": 15,
+    "period_blocks": 12,
+    "all_tie_phases_off_mean": true,
+    "tie_phases": [
+      {
+        "phase": 3,
+        "slots": [
+          0,
+          1
+        ],
+        "normalized_load": 0,
+        "all_player_load_sum": 4,
+        "scaled_distance_from_mean": -4
+      }
+    ]
+  },
+  {
+    "n": 8,
+    "start_blocks": 110,
+    "period_blocks": 16,
+    "all_tie_phases_off_mean": true,
+    "tie_phases": [
+      {
+        "phase": 5,
+        "slots": [
+          4,
+          5
+        ],
+        "normalized_load": 7,
+        "all_player_load_sum": 52,
+        "scaled_distance_from_mean": 4
+      },
+      {
+        "phase": 10,
+        "slots": [
+          1,
+          2
+        ],
+        "normalized_load": 3,
+        "all_player_load_sum": 56,
+        "scaled_distance_from_mean": -32
+      },
+      {
+        "phase": 11,
+        "slots": [
+          2,
+          3
+        ],
+        "normalized_load": 3,
+        "all_player_load_sum": 52,
+        "scaled_distance_from_mean": -28
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "start_blocks": 5789,
+    "period_blocks": 196,
+    "all_tie_phases_off_mean": true,
+    "tie_phases": [
+      {
+        "phase": 4,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 10,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 24,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 27,
+        "slots": [
+          2,
+          3
+        ],
+        "normalized_load": 4,
+        "all_player_load_sum": 266,
+        "scaled_distance_from_mean": -210
+      },
+      {
+        "phase": 37,
+        "slots": [
+          4,
+          5
+        ],
+        "normalized_load": 7,
+        "all_player_load_sum": 266,
+        "scaled_distance_from_mean": -168
+      },
+      {
+        "phase": 38,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 60,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 66,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 74,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 80,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 88,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 94,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 97,
+        "slots": [
+          2,
+          3
+        ],
+        "normalized_load": 4,
+        "all_player_load_sum": 266,
+        "scaled_distance_from_mean": -210
+      },
+      {
+        "phase": 116,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 130,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 139,
+        "slots": [
+          2,
+          3
+        ],
+        "normalized_load": 4,
+        "all_player_load_sum": 266,
+        "scaled_distance_from_mean": -210
+      },
+      {
+        "phase": 144,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 150,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 153,
+        "slots": [
+          2,
+          3
+        ],
+        "normalized_load": 4,
+        "all_player_load_sum": 266,
+        "scaled_distance_from_mean": -210
+      },
+      {
+        "phase": 164,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 167,
+        "slots": [
+          2,
+          3
+        ],
+        "normalized_load": 4,
+        "all_player_load_sum": 266,
+        "scaled_distance_from_mean": -210
+      },
+      {
+        "phase": 172,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 178,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 26,
+        "all_player_load_sum": 259,
+        "scaled_distance_from_mean": 105
+      },
+      {
+        "phase": 181,
+        "slots": [
+          2,
+          3
+        ],
+        "normalized_load": 4,
+        "all_player_load_sum": 266,
+        "scaled_distance_from_mean": -210
+      },
+      {
+        "phase": 186,
+        "slots": [
+          9,
+          10
+        ],
+        "normalized_load": 27,
+        "all_player_load_sum": 273,
+        "scaled_distance_from_mean": 105
+      }
+    ]
+  }
+]

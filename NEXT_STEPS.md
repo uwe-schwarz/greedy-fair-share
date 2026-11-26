@@ -61,6 +61,16 @@ The new all-fixed-degree induction has completed the normal-form part of this ro
 
 The [period theorem](PERIOD_BOUND.md) adds a universal restriction: if depth d separates the players, the least turn period divides `2N * lcm(1,...,N)^d`. In particular an eventual least period has no prime factor greater than N. This controls the possible period factors without establishing a bound on d.
 
+### A second route: exact rank counts and cyclotomic classes
+
+The [rank-rigidity investigation](research/RANK_RIGIDITY.md) isolates a stronger condition observed on the canonical third-moment networks: every closed compatible route has the same centered rank-count vector. Its validity for arbitrary N remains conjectural. The independent checks and the exact counterexamples are in [RANK_RIGIDITY_CHECKS.md](research/RANK_RIGIDITY_CHECKS.md).
+
+Under that hypothesis, the [cyclotomic theorem](research/CYCLOTOMIC_SEPARATION.md) proves a finite depth bound for any pair distinguished at a prime-power root of unity of order dividing 2N. This already separates the large known components of sizes 27 and 56 at N=30 and N=60. If every remaining signature class has at most two labels, finite-depth refinement leaves only singletons and closed binary components. Off-mean tests can then finish those pairs. Thus the new route needs three universal statements: canonical rank rigidity, eventual classes of size at most two, and binary nonresonance. None should be replaced by the finite evidence.
+
+The [binary note](research/BINARY_RESONANCE.md) now proves that the complete zero second-moment state never returns for N>2. It also supplies a reusable difference-constraint certificate excluding binary mean ties on every integer recurrent second-moment cycle for 237 specified player counts. The latter is a finite component result, not full periodicity for those player counts. A higher-moment-closed pair need not be isolated in second moments, so that certificate cannot automatically be applied after every refinement.
+
+The [terminal-component reduction](research/TERMINAL_COMPONENTS.md) shows that an infinite-depth obstruction would have all-orders-flat signed generating functions. Multicolor Prouhet constructions demonstrate that this condition alone does not imply a binary group or an origin reset. The continuation's greedy routing is essential. Likewise, strict convexity of the rank weights is insufficient: a concrete six-player altered-weight example defeats rank rigidity, and a ten-player altered-weight example satisfies the proposed oriented two-block pattern.
+
 ## 3. Preserve exact certification when exploring further
 
 Candidate discovery and proof checking have different roles. New searches may propose a prefix and period, but acceptance should still require exact prefix reconstruction and a proof of every future comparison.
