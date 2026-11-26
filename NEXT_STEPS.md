@@ -16,22 +16,34 @@ Current general results establish:
 1. Every paired round has the form `π reverse(π)`.
 2. The sorted second-moment differences, after subtracting their minimum and dividing by two, lie in a finite state space and eventually repeat.
 3. A proposed periodic tail can be certified by finitely many exact coefficient comparisons.
-4. The unlabelled dynamics through degree four has an eventual polynomial form with repeating phases, using the normalizations proved in [moment dynamics](TIE_DYNAMICS.md). This uses Kohlberg's invariant-half-line theorem and a finite-lattice argument.
+4. At **every fixed moment depth**, the unlabelled dynamics has an eventual polynomial form with repeating phases. The [general induction](FINITE_DEPTH.md) uses polynomial transport along a finite graph, Kohlberg's invariant-half-line theorem, and a finite-lattice argument.
+5. Eventual periodicity is **equivalent** to eventual separation at some finite moment depth. The depth may depend on N.
 
-The new reduction gives a concrete sufficient next theorem: for every `N ≥ 3`, there is a paired-block time after which distinct players always have distinct triples `(M₂, M₃, M₄)`. Once this is proved, the phasewise routing of labels becomes periodic; a finite power of its permutation restores every label. Section 11 of the research note gives the precise quantified statement and proof of this implication.
+The exact remaining target can therefore be written as
 
-**This separation theorem is not proved.** Degree four suffices for the supplied certificates but is not an established bound for arbitrary `N`. The condition is also not claimed to be necessary: an eventually periodic sequence could still require higher moments to resolve some decisions. The two-player Thue–Morse sequence fails finite-degree separation and remains a necessary check on any proposed universal argument.
+$$
+\forall N\ge3\;\exists d,m_0\;\forall m\ge m_0\;\forall i\ne j,
+\qquad (M_{i,0}(m),\ldots,M_{i,d}(m))
+\ne (M_{j,0}(m),\ldots,M_{j,d}(m)).
+$$
+
+Here m counts paired blocks of 2N turns. If a finite depth separates all players, its eventual polynomial profiles determine periodic routing of labels. A finite power of the routing permutation restores every label. Conversely, a periodic player word has a first distinguishing coefficient bounded uniformly over its finitely many phases and player pairs. Both directions are proved in [FINITE_DEPTH.md](FINITE_DEPTH.md).
+
+**The existence of such a finite depth for every N >= 3 is not proved.** Degree four suffices for the supplied certificates and remains a stronger sufficient conjecture. We no longer need a new normal-form argument if a higher degree is required. The two-player Thue–Morse sequence fails every finite-depth separation condition and remains a necessary check on a universal argument.
 
 An alternative sufficient theorem would guarantee that every `N ≥ 3` eventually reaches a tail accepted by an exact finite-moment certificate checker. Termination of such a search remains unproved.
 
-## 2. Analyze the recurring tie groups
+## 2. Extend the arithmetic obstruction to interacting groups
 
-The most direct next work is to study exact ties inside the now-understood lower-moment dynamics:
+The [parity theorem](research/PARITY_OBSTRUCTION.md) now supplies an arithmetic obstruction for a closed two-player component. Modulo two, its score difference becomes the indicator of the turns occupied by either player. That union is independent of the internal ordering of the two labels. Its fixed affine recurrence bounds the comparison depth unless a rational-function ratio is a Laurent monomial.
 
-1. **Build the periodic comparison structure.** Compute the second-moment cycle and its possible player movements between equal-value groups. Record which groups of player positions remain closed under these movements.
-2. **Extract the affine and quadratic regimes.** Use the proved coordinate changes to remove common growth. Identify the persistent ties through degree three, then through degree four. Record actual integer coefficients and exact equalities.
-3. **Seek a separation invariant.** A modular obstruction to simultaneous equalities or a strictly decreasing integer quantity could prove that the degree-four tie cases cannot recur indefinitely from the canonical zero initial state. Neither obstruction has yet been established.
-4. **Test the proposed statement directly.** Carry additional moment coefficients when degree four ties. Record the smallest deciding degree, the closed group involved, and the complete return map. A degree-four tie would challenge the strongest bound; it would not by itself disprove eventual separation or eventual periodicity.
+The [physical interpretation](research/PARITY_RESONANCE.md) shows that this monomial exception requires the pair's occupancy to have been periodic from turn zero, aligned with the selected prefix and base period. At a second-moment tie it also requires both players to be at the global mean load. Thus an [off-mean tie](research/MEAN_OBSTRUCTION.md) gives a simpler sufficient test. All 988 tie phases of the 54 investigated N>2 binary components pass it. These are component theorems, not complete new player-count cases; see [the exact scope](research/STRUCTURE_EXPERIMENTS.md).
+
+The next mathematical tasks are:
+
+1. **Treat networks of changing pairs.** The persistent third-moment comparison graph already contains a component of size three for N=8 and one of size fourteen for N=14. Every instantaneous tie in these examples has size two, but the same player can meet different partners. A fixed pair's union of turns is then no longer independent of the other comparisons. We need an invariant or arithmetic argument for the whole interacting component. The [exact graph calculations](research/THIRD_COMPONENTS.md) give small concrete cases for testing such a lemma.
+2. **Resolve the exceptional closed binary case.** Prove that the canonical integer dynamics cannot produce the mean-level, phase-aligned occupancy resonance, or show that integer information beyond parity still bounds its depth. Exhaustive checks of the complete integer state spaces for N=3,...,7 find no binary mean ties. An explicit rational N=4 counterexample shows why a proof must retain integrality or canonical reachability. This remains a conjectural structural step.
+3. **Test degree four without assuming it.** Carry additional moment coefficients whenever degree four ties. Record the first deciding degree, the component, and the complete return map. A degree-four tie challenges the stronger bound; it does not refute eventual periodicity. The correct target is a finite bound depending on N.
 
 The [component study](research/BINARY_COMPONENTS.md) provides an exact graph construction, an elementary binary return-map lemma, a structural derivation for `N = 7`, and a targeted `N = 78` example. In that example, one closed pair first needs degree four at turn index 3020004; its later behavior can be certified algebraically without generating billions of turns. This establishes that component's behavior, not the full `N = 78` sequence.
 
@@ -45,7 +57,7 @@ The fourth rank weight is a strictly convex quadratic function of the second ran
 
 The binary false-start paper offers another model for the missing step. Its coefficient-cancellation process eventually leaves a nonzero arithmetic remainder for a non-Thue–Morse prefix. An analogous obstruction for a recurring multiplayer tie group would be useful. Its theorem cannot be applied merely by deleting other players' turns, because deletion changes the time exponents. See Khovanova and Madhavarapu, [*Fair Duels after a False Start*](https://arxiv.org/html/2610.00880v1), Theorems 1.1 and 4.6.
 
-If degree four does not yield eventual separation for all N, the next mathematical task is to extend the moment normal form to higher fixed degrees and establish a sufficient degree depending on N. An all-degree induction is not included in the current proof.
+The new all-fixed-degree induction has completed the normal-form part of this route. The work left is to bound the depth of the unresolved comparison networks, not to reprove the reduction at each degree.
 
 ## 3. Preserve exact certification when exploring further
 
@@ -81,6 +93,8 @@ Minimal period and minimal preperiod are separate claims from eventual periodici
 For the larger cases, choose a proof-producing or otherwise explicitly justified computation path, and document its trusted assumptions. Importing the Python result as an assertion would not formally verify the computation.
 
 Formalizing these results would strengthen confidence in the current finite-case proofs. It would leave the universal existence theorem in section 1 as a distinct mathematical task.
+
+The polynomial-transport lemma in [FINITE_DEPTH.md](FINITE_DEPTH.md), section 4, is another compact candidate for formalization: a unipotent matrix recurrence on a finite graph forces all time-dependent polynomial terms to agree inside a closed component. Formalizing the whole fixed-depth induction would additionally require the nonexpansive piecewise-affine theorem or a replacement proof.
 
 ## 5. Keep the research record clear
 

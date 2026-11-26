@@ -1,0 +1,235 @@
+{"n": 25, "mu": 28, "p": 15, "component_sizes": [25], "binary": []}
+{"n": 26, "mu": 45, "p": 22, "component_sizes": [1, 1, 1, 23], "binary": []}
+{"n": 27, "mu": 41, "p": 18, "component_sizes": [1, 1, 1, 3, 3, 18], "binary": []}
+{"n": 28, "mu": 47, "p": 48, "component_sizes": [7, 21], "binary": []}
+{"n": 29, "mu": 30, "p": 13, "component_sizes": [1, 1, 1, 2, 2, 22], "binary": [{"ranks0": [3, 13], "ties": 1, "first_phase": 2, "constant_forcing": true, "return_blocks": 13, "labels": [10, 4], "D234": [0, 150568, 159904776], "H01234": [0, 0, 0, 62524, 15753688], "unexpected": true}, {"ranks0": [19, 22], "ties": 1, "first_phase": 1, "constant_forcing": true, "return_blocks": 13, "labels": [5, 24], "D234": [0, 21692, -65460294], "H01234": [0, 0, 0, -64032, -17891684], "deciding_degree": 3}]}
+{"n": 30, "mu": 60, "p": 30, "component_sizes": [30], "binary": []}
+{"n": 31, "mu": 73, "p": 22, "component_sizes": [31], "binary": []}
+{"n": 32, "mu": 74, "p": 32, "component_sizes": [32], "binary": []}
+{"n": 33, "mu": 83, "p": 33, "component_sizes": [2, 2, 2, 7, 20], "binary": [{"ranks0": [6, 9], "ties": 1, "first_phase": 7, "constant_forcing": true, "return_blocks": 33, "labels": [19, 11], "D234": [0, 43164, 428108880], "H01234": [0, 0, 0, -1452, 27592356], "deciding_degree": 3}, {"ranks0": [3, 12], "ties": 1, "first_phase": 22, "constant_forcing": true, "return_blocks": 33, "labels": [22, 8], "D234": [0, 52404, 404591814], "H01234": [0, 0, 0, -1452, 27592356], "deciding_degree": 3}, {"ranks0": [17, 24], "ties": 1, "first_phase": 8, "constant_forcing": true, "return_blocks": 33, "labels": [28, 7], "D234": [0, 58344, 401504892], "H01234": [0, 0, 0, -1452, 27592356], "deciding_degree": 3}]}
+{"n": 34, "mu": 77, "p": 144, "component_sizes": [34], "binary": []}
+{"n": 35, "mu": 68, "p": 26, "component_sizes": [35], "binary": []}
+{"n": 36, "mu": 56, "p": 18, "component_sizes": [1, 1, 1, 1, 1, 1, 15, 15], "binary": []}
+{"n": 37, "mu": 67, "p": 112, "component_sizes": [1, 1, 1, 1, 16, 17], "binary": []}
+{"n": 38, "mu": 86, "p": 24, "component_sizes": [38], "binary": []}
+{"n": 39, "mu": 101, "p": 33, "component_sizes": [39], "binary": []}
+{"n": 40, "mu": 50, "p": 32, "component_sizes": [1, 1, 1, 1, 1, 2, 33], "binary": [{"ranks0": [17, 22], "ties": 1, "first_phase": 27, "constant_forcing": true, "return_blocks": 32, "labels": [22, 0], "D234": [0, 581600, 1480843272], "H01234": [0, 0, 0, 297920, 320937856], "unexpected": true}]}
+{"n": 41, "mu": 68, "p": 148, "component_sizes": [1, 1, 1, 38], "binary": []}
+{"n": 42, "mu": 84, "p": 42, "component_sizes": [1, 3, 4, 34], "binary": []}
+{"n": 43, "mu": 123, "p": 378, "component_sizes": [43], "binary": []}
+{"n": 44, "mu": 120, "p": 30, "component_sizes": [44], "binary": []}
+{"n": 45, "mu": 55, "p": 45, "component_sizes": [1, 1, 1, 14, 28], "binary": []}
+{"n": 46, "mu": 203, "p": 36, "component_sizes": [1, 1, 44], "binary": []}
+{"n": 47, "mu": 91, "p": 41, "component_sizes": [1, 1, 1, 1, 43], "binary": []}
+{"n": 48, "mu": 202, "p": 48, "component_sizes": [48], "binary": []}
+{"n": 49, "mu": 134, "p": 130, "component_sizes": [49], "binary": []}
+{"n": 50, "mu": 77, "p": 50, "component_sizes": [1, 1, 1, 2, 2, 5, 15, 23], "binary": [{"ranks0": [4, 11], "ties": 1, "first_phase": 30, "constant_forcing": true, "return_blocks": 50, "labels": [32, 19], "D234": [0, 229200, 2125801612], "H01234": [0, 0, 0, -5000, -1855000], "deciding_degree": 3}, {"ranks0": [37, 38], "ties": 1, "first_phase": 6, "constant_forcing": true, "return_blocks": 50, "labels": [36, 49], "D234": [0, 371200, 2330560242], "H01234": [0, 0, 0, -5000, -1855000], "deciding_degree": 3}]}
+{"n": 51, "mu": 81, "p": 45, "component_sizes": [51], "binary": []}
+{"n": 52, "mu": 93, "p": 72, "component_sizes": [1, 1, 24, 26], "binary": []}
+{"n": 53, "mu": 138, "p": 26, "component_sizes": [53], "binary": []}
+{"n": 54, "mu": 116, "p": 54, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 6, 7, 7, 10], "binary": [{"ranks0": [32, 34], "ties": 1, "first_phase": 38, "constant_forcing": true, "return_blocks": 54, "labels": [40, 10], "D234": [0, 104112, 2305292814], "H01234": [0, 0, 0, -5832, 1348457544], "deciding_degree": 3}, {"ranks0": [15, 49], "ties": 1, "first_phase": 39, "constant_forcing": true, "return_blocks": 54, "labels": [51, 44], "D234": [0, 33480, -3395667946], "H01234": [0, 0, 0, -5832, 1348457544], "deciding_degree": 3}, {"ranks0": [5, 51], "ties": 1, "first_phase": 27, "constant_forcing": true, "return_blocks": 54, "labels": [26, 30], "D234": [0, 164592, 950586504], "H01234": [0, 0, 0, -5832, 1348457544], "deciding_degree": 3}, {"ranks0": [0, 7], "ties": 1, "first_phase": 52, "constant_forcing": true, "return_blocks": 54, "labels": [50, 46], "D234": [0, 142992, 5165253600], "H01234": [0, 0, 0, -5832, 1348457544], "deciding_degree": 3}]}
+{"n": 55, "mu": 125, "p": 35, "component_sizes": [55], "binary": []}
+{"n": 56, "mu": 107, "p": 36, "component_sizes": [56], "binary": []}
+{"n": 57, "mu": 78, "p": 57, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 45], "binary": [{"ranks0": [9, 29], "ties": 1, "first_phase": 27, "constant_forcing": true, "return_blocks": 57, "labels": [49, 45], "D234": [0, 124488, -413213510], "H01234": [0, 0, 0, -8664, 706757136], "deciding_degree": 3}, {"ranks0": [6, 31], "ties": 1, "first_phase": 37, "constant_forcing": true, "return_blocks": 57, "labels": [32, 23], "D234": [0, 320796, 1557116248], "H01234": [0, 0, 0, -8664, 706757136], "deciding_degree": 3}]}
+{"n": 58, "mu": 107, "p": 34, "component_sizes": [58], "binary": []}
+{"n": 59, "mu": 91, "p": 59, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 4, 8, 10, 24], "binary": []}
+{"n": 60, "mu": 168, "p": 60, "component_sizes": [60], "binary": []}
+{"n": 61, "mu": 64, "p": 888, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 54], "binary": []}
+{"n": 62, "mu": 99, "p": 60, "component_sizes": [1, 1, 30, 30], "binary": []}
+{"n": 63, "mu": 65, "p": 108, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 48], "binary": []}
+{"n": 64, "mu": 413, "p": 510, "component_sizes": [64], "binary": []}
+{"n": 65, "mu": 70, "p": 58, "component_sizes": [65], "binary": []}
+{"n": 66, "mu": 209, "p": 66, "component_sizes": [66], "binary": []}
+{"n": 67, "mu": 161, "p": 925, "component_sizes": [1, 1, 1, 1, 1, 62], "binary": []}
+{"n": 68, "mu": 333, "p": 76, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 47], "binary": []}
+{"n": 69, "mu": 131, "p": 117, "component_sizes": [1, 3, 65], "binary": []}
+{"n": 70, "mu": 257, "p": 38, "component_sizes": [70], "binary": []}
+{"n": 71, "mu": 167, "p": 1188, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 62], "binary": []}
+{"n": 72, "mu": 168, "p": 54, "component_sizes": [4, 68], "binary": []}
+{"n": 73, "mu": 313, "p": 920, "component_sizes": [1, 1, 1, 1, 1, 68], "binary": []}
+{"n": 74, "mu": 142, "p": 420, "component_sizes": [1, 1, 1, 71], "binary": []}
+{"n": 75, "mu": 233, "p": 75, "component_sizes": [1, 1, 3, 70], "binary": []}
+{"n": 76, "mu": 79, "p": 520, "component_sizes": [76], "binary": []}
+{"n": 77, "mu": 100, "p": 494, "component_sizes": [77], "binary": []}
+{"n": 78, "mu": 309, "p": 72, "component_sizes": [2, 2, 2, 34, 38], "binary": [{"ranks0": [45, 47], "ties": 12, "first_phase": 4, "constant_forcing": true, "return_blocks": 6, "labels": [11, 20], "D234": [0, 1511952, 55284041338], "H01234": [0, 0, 0, -936, -20003256], "deciding_degree": 3}, {"ranks0": [70, 71], "ties": 12, "first_phase": 2, "constant_forcing": true, "return_blocks": 6, "labels": [16, 77], "D234": [0, 503256, 25687923796], "H01234": [0, 0, 0, -936, -20003256], "deciding_degree": 3}, {"ranks0": [6, 7], "ties": 12, "first_phase": 0, "constant_forcing": true, "return_blocks": 6, "labels": [46, 27], "D234": [0, 2971800, 95006987238], "H01234": [0, 0, 0, -936, -20003256], "third_zero_after": 3175, "third_zero_block": 19359, "D4_at_zero": 4448685071838, "fourth_step": 876096, "fourth_residue": 122142, "deciding_degree": 4}]}
+{"n": 79, "mu": 169, "p": 2288, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 5, 7, 10, 13, 16], "binary": [{"ranks0": [58, 67], "ties": 208, "first_phase": 8, "constant_forcing": true, "return_blocks": 11, "labels": [20, 11], "D234": [0, 1439380, 36526630794], "H01234": [0, 0, 0, -3476, -82427652], "deciding_degree": 3}, {"ranks0": [27, 30], "ties": 208, "first_phase": 4, "constant_forcing": true, "return_blocks": 11, "labels": [46, 77], "D234": [0, 1660264, 40902861676], "H01234": [0, 0, 0, -3476, -82427652], "deciding_degree": 3}, {"ranks0": [35, 37], "ties": 208, "first_phase": 5, "constant_forcing": true, "return_blocks": 11, "labels": [42, 29], "D234": [0, 265124, 5191014924], "H01234": [0, 0, 0, -3476, -82427652], "deciding_degree": 3}]}
+{"n": 80, "mu": 166, "p": 80, "component_sizes": [80], "binary": []}
+{"n": 81, "mu": 136, "p": 81, "component_sizes": [81], "binary": []}
+{"n": 82, "mu": 330, "p": 42, "component_sizes": [82], "binary": []}
+{"n": 83, "mu": 106, "p": 12597, "component_sizes": [83], "binary": []}
+{"n": 84, "mu": 152, "p": 60, "component_sizes": [84], "binary": []}
+{"n": 85, "mu": 289, "p": 1551, "component_sizes": [85], "binary": []}
+{"n": 86, "mu": 182, "p": 86, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 6, 62], "binary": [{"ranks0": [20, 25], "ties": 1, "first_phase": 47, "constant_forcing": true, "return_blocks": 86, "labels": [56, 68], "D234": [0, 33368, -23284004066], "H01234": [0, 0, 0, -14792, -7857318104], "deciding_degree": 3}, {"ranks0": [7, 27], "ties": 1, "first_phase": 13, "constant_forcing": true, "return_blocks": 86, "labels": [82, 80], "D234": [0, 240800, -10978168250], "H01234": [0, 0, 0, -14792, -7857318104], "deciding_degree": 3}, {"ranks0": [5, 46], "ties": 1, "first_phase": 61, "constant_forcing": true, "return_blocks": 86, "labels": [31, 6], "D234": [0, 11696, -18047151906], "H01234": [0, 0, 0, -14792, -7857318104], "deciding_degree": 3}]}
+{"n": 87, "mu": 113, "p": 756, "component_sizes": [1, 86], "binary": []}
+{"n": 88, "mu": 223, "p": 88, "component_sizes": [1, 87], "binary": []}
+{"n": 89, "mu": 326, "p": 59, "component_sizes": [89], "binary": []}
+{"n": 90, "mu": 276, "p": 48, "component_sizes": [90], "binary": []}
+{"n": 91, "mu": 201, "p": 53, "component_sizes": [91], "binary": []}
+{"n": 92, "mu": 192, "p": 4080, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 84], "binary": []}
+{"n": 93, "mu": 231, "p": 168, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 65], "binary": [{"ranks0": [42, 48], "ties": 4, "first_phase": 36, "constant_forcing": true, "return_blocks": 42, "labels": [69, 19], "D234": [0, 9330876, 367758033502], "H01234": [0, 0, 0, -31248, -5962796928], "deciding_degree": 3}, {"ranks0": [14, 47], "ties": 4, "first_phase": 24, "constant_forcing": true, "return_blocks": 42, "labels": [22, 88], "D234": [0, 1384584, 18940529970], "H01234": [0, 0, 0, -31248, -5962796928], "deciding_degree": 3}]}
+{"n": 94, "mu": 239, "p": 94, "component_sizes": [94], "binary": []}
+{"n": 95, "mu": 282, "p": 176, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 82], "binary": []}
+{"n": 96, "mu": 241, "p": 96, "component_sizes": [96], "binary": []}
+{"n": 97, "mu": 206, "p": 912, "component_sizes": [1, 1, 95], "binary": []}
+{"n": 98, "mu": 185, "p": 62, "component_sizes": [98], "binary": []}
+{"n": 99, "mu": 241, "p": 1980, "component_sizes": [1, 1, 1, 1, 2, 93], "binary": [{"ranks0": [8, 54], "ties": 60, "first_phase": 16, "constant_forcing": true, "return_blocks": 33, "labels": [14, 46], "D234": [0, 2884464, 156419923758], "H01234": [0, 0, 0, -8712, 5315522256], "deciding_degree": 3}]}
+{"n": 100, "mu": 163, "p": 100, "component_sizes": [100], "binary": []}
+{"n": 101, "mu": 238, "p": 270, "component_sizes": [101], "binary": []}
+{"n": 102, "mu": 194, "p": 102, "component_sizes": [102], "binary": []}
+{"n": 103, "mu": 239, "p": 180, "component_sizes": [103], "binary": []}
+{"n": 104, "mu": 146, "p": 104, "component_sizes": [104], "binary": []}
+{"n": 105, "mu": 256, "p": 102, "component_sizes": [1, 1, 1, 102], "binary": []}
+{"n": 106, "mu": 138, "p": 102, "component_sizes": [106], "binary": []}
+{"n": 107, "mu": 217, "p": 4370, "component_sizes": [17, 90], "binary": []}
+{"n": 108, "mu": 170, "p": 168, "component_sizes": [108], "binary": []}
+{"n": 109, "mu": 135, "p": 318, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 90], "binary": []}
+{"n": 110, "mu": 211, "p": 108, "component_sizes": [110], "binary": []}
+{"n": 111, "mu": 151, "p": 111, "component_sizes": [111], "binary": []}
+{"n": 112, "mu": 212, "p": 112, "component_sizes": [112], "binary": []}
+{"n": 113, "mu": 282, "p": 301, "component_sizes": [1, 1, 1, 1, 1, 1, 107], "binary": []}
+{"n": 114, "mu": 149, "p": 114, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 106], "binary": []}
+{"n": 115, "mu": 673, "p": 24, "component_sizes": [115], "binary": []}
+{"n": 116, "mu": 192, "p": 116, "component_sizes": [116], "binary": []}
+{"n": 117, "mu": 246, "p": 378, "component_sizes": [117], "binary": []}
+{"n": 118, "mu": 754, "p": 66, "component_sizes": [118], "binary": []}
+{"n": 119, "mu": 304, "p": 60, "component_sizes": [119], "binary": []}
+{"n": 120, "mu": 214, "p": 120, "component_sizes": [120], "binary": []}
+{"n": 121, "mu": 128, "p": 121, "component_sizes": [121], "binary": []}
+{"n": 122, "mu": 169, "p": 920, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 91], "binary": [{"ranks0": [27, 69], "ties": 23, "first_phase": 11, "constant_forcing": true, "return_blocks": 40, "labels": [58, 75], "D234": [0, 1458144, -149742305308], "H01234": [0, 0, 0, -2635200, 5163385004], "deciding_degree": 3}, {"ranks0": [16, 19], "ties": 23, "first_phase": 18, "constant_forcing": true, "return_blocks": 40, "labels": [62, 20], "D234": [0, 531920, -521546892], "H01234": [0, 0, 0, -2635200, 5163385004], "deciding_degree": 3}, {"ranks0": [48, 119], "ties": 23, "first_phase": 4, "constant_forcing": true, "return_blocks": 40, "labels": [42, 76], "D234": [0, 7952448, -71286580276], "H01234": [0, 0, 0, -2635200, 5163385004], "deciding_degree": 3}, {"ranks0": [25, 43], "ties": 23, "first_phase": 2, "constant_forcing": true, "return_blocks": 40, "labels": [91, 39], "D234": [0, 10815544, 457533782032], "H01234": [0, 0, 0, -2635200, 5163385004], "deciding_degree": 3}, {"ranks0": [10, 26], "ties": 23, "first_phase": 33, "constant_forcing": true, "return_blocks": 40, "labels": [80, 6], "D234": [0, 1990552, 378832664764], "H01234": [0, 0, 0, -2635200, 5163385004], "deciding_degree": 3}, {"ranks0": [18, 91], "ties": 23, "first_phase": 10, "constant_forcing": true, "return_blocks": 40, "labels": [0, 8], "D234": [0, 2367776, -166804550244], "H01234": [0, 0, 0, -2635200, 5163385004], "deciding_degree": 3}]}
+{"n": 123, "mu": 303, "p": 123, "component_sizes": [123], "binary": []}
+{"n": 124, "mu": 319, "p": 4284, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 116], "binary": []}
+{"n": 125, "mu": 260, "p": 231, "component_sizes": [1, 1, 1, 122], "binary": []}
+{"n": 126, "mu": 283, "p": 72, "component_sizes": [63, 63], "binary": []}
+{"n": 127, "mu": 344, "p": 440, "component_sizes": [1, 1, 1, 1, 1, 122], "binary": []}
+{"n": 128, "mu": 248, "p": 58, "component_sizes": [128], "binary": []}
+{"n": 129, "mu": 974, "p": 81, "component_sizes": [129], "binary": []}
+{"n": 130, "mu": 463, "p": 2052, "component_sizes": [130], "binary": []}
+{"n": 131, "mu": 242, "p": 114, "component_sizes": [131], "binary": []}
+{"n": 132, "mu": 1008, "p": 132, "component_sizes": [132], "binary": []}
+{"n": 133, "mu": 872, "p": 2820, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 87], "binary": []}
+{"n": 134, "mu": 445, "p": 2520, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 46, 71], "binary": []}
+{"n": 135, "mu": 321, "p": 1428, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 128], "binary": []}
+{"n": 136, "mu": 564, "p": 2214, "component_sizes": [136], "binary": []}
+{"n": 137, "mu": 277, "p": 97, "component_sizes": [137], "binary": []}
+{"n": 138, "mu": 901, "p": 780, "component_sizes": [138], "binary": []}
+{"n": 139, "mu": 279, "p": 790, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 130], "binary": []}
+{"n": 140, "mu": 277, "p": 140, "component_sizes": [1, 1, 1, 1, 136], "binary": []}
+{"n": 141, "mu": 325, "p": 141, "component_sizes": [141], "binary": []}
+{"n": 142, "mu": 576, "p": 130, "component_sizes": [142], "binary": []}
+{"n": 143, "mu": 227, "p": 143, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 101], "binary": []}
+{"n": 144, "mu": 317, "p": 144, "component_sizes": [64, 80], "binary": []}
+{"n": 145, "mu": 348, "p": 1568, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 123], "binary": [{"ranks0": [42, 113], "ties": 49, "first_phase": 18, "constant_forcing": true, "return_blocks": 32, "labels": [116, 45], "D234": [0, 1751600, 579804140690], "H01234": [0, 0, 0, -18560, 33968008560], "deciding_degree": 3}]}
+{"n": 146, "mu": 247, "p": 1456, "component_sizes": [1, 1, 1, 1, 1, 1, 140], "binary": []}
+{"n": 147, "mu": 1072, "p": 129, "component_sizes": [147], "binary": []}
+{"n": 148, "mu": 274, "p": 96, "component_sizes": [148], "binary": []}
+{"n": 149, "mu": 647, "p": 170, "component_sizes": [149], "binary": []}
+{"n": 150, "mu": 676, "p": 150, "component_sizes": [150], "binary": []}
+{"n": 151, "mu": 630, "p": 116, "component_sizes": [151], "binary": []}
+{"n": 152, "mu": 454, "p": 152, "component_sizes": [1, 1, 1, 1, 1, 1, 146], "binary": []}
+{"n": 153, "mu": 642, "p": 6732, "component_sizes": [153], "binary": []}
+{"n": 154, "mu": 416, "p": 12710, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 145], "binary": []}
+{"n": 155, "mu": 244, "p": 25705, "component_sizes": [1, 1, 1, 1, 1, 150], "binary": []}
+{"n": 156, "mu": 486, "p": 156, "component_sizes": [71, 85], "binary": []}
+{"n": 157, "mu": 522, "p": 448, "component_sizes": [157], "binary": []}
+{"n": 158, "mu": 306, "p": 150, "component_sizes": [158], "binary": []}
+{"n": 159, "mu": 280, "p": 159, "component_sizes": [159], "binary": []}
+{"n": 160, "mu": 355, "p": 60, "component_sizes": [160], "binary": []}
+{"n": 161, "mu": 1395, "p": 5460, "component_sizes": [161], "binary": []}
+{"n": 162, "mu": 246, "p": 162, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 155], "binary": []}
+{"n": 163, "mu": 169, "p": 153, "component_sizes": [163], "binary": []}
+{"n": 164, "mu": 216, "p": 520, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 9, 137], "binary": [{"ranks0": [9, 71], "ties": 4, "first_phase": 57, "constant_forcing": true, "return_blocks": 130, "labels": [13, 17], "D234": [0, 24333664, 2032177626486], "H01234": [0, 0, 0, -42640, 167710158224], "deciding_degree": 3}]}
+{"n": 165, "mu": 318, "p": 150, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 155], "binary": []}
+{"n": 166, "mu": 1736, "p": 92, "component_sizes": [166], "binary": []}
+{"n": 167, "mu": 863, "p": 113, "component_sizes": [167], "binary": []}
+{"n": 168, "mu": 307, "p": 168, "component_sizes": [168], "binary": []}
+{"n": 169, "mu": 1120, "p": 1416, "component_sizes": [169], "binary": []}
+{"n": 170, "mu": 2515, "p": 3068, "component_sizes": [170], "binary": []}
+{"n": 171, "mu": 595, "p": 147, "component_sizes": [171], "binary": []}
+{"n": 172, "mu": 1648, "p": 1800, "component_sizes": [172], "binary": []}
+{"n": 173, "mu": 296, "p": 173, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 5, 9, 92], "binary": [{"ranks0": [0, 4], "ties": 1, "first_phase": 170, "constant_forcing": true, "return_blocks": 173, "labels": [83, 42], "D234": [0, 39267540, 5911338698936], "H01234": [0, 0, 0, -119716, 313800417212], "deciding_degree": 3}, {"ranks0": [1, 74], "ties": 1, "first_phase": 71, "constant_forcing": true, "return_blocks": 173, "labels": [68, 90], "D234": [0, 28944284, 3134721622600], "H01234": [0, 0, 0, -119716, -112058844924], "deciding_degree": 3}, {"ranks0": [97, 170], "ties": 1, "first_phase": 50, "constant_forcing": true, "return_blocks": 173, "labels": [36, 134], "D234": [0, 16943620, 1875044768068], "H01234": [0, 0, 0, -119716, 313800417212], "deciding_degree": 3}, {"ranks0": [43, 167], "ties": 1, "first_phase": 15, "constant_forcing": true, "return_blocks": 173, "labels": [143, 107], "D234": [0, 4976864, 831687343766], "H01234": [0, 0, 0, -119716, 313800417212], "deciding_degree": 3}, {"ranks0": [142, 146], "ties": 2, "first_phase": 10, "constant_forcing": false}, {"ranks0": [46, 79], "ties": 1, "first_phase": 97, "constant_forcing": true, "return_blocks": 173, "labels": [158, 45], "D234": [0, 17653612, 1972445962194], "H01234": [0, 0, 0, -119716, -112058844924], "deciding_degree": 3}, {"ranks0": [58, 83], "ties": 1, "first_phase": 30, "constant_forcing": true, "return_blocks": 173, "labels": [81, 50], "D234": [0, 799260, 106525723764], "H01234": [0, 0, 0, -119716, 313800417212], "deciding_degree": 3}, {"ranks0": [30, 118], "ties": 1, "first_phase": 86, "constant_forcing": true, "return_blocks": 173, "labels": [135, 30], "D234": [0, 27761656, 3319857207230], "H01234": [0, 0, 0, -119716, -112058844924], "deciding_degree": 3}, {"ranks0": [12, 91], "ties": 1, "first_phase": 8, "constant_forcing": true, "return_blocks": 173, "labels": [149, 55], "D234": [0, 20324040, 2125335621850], "H01234": [0, 0, 0, -119716, 313800417212], "deciding_degree": 3}, {"ranks0": [21, 158], "ties": 1, "first_phase": 76, "constant_forcing": true, "return_blocks": 173, "labels": [108, 2], "D234": [0, 18821016, 2382716802820], "H01234": [0, 0, 0, -119716, 313800417212], "deciding_degree": 3}]}
+{"n": 174, "mu": 492, "p": 174, "component_sizes": [174], "binary": []}
+{"n": 175, "mu": 614, "p": 1818, "component_sizes": [175], "binary": []}
+{"n": 176, "mu": 230, "p": 176, "component_sizes": [1, 1, 174], "binary": []}
+{"n": 177, "mu": 321, "p": 177, "component_sizes": [177], "binary": []}
+{"n": 178, "mu": 261, "p": 2688, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 171], "binary": []}
+{"n": 179, "mu": 332, "p": 3276, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 14, 22, 24, 100], "binary": []}
+{"n": 180, "mu": 685, "p": 180, "component_sizes": [180], "binary": []}
+{"n": 181, "mu": 613, "p": 86, "component_sizes": [1, 180], "binary": []}
+{"n": 182, "mu": 1184, "p": 3456, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 159], "binary": [{"ranks0": [105, 139], "ties": 27, "first_phase": 107, "constant_forcing": true, "return_blocks": 128, "labels": [161, 108], "D234": [0, 19733168, 7823913717138], "H01234": [0, 0, 0, -46592, -94353269920], "deciding_degree": 3}]}
+{"n": 183, "mu": 425, "p": 183, "component_sizes": [183], "binary": []}
+{"n": 184, "mu": 192, "p": 1320, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 164], "binary": []}
+{"n": 185, "mu": 1502, "p": 3648, "component_sizes": [185], "binary": []}
+{"n": 186, "mu": 440, "p": 186, "component_sizes": [186], "binary": []}
+{"n": 187, "mu": 362, "p": 6090, "component_sizes": [187], "binary": []}
+{"n": 188, "mu": 445, "p": 8932, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 153], "binary": []}
+{"n": 189, "mu": 395, "p": 1590, "component_sizes": [1, 1, 1, 1, 1, 1, 183], "binary": []}
+{"n": 190, "mu": 328, "p": 190, "component_sizes": [190], "binary": []}
+{"n": 191, "mu": 570, "p": 171, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 160], "binary": []}
+{"n": 192, "mu": 337, "p": 192, "component_sizes": [1, 1, 1, 189], "binary": []}
+{"n": 193, "mu": 366, "p": 78958, "component_sizes": [193], "binary": []}
+{"n": 194, "mu": 712, "p": 4392, "component_sizes": [194], "binary": []}
+{"n": 195, "mu": 447, "p": 195, "component_sizes": [195], "binary": []}
+{"n": 196, "mu": 213, "p": 168, "component_sizes": [196], "binary": []}
+{"n": 197, "mu": 918, "p": 66, "component_sizes": [197], "binary": []}
+{"n": 198, "mu": 499, "p": 198, "component_sizes": [198], "binary": []}
+{"n": 199, "mu": 739, "p": 119, "component_sizes": [199], "binary": []}
+{"n": 200, "mu": 310, "p": 200, "component_sizes": [200], "binary": []}
+{"n": 201, "mu": 849, "p": 108, "component_sizes": [201], "binary": []}
+{"n": 202, "mu": 257, "p": 1980, "component_sizes": [202], "binary": []}
+{"n": 203, "mu": 477, "p": 191, "component_sizes": [203], "binary": []}
+{"n": 204, "mu": 2039, "p": 6, "component_sizes": [204], "binary": []}
+{"n": 205, "mu": 613, "p": 880, "component_sizes": [1, 1, 1, 1, 1, 100, 100], "binary": []}
+{"n": 206, "mu": 1573, "p": 68, "component_sizes": [206], "binary": []}
+{"n": 207, "mu": 337, "p": 138, "component_sizes": [207], "binary": []}
+{"n": 208, "mu": 330, "p": 182, "component_sizes": [208], "binary": []}
+{"n": 209, "mu": 338, "p": 5559, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 139], "binary": []}
+{"n": 210, "mu": 938, "p": 210, "component_sizes": [3, 207], "binary": []}
+{"n": 211, "mu": 591, "p": 23, "component_sizes": [211], "binary": []}
+{"n": 212, "mu": 662, "p": 14300, "component_sizes": [212], "binary": []}
+{"n": 213, "mu": 448, "p": 213, "component_sizes": [213], "binary": []}
+{"n": 214, "mu": 458, "p": 214, "component_sizes": [1, 1, 1, 211], "binary": []}
+{"n": 215, "mu": 269, "p": 215, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 192], "binary": []}
+{"n": 216, "mu": 619, "p": 216, "component_sizes": [1, 215], "binary": []}
+{"n": 217, "mu": 580, "p": 824, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 204], "binary": []}
+{"n": 218, "mu": 714, "p": 7544, "component_sizes": [1, 1, 1, 1, 1, 1, 212], "binary": []}
+{"n": 219, "mu": 366, "p": 141, "component_sizes": [219], "binary": []}
+{"n": 220, "mu": 732, "p": 180, "component_sizes": [220], "binary": []}
+{"n": 221, "mu": 590, "p": 1242, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 212], "binary": []}
+{"n": 222, "mu": 486, "p": 222, "component_sizes": [1, 1, 1, 1, 218], "binary": []}
+{"n": 223, "mu": 386, "p": 20904, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 198], "binary": []}
+{"n": 224, "mu": 416, "p": 224, "component_sizes": [224], "binary": []}
+{"n": 225, "mu": 421, "p": 216, "component_sizes": [225], "binary": []}
+{"n": 226, "mu": 1085, "p": 546, "component_sizes": [226], "binary": []}
+{"n": 227, "mu": 523, "p": 51, "component_sizes": [227], "binary": []}
+{"n": 228, "mu": 663, "p": 228, "component_sizes": [228], "binary": []}
+{"n": 229, "mu": 277, "p": 224, "component_sizes": [229], "binary": []}
+{"n": 230, "mu": 384, "p": 230, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 2, 220], "binary": [{"ranks0": [84, 207], "ties": 1, "first_phase": 146, "constant_forcing": true, "return_blocks": 230, "labels": [209, 47], "D234": [0, 32805360, 9847605348016], "H01234": [0, 0, 0, -105800, 872207265000], "deciding_degree": 3}]}
+{"n": 231, "mu": 2066, "p": 690, "component_sizes": [231], "binary": []}
+{"n": 232, "mu": 1914, "p": 152, "component_sizes": [232], "binary": []}
+{"n": 233, "mu": 1072, "p": 786, "component_sizes": [1, 1, 1, 1, 1, 1, 227], "binary": []}
+{"n": 234, "mu": 1245, "p": 1488, "component_sizes": [234], "binary": []}
+{"n": 235, "mu": 963, "p": 336, "component_sizes": [1, 1, 1, 232], "binary": []}
+{"n": 236, "mu": 762, "p": 188, "component_sizes": [236], "binary": []}
+{"n": 237, "mu": 429, "p": 237, "component_sizes": [237], "binary": []}
+{"n": 238, "mu": 686, "p": 16848, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 221], "binary": []}
+{"n": 239, "mu": 586, "p": 186, "component_sizes": [239], "binary": []}
+{"n": 240, "mu": 710, "p": 288, "component_sizes": [240], "binary": []}
+{"n": 241, "mu": 429, "p": 136, "component_sizes": [241], "binary": []}
+{"n": 242, "mu": 311, "p": 242, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 162], "binary": [{"ranks0": [57, 138], "ties": 2, "first_phase": 106, "constant_forcing": false}, {"ranks0": [60, 118], "ties": 2, "first_phase": 41, "constant_forcing": false}, {"ranks0": [76, 136], "ties": 1, "first_phase": 119, "constant_forcing": true, "return_blocks": 242, "labels": [129, 41], "D234": [0, 13165768, 3576577341522], "H01234": [0, 0, 0, -351384, 1708569912984], "deciding_degree": 3}]}
+{"n": 243, "mu": 663, "p": 2814, "component_sizes": [243], "binary": []}
+{"n": 244, "mu": 593, "p": 90636, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 219], "binary": []}
+{"n": 245, "mu": 325, "p": 245, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 227], "binary": []}
+{"n": 246, "mu": 943, "p": 2184, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 226], "binary": []}
+{"n": 247, "mu": 1086, "p": 26117, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 199], "binary": []}
+{"n": 248, "mu": 3632, "p": 6438, "component_sizes": [248], "binary": []}
+{"n": 249, "mu": 981, "p": 150, "component_sizes": [249], "binary": []}
+{"n": 250, "mu": 355, "p": 250, "component_sizes": [250], "binary": []}
+{"n": 251, "mu": 306, "p": 3625, "component_sizes": [1, 1, 1, 1, 1, 246], "binary": []}
+{"n": 252, "mu": 920, "p": 252, "component_sizes": [124, 128], "binary": []}
+{"n": 253, "mu": 1701, "p": 70, "component_sizes": [1, 1, 1, 1, 1, 1, 1, 246], "binary": []}
+{"n": 254, "mu": 326, "p": 254, "component_sizes": [254], "binary": []}
+{"n": 255, "mu": 801, "p": 204, "component_sizes": [255], "binary": []}
+{"n": 256, "mu": 1173, "p": 104, "component_sizes": [256], "binary": []}
+{"n": 257, "mu": 3465, "p": 59, "component_sizes": [257], "binary": []}
+{"n": 258, "mu": 990, "p": 258, "component_sizes": [258], "binary": []}
+{"n": 259, "mu": 341, "p": 206, "component_sizes": [259], "binary": []}

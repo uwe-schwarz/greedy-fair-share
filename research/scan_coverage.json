@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-26",
+  "initial_scan": {
+    "requested_range": [
+      25,
+      400
+    ],
+    "completed_contiguous_range": [
+      25,
+      259
+    ],
+    "base_state_cap": 100000,
+    "stopped_at": 260,
+    "stop_reason": "base-state cap reached",
+    "complete_base_graphs": 235,
+    "N_with_binary_tie_components": [
+      29,
+      33,
+      40,
+      50,
+      54,
+      57,
+      78,
+      79,
+      86,
+      93,
+      99,
+      122,
+      145,
+      164,
+      173,
+      182,
+      230,
+      242
+    ],
+    "binary_tie_components": 49
+  },
+  "all_phase_parity_check": {
+    "N": [
+      2,
+      7,
+      10,
+      13,
+      23,
+      29,
+      33,
+      40,
+      50,
+      54,
+      57,
+      78,
+      79,
+      86,
+      93,
+      99,
+      122,
+      145,
+      164,
+      173,
+      182,
+      230,
+      242
+    ],
+    "N_gt2_components": 54,
+    "N_gt2_tie_phases": 988,
+    "N_gt2_monomial_failures": [],
+    "N2_baseline_fails": true
+  },
+  "full_sequence_cases_from_size2_components": {
+    "among_25_259": [],
+    "among_additional_baselines": [
+      7
+    ]
+  },
+  "prefix_scope": "Exact labelled prefixes are replayed only for N having binary comparison components, through the first needed comparison phases (through base entry for full-period parity). N with no binary component only undergo the unlabelled base-graph analysis. No unresolved tie is silently broken.",
+  "claims_not_made": [
+    "No full N>24 periodicity theorem follows solely from these component checks.",
+    "No absence of all future degree-four ties is established by a finite prefix replay."
+  ]
+}

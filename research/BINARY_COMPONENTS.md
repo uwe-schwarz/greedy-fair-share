@@ -172,68 +172,6 @@ argument. No monotone potential or universal termination theorem is
 proved by this identity alone; sums along different histories can
 still cancel.
 
-## 6. A targeted N = 78 stress case: degree four resolves a deep binary tie
-
-This section concerns only one closed binary component, not a proof of
-periodicity for the entire 78-player sequence. The exact calculation is
-reproducible with `python global_routes_n78.py`; output is recorded in
-`global_routes_n78.json`.
-
-The second-moment base has preperiod 309 blocks and period 72. Its
-component occupying ranks 6 and 7 at phase zero is a closed pair. The
-same two rank paths recur between every comparison, six blocks apart.
-For this pair the full signed difference obeys
-
-`D_next = (1+z)^936 D - sign(D) K(z)`,
-
-where K has first nonzero coefficient `K_3 = 936`. At the first
-comparison, absolute block 309, the two fixed player labels are
-A = 46 and B = 27 (zero-based), and `D = G_B - G_A` has
-
-`D_3 = 2971800`, `D_4 = 95006987238`.
-
-The third coefficient decreases by 936 for 3175 comparison events,
-so it first reaches zero at block 19359, or turn index 3020004.
-At that exact point the fourth coefficient is
-
-`D_4 = 4448685071838 > 0`.
-
-Thus degree four decides the actual next order. No proposed word is
-continued blindly through this zero.
-
-Let X = (1+z)^936. Whenever the third coefficient is zero, the next
-comparison has the opposite sign, because its third coefficient is
-`-sign(D) * 936`. Two comparisons therefore give the exact return map
-
-`D_next_next = X^2 D - sign(D) (X-1)K`.
-
-Its first forcing coefficient is now at degree four and equals
-`936^2 = 876096`. At the first degree-three zero, the normalized
-degree-four value is
-
-`4448685071838 / 876096 = 741447511973 / 146016`.
-
-This is not an integer. Its remainder modulo 876096 is 122142.
-Consequently degree four never vanishes at these two-comparison return
-times, and the elementary binary lemma certifies all future choices
-of this pair. No fifth or higher coefficient is ever needed thereafter.
-
-The integer part of this ratio is 5077851, so the simple sufficient
-onset of the pair's strict final cycle is block
-
-`19359 + 12 * 5077851 = 60953571`,
-
-equivalently turn index `9508757076`. A valid period of the pair's
-label routing is 24 blocks, or 3744 turns. These are component bounds;
-they are not a certificate, minimal preperiod, or least period for
-the complete N = 78 sequence.
-
-This is a useful discriminator for the proposed universal route:
-degree three alone really does encounter a late exact tie, while the
-fourth moment settles that component algebraically. A brute-force
-extension to billions of turns is unnecessary for this calculation.
-
-
 ## 6. A late fourth-moment decision inside N = 78
 
 This calculation concerns **one closed binary component**, not the complete 78-player sequence. It is reproduced by `n78_component.py`, with recorded output in [n78_component.json](n78_component.json).
@@ -280,3 +218,5 @@ python3 research/n78_component.py
 ```
 
 Both scripts use exact integer arithmetic and the standard library. The output is recorded in [transport_components.json](transport_components.json) and [n78_component.json](n78_component.json). The scripts are research aids; the general proof and the limited scope of each conclusion are stated above.
+
+The [parity theorem](PARITY_OBSTRUCTION.md) now gives a more general finite-depth criterion, including components with variable forcing. See [the experiment record](STRUCTURE_EXPERIMENTS.md) for its verified scope.

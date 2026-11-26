@@ -12,7 +12,8 @@ English is the canonical language for the documentation. The [full proof](fair_s
 
 - **Established for each `N = 3, …, 24`:** an exact finite certificate proves the proposed tail follows the greedy rule for every future repetition.
 - **Written out by hand for `N = 3`:** the proof exhibits a closed nine-block cycle, giving least period 54 after 47 initial terms.
-- **General reduction for every `N ≥ 2`:** the unlabelled moment dynamics through degree four eventually has a polynomial form with repeating phases. Eventual strictness through degree four would therefore imply labelled periodicity. See [moment dynamics](TIE_DYNAMICS.md) for the proof and the remaining separation conjecture.
+- **General reduction for every `N ≥ 2` and every fixed moment depth:** the unlabelled moment dynamics eventually has a polynomial form with repeating phases. Consequently, the labelled sequence is eventually periodic **if and only if** some finite moment depth eventually separates every player pair. See [the finite-depth theorem](FINITE_DEPTH.md). The sufficient depth may depend on `N`; its existence for every `N ≥ 3` remains unproved.
+- **Arithmetic criterion for closed two-player groups:** a nonmonomial parity ratio bounds their required comparison depth. A tie away from the global mean is a simpler sufficient test. The [exact experiments](research/STRUCTURE_EXPERIMENTS.md) establish this criterion for 54 components, covering all 988 of their tie phases. This proves those components' eventual periodicity, not the full sequences for their player counts.
 - **Not established:** eventual periodicity for every integer `N > 2`, or guaranteed termination of a search for certificates.
 - **Verification level:** a mathematical soundness argument plus an executable Python checker using arbitrary-precision integers. No Lean formalization is included.
 
@@ -87,11 +88,17 @@ The complete derivation, including the initial degree-four tie for `N = 3`, is i
 | [fair_share_certificates.json](fair_share_certificates.json) | Certificates for `N = 3, …, 24` and the temporary `N = 15` cycle example. |
 | [fair_share_verification.json](fair_share_verification.json) | Recorded results of independent verification. |
 | [NEXT_STEPS.md](NEXT_STEPS.md) | The unresolved mathematical step and a possible Lean formalization plan. |
-| [TIE_DYNAMICS.md](TIE_DYNAMICS.md) | General moment reduction through degree four, a conditional periodicity theorem, and the precise remaining separation problem. |
+| [FINITE_DEPTH.md](FINITE_DEPTH.md) | Polynomial normal form for every fixed moment degree; eventual periodicity is equivalent to eventual bounded comparison depth. |
+| [TIE_DYNAMICS.md](TIE_DYNAMICS.md) | Detailed worked reduction through degree four and the stronger degree-four separation conjecture. |
 | [research/BINARY_COMPONENTS.md](research/BINARY_COMPONENTS.md) | Closed comparison groups, exact research scripts, and a targeted binary-component case inside `N = 78`. |
+| [research/PARITY_OBSTRUCTION.md](research/PARITY_OBSTRUCTION.md) | A rigorous finite-depth criterion for closed binary components, including variable forcing. |
+| [research/PARITY_RESONANCE.md](research/PARITY_RESONANCE.md) and [research/MEAN_OBSTRUCTION.md](research/MEAN_OBSTRUCTION.md) | The occupancy meaning of the exceptional parity case and a sufficient test using the global mean. |
+| [research/STRUCTURE_EXPERIMENTS.md](research/STRUCTURE_EXPERIMENTS.md) | Reproducible checks, exact scope, and the larger comparison networks that remain to be treated. |
 
 ## Continuing the work
 
-The current main target is an eventual separation theorem: for every `N ≥ 3`, show that no two players keep the same second, third, and fourth moments at arbitrarily late paired-block boundaries. The [new reduction](TIE_DYNAMICS.md) proves that this condition would imply the desired periodicity. The condition is sufficient and remains unproved; if degree four does not suffice, the reduction must be extended to higher moments.
+The current main target is to prove that, for each fixed `N ≥ 3`, some finite degree `d(N)` eventually resolves every comparison. The [general reduction](FINITE_DEPTH.md) proves that this is equivalent to the desired periodicity. Degree four remains a stronger sufficient conjecture, but the reduction now works at every fixed degree.
+
+The binary criterion handles closed groups of two players. Larger groups are a real remaining obstacle: [persistent pairwise ties can connect three labels for `N = 8` and all fourteen labels for `N = 14`](research/THIRD_COMPONENTS.md). The next step is to extend the arithmetic argument to these interacting comparison networks and understand the exceptional binary resonance.
 
 Lean would be useful for formally verifying the certificate criterion and its connection to the original greedy rule. It is not required to reproduce the current results, and formalizing the existing finite cases would not prove the universal conjecture. See [next steps](NEXT_STEPS.md).

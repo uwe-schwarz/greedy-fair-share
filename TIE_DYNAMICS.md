@@ -2,6 +2,8 @@
 
 Date: 2026-11-26. English is the canonical version of this research note.
 
+**Extension:** [FINITE_DEPTH.md](FINITE_DEPTH.md) now proves the corresponding normal form at every fixed moment degree, and proves that eventual periodicity is equivalent to eventual separation at some finite degree. This note retains the detailed degree-three and degree-four calculations.
+
 **Result established here:** for every N >= 2, the unlabelled moment dynamics through degree four has an eventual polynomial form with finitely many repeating phases, after the stated common normalizations. Consequently, if comparisons are eventually strict through degree four, the labelled greedy sequence is eventually periodic.
 
 **Not established:** eventual strictness through degree four for every N >= 3, or the original universal periodicity conjecture. The separation condition below is sufficient; it is not claimed to be necessary.
@@ -295,7 +297,7 @@ $$
 
 The existing certificates establish this eventual degree-four strictness separately for N=3,...,24. A failure of (5) for another N would rule out this particular route at degree four, but would not refute eventual periodicity itself.
 
-The argument above deliberately stops at degree four. Extending the same type of normal form to every fixed moment degree is a possible next step, not a theorem established here.
+The argument above stops at degree four. The [all-fixed-degree induction](FINITE_DEPTH.md) extends this normal form to every finite depth. It proves that eventual separation at some finite depth is equivalent to eventual periodicity. It does not prove that degree four, or any other finite degree, suffices for every N >= 3.
 
 ## 12. A small exact experiment behind the reduction
 
