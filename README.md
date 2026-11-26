@@ -88,6 +88,7 @@ The complete derivation, including the initial degree-four tie for `N = 3`, is i
 | [fair_share_certificates.json](fair_share_certificates.json) | Certificates for `N = 3, …, 24` and the temporary `N = 15` cycle example. |
 | [fair_share_verification.json](fair_share_verification.json) | Recorded results of independent verification. |
 | [NEXT_STEPS.md](NEXT_STEPS.md) | The unresolved mathematical step and a possible Lean formalization plan. |
+| [RESEARCH_LOG.md](RESEARCH_LOG.md) | Intermediate proof attempts, checked lemmas, counterexamples, and historical-source updates. |
 | [FINITE_DEPTH.md](FINITE_DEPTH.md) | Polynomial normal form for every fixed moment degree; eventual periodicity is equivalent to eventual bounded comparison depth. |
 | [TIE_DYNAMICS.md](TIE_DYNAMICS.md) | Detailed worked reduction through degree four and the stronger degree-four separation conjecture. |
 | [research/BINARY_COMPONENTS.md](research/BINARY_COMPONENTS.md) | Closed comparison groups, exact research scripts, and a targeted binary-component case inside `N = 78`. |
