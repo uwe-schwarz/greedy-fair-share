@@ -1,5 +1,7 @@
 # Next steps
 
+The [English proof](fair_share_proof.md) is the canonical version. Update it first when extending or correcting the argument, then synchronize the [German translation](fair_share_proof.de.md).
+
 ## 1. Isolate the missing universal theorem
 
 The available certificates prove eventual periodicity separately for every `N = 3, …, 24`. The open target is

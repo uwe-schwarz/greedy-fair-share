@@ -6,6 +6,8 @@ Exact eventual-periodicity certificates for the multiplayer greedy duel rule dis
 
 At each turn, give the next opportunity to the player with the smallest probability of having won so far, in the **termwise limit** as the common hit probability tends to zero.
 
+English is the canonical language for the documentation. The [full proof](fair_share_proof.md) uses the default filename; the [German translation](fair_share_proof.de.md) is retained separately. Make substantive updates to the English version first, then update translations.
+
 ## Research status
 
 - **Established for each `N = 3, …, 24`:** an exact finite certificate proves the proposed tail follows the greedy rule for every future repetition.
@@ -72,13 +74,14 @@ $$
 
 Checking `a ≥ 0`, `b ≥ 0`, and the initial strict comparison proves the required order for every `k ≥ 0`. The checker applies this criterion to adjacent players at every phase. It also verifies the least period of the resulting cyclic word and finds the last prefix term that disagrees with its periodic continuation.
 
-The complete derivation, including the initial degree-four tie for `N = 3`, is in [the proof document](fair_share_proof.md) (German).
+The complete derivation, including the initial degree-four tie for `N = 3`, is in [the English proof document](fair_share_proof.md). A [German translation](fair_share_proof.de.md) is also available.
 
 ## Repository contents
 
 | File | Purpose |
 |---|---|
-| [fair_share_proof.md](fair_share_proof.md) | Full mathematical argument, hand-checkable `N = 3` tables, all results, and references; German. |
+| [fair_share_proof.md](fair_share_proof.md) | Canonical English proof: full mathematical argument, hand-checkable `N = 3` tables, all results, and references. |
+| [fair_share_proof.de.md](fair_share_proof.de.md) | German translation of the proof. |
 | [fair_share_verify.py](fair_share_verify.py) | Standalone exact prefix and all-future certificate checker. |
 | [fair_share_certificates.json](fair_share_certificates.json) | Certificates for `N = 3, …, 24` and the temporary `N = 15` cycle example. |
 | [fair_share_verification.json](fair_share_verification.json) | Recorded results of independent verification. |

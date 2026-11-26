@@ -1,60 +1,61 @@
-# Greedy-Fair-Share-Folgen: exakte Periodizitätsbeweise
+# Greedy Fair-Share Sequences: Exact Periodicity Proofs
 
-Datum: 2026-11-26
+Canonical English version. [German translation](fair_share_proof.de.md).
 
-## Ergebnis und Geltungsbereich
+Date: 2026-11-26
 
-Für die im Video beschriebene Greedy-Regel im gliedweisen Grenzwert der
-Trefferwahrscheinlichkeit gegen null liefert diese Ausarbeitung:
+## Results and scope
 
-1. Einen vollständig nachrechenbaren Beweis für **N = 3**: kleinste Periode
-   54, periodisch ab dem nullbasierten Index 47, also ab dem 48. Glied.
-2. Ein allgemeines, endliches Kriterium, mit dem ein vorgeschlagener
-   periodischer Rest für eine beliebige feste Spielerzahl bewiesen werden kann.
-3. Exakte Zertifikate für **jede Spielerzahl von 3 bis 24**. Diese beweisen
-   jeweils eine unendliche periodische Fortsetzung; sie beruhen nicht auf der
-   bloßen Beobachtung vieler gleicher Blöcke.
-4. Einen konkreten vorübergehenden Wiederholungsblock für N = 15, dessen
-   scheinbare Periode später zwingend scheitert.
+For the greedy rule described in the video, in the termwise limit as the
+hit probability tends to zero, this document provides:
 
-**Nicht bewiesen ist der universelle Satz für alle ganzen N > 2.** Insbesondere
-ist nicht bewiesen, dass die Suche nach einem Zertifikat für jede Spielerzahl
-terminiert. Die endliche Liste von 22 Fällen ersetzt diesen Schritt nicht.
+1. A fully checkable proof for **N = 3**: least period 54, with periodicity
+   starting at zero-based index 47, or the 48th term.
+2. A general finite criterion for proving that a proposed periodic tail is
+   valid for any fixed number of players.
+3. Exact certificates for **every number of players from 3 to 24**. Each
+   proves an infinite periodic continuation; the certificates do not rely
+   merely on observing many identical blocks.
+4. A concrete temporary repeating block for N = 15 whose apparent period
+   must eventually fail.
 
-Die Beweise im Folgenden werden hier aus der Konstruktionsregel hergeleitet.
-Es wird kein Anspruch auf wissenschaftliche Erstveröffentlichung erhoben.
-Literaturangaben dienen der Einordnung des Problems, nicht als Ersatz für
-die angegebenen Beweisschritte.
+**The universal theorem for all integers N > 2 is not proved.** In particular,
+termination of the certificate search has not been proved for every number
+of players. The finite list of 22 cases does not replace that step.
 
-## 1. Präzise Definition
+The proofs below are derived here from the construction rule. No claim of
+scientific priority is made. References provide context for the problem;
+they do not replace the proof steps given here.
 
-Die Spieler heißen 0, ..., N−1. Der Zug mit Index t beginnt bei t = 0.
-Mit a_t bezeichnen wir den dort ausgewählten Spieler. Für q = 1−p sei
+## 1. Precise definition
+
+The players are labelled 0, ..., N−1. Turns are indexed by t, starting at
+t = 0. Let a_t denote the player selected at that turn. For q = 1−p, let
 
 \[
 S_i(t,q)=\sum_{\substack{0\le s<t\\a_s=i}}q^s.
 \]
 
-Die Wahrscheinlichkeit, dass Spieler i bereits gewonnen hat, ist
-p S_i(t,q). Der gemeinsame positive Faktor p beeinflusst den Vergleich nicht.
-Der nächste Zug geht deshalb an den Spieler mit dem kleinsten S_i(t,q)
-für q hinreichend nahe bei 1 von links. Anfangs erhalten die noch nicht
-aufgetretenen Spieler ihre Nummern in der Reihenfolge ihrer ersten Züge.
+The probability that player i has already won is p S_i(t,q). The common
+positive factor p does not affect the comparison. The next turn therefore
+goes to the player with the smallest S_i(t,q) for q sufficiently close to
+1 from below. Initially, players who have not yet appeared receive their
+labels in the order of their first turns.
 
-Dies ist ein **gliedweiser Grenzwert**: Für jeden endlichen Abschnitt darf
-die notwendige obere Schranke für p anders ausfallen. Wir behaupten nicht,
-dass ein einziges festes p > 0 die gesamte unendliche Grenzfolge erzeugt.
+This is a **termwise limit**: the required upper bound on p may differ for
+each finite prefix. We do not claim that a single fixed p > 0 generates
+the entire infinite limiting sequence.
 
-### Altersmomente
+### Age moments
 
-Setze
+Set
 
 \[
 q=\frac1{1+z},\qquad z>0.
 \]
 
-Multiplikation aller Spielerwerte mit dem gemeinsamen positiven Faktor
-q^(−t) erhält ihre Ordnung. Damit erhalten wir
+Multiplying every player's score by the common positive factor q^(−t)
+preserves their order. This gives
 
 \[
 G_i(t,z)=q^{-t}S_i(t,q)
@@ -66,81 +67,80 @@ G_i(t,z)=q^{-t}S_i(t,q)
 M_{i,k}(t)=\sum_{\substack{s<t\\a_s=i}}\binom{t-s}{k}.
 \]
 
-Die Greedy-Regel vergleicht somit die ganzzahligen Vektoren
-(M_i,0, M_i,1, M_i,2, ...) lexikografisch: Der erste unterschiedliche
-Koeffizient entscheidet; kleiner bedeutet früher am Zug.
+The greedy rule thus compares the integer vectors
+(M_i,0, M_i,1, M_i,2, ...) lexicographically: the first differing
+coefficient decides, with the smaller value receiving the earlier turn.
 
-Für die Aktualisierung gilt exakt
+The exact update is
 
 \[
 M_{i,k}(t+1)=M_{i,k}(t)+M_{i,k-1}(t)
 +\mathbf1_{a_t=i}\binom1k,
 \]
 
-wobei M_i,−1 = 0. Das folgt unmittelbar aus der Pascalschen Identität.
-Koeffizienten bis zum Grad d entwickeln sich unabhängig von den höheren
-Koeffizienten. Ein abgeschnittener Vektor bestimmt die echte Entscheidung,
-sofern sein lexikografisches Minimum bereits eindeutig ist.
+where M_i,−1 = 0. This follows immediately from Pascal's identity.
+Coefficients through degree d evolve independently of the higher
+coefficients. A truncated vector determines the actual decision whenever
+its lexicographic minimum is already unique.
 
-## 2. Allgemeines Lemma: Permutation und Umkehrung
+## 2. General lemma: a permutation and its reversal
 
-**Lemma.** Für jedes N besteht jeder an Index 2Nm beginnende Block aus
-einer Permutation π der Spieler und anschließend ihrer Umkehrung:
+**Lemma.** For every N, each block beginning at index 2Nm consists of a
+permutation π of the players followed by its reversal:
 
 \[
 \pi\,\operatorname{rev}(\pi).
 \]
 
-An jeder solchen Blockgrenze sind die Momente M_i,0 und M_i,1 für alle
-Spieler gleich.
+At every such block boundary, the moments M_i,0 and M_i,1 are equal for all
+players.
 
-**Beweis.** Am Anfang sind alle diese Werte null. Angenommen, sie sind an
-einer Blockgrenze gleich. Weil der Grad-0-Koeffizient die bisherige Zugzahl
-zählt, erhält in den nächsten N Zügen jeder Spieler genau einen Zug.
-Unter den noch nicht ausgewählten Spielern ändert das bloße Altern die
-Ordnung ihrer G_i nicht: Es multipliziert alle mit demselben positiven
-Faktor. Daher ist die erste Runde eine feste Permutation π.
+**Proof.** Initially, all these values are zero. Suppose they are equal
+at a block boundary. Since the degree-0 coefficient counts previous
+turns, every player receives exactly one of the next N turns. Among
+players not yet selected in this round, ageing alone does not change
+the order of their G_i: it multiplies all of them by the same positive
+factor. The first round is therefore a fixed permutation π.
 
-Sei r_i die Position von Spieler i in dieser Permutation, mit 0 ≤ r_i < N.
-Nach der ersten Runde sind die Zugzahlen wieder gleich. Die zuvor
-gleichen ersten Momente unterscheiden sich jetzt allein durch die Alter
-N−r_i der gerade vergebenen Züge. Das kleinste erste Moment hat der
-zuletzt berücksichtigte Spieler. Folglich erzwingt der Grad-1-Vergleich
-die umgekehrte Reihenfolge in der nächsten Runde. Bereits berücksichtigte
-Spieler scheiden durch ihre größere Zugzahl aus.
+Let r_i be player i's position in this permutation, with 0 ≤ r_i < N.
+After the first round, the turn counts are equal again. The previously
+equal first moments now differ only through the ages N−r_i of the turns
+just assigned. The player selected last has the smallest first moment.
+Consequently, the degree-1 comparison forces the reverse order in the
+next round. Players already selected in that round are excluded by their
+larger turn counts.
 
-Am Ende des Doppelblocks besitzt jeder Spieler zwei neue Züge mit den
-Altern
+At the end of the paired block, each player has two new turns with ages
 
 \[
-2N-r_i\quad\text{und}\quad r_i+1.
+2N-r_i\quad\text{and}\quad r_i+1.
 \]
 
-Ihre Summe ist immer 2N+1. Zugzahl und erstes Moment sind wieder bei allen
-Spielern gleich. Induktion beweist das Lemma. ∎
+Their sum is always 2N+1. The turn counts and first moments are once again
+equal for all players. Induction proves the lemma. ∎
 
-### Aktualisierung an Blockgrenzen
+### Updates at block boundaries
 
-Subtrahiere Spieler 0 als gemeinsame Referenz:
+Subtract player 0's moments as a common reference:
 
 \[
 D_{i,k}=M_{i,k}-M_{0,k}.
 \]
 
-An Blockgrenzen gilt D_i,0 = D_i,1 = 0. Mit B = 2N und
+At block boundaries, D_i,0 = D_i,1 = 0. With B = 2N and
 
 \[
 w_k(r)=\binom{B-r}{k}+\binom{r+1}{k}
 \]
 
-lautet die exakte Aktualisierung
+the exact update is
 
 \[
 D'_{i,k}=\sum_{j=2}^{k}\binom{B}{k-j}D_{i,j}
 +w_k(r_i)-w_k(r_0).
 \]
 
-Für die Grade 2, 3 und 4 bedeutet dies
+For degrees 2, 3, and 4, this means
 
 \[
 \begin{aligned}
@@ -151,26 +151,26 @@ D'_{i,4}&=D_{i,4}+B D_{i,3}+\binom B2D_{i,2}
 \end{aligned}
 \]
 
-Diese drei Formeln sind die gesamte Dynamik des beigefügten Prüfers.
-Wenn sie eine Ordnung nicht entscheiden, bricht er ab; er ersetzt einen
-unbekannten höheren Koeffizienten niemals durch eine willkürliche Wahl.
+These three formulas describe the entire dynamics used by the accompanying
+verifier. If they do not determine an order, it stops; it never replaces an
+unknown higher coefficient with an arbitrary choice.
 
-## 3. Vollständiger Beweis für N = 3
+## 3. Complete proof for N = 3
 
-Schreibe A, B, C für die Spieler 0, 1, 2. Setze
+Write A, B, C for players 0, 1, 2. Set
 
 \[
 x_i=D_{i,2},\qquad y_i=D_{i,3},\qquad z_i=D_{i,4}.
 \]
 
-Der Referenzspieler A hat immer (x_A,y_A,z_A) = (0,0,0).
-Die Ranggewichte sind
+The reference player A always has (x_A,y_A,z_A) = (0,0,0).
+The rank weights are
 
 \[
 w_2=(15,11,9),\qquad w_3=(20,10,5),\qquad w_4=(15,5,1).
 \]
 
-Damit gilt
+Thus
 
 \[
 \begin{aligned}
@@ -180,11 +180,10 @@ z'_i&=z_i+6y_i+15x_i+w_4(r_i)-w_4(r_A).
 \end{aligned}
 \]
 
-### 3.1 Der endliche Anfang
+### 3.1 The finite prefix
 
-Die folgende Tabelle ist aus diesen drei ganzzahligen Formeln direkt
-nachrechenbar. π bezeichnet die erste Hälfte des jeweils folgenden
-Sechserblocks.
+The following table can be checked directly using these three integer
+formulas. Here π denotes the first half of the next six-turn block.
 
 | Index t | x_B | x_C | y_B | y_C | z_B | z_C | π |
 |---:|---:|---:|---:|---:|---:|---:|:---|
@@ -198,23 +197,23 @@ Sechserblocks.
 | 42 | −2 | −2 | −5 | −5 | −726 | −870 | CBA |
 | 48 | 0 | 4 | −12 | −2 | −782 | −916 | BAC |
 
-Nur der Start ist ein vollständiger Gleichstand. Bei t = 42 sind B und C
-bis Grad 3 gleich, aber der vierte Koeffizient −870 < −726 entscheidet
-für C vor B. Das ist der Grund, warum man nicht von Anfang an einfach alle
-Koeffizienten oberhalb von Grad 3 verwerfen darf.
+Only the initial state is a complete tie. At t = 42, B and C agree through
+degree 3, but the fourth coefficient, −870 < −726, puts C before B. This
+is why coefficients above degree 3 cannot simply be discarded from the
+start.
 
-Die ersten 48 Zeichen lauten daher
+The first 48 symbols are therefore
 
 ```text
 ABCCBA CBAABC BCAACB ACBBCA CBAABC BACCAB ACBBCA CBAABC
 ```
 
-### 3.2 Der unendliche Rest
+### 3.2 The infinite tail
 
-Ab t = 48 genügen dagegen die beiden Koordinaten x und y für sämtliche
-Ordnungsvergleiche in der folgenden Tabelle:
+From t = 48 onward, the two coordinates x and y suffice for every order
+comparison in the following table:
 
-| Index t | (x_B, y_B) | (x_C, y_C) | Nächste sechs Züge |
+| Index t | (x_B, y_B) | (x_C, y_C) | Next six turns |
 |---:|:---|:---|:---|
 | 48 | (0, −12) | (4, −2) | BACCAB |
 | 54 | (4, −2) | (2, 17) | ACBBCA |
@@ -225,157 +224,155 @@ Ordnungsvergleiche in der folgenden Tabelle:
 | 84 | (−4, 2) | (−4, −10) | CBAABC |
 | 90 | (−2, −17) | (2, −19) | BACCAB |
 | 96 | (2, −19) | (0, −12) | CABBAC |
-| 102 | (0, −12) | (4, −2) | Zustand von t = 48 |
+| 102 | (0, −12) | (4, −2) | State at t = 48 |
 
-In jeder Zeile sind die drei Paare (0,0), (x_B,y_B), (x_C,y_C)
-verschieden. Deshalb steht die Reihenfolge eindeutig fest, unabhängig
-von allen höheren Momenten. Zum Beispiel ist bei t = 48
+In every row, the three pairs (0,0), (x_B,y_B), and (x_C,y_C) are
+distinct. The order is therefore uniquely determined, independently of
+all higher moments. For example, at t = 48,
 
 \[
 (0,-12)<_{\mathrm{lex}}(0,0)<_{\mathrm{lex}}(4,-2),
 \]
 
-also lautet π = BAC und der Doppelblock BACCAB.
+so π = BAC and the paired block is BACCAB.
 
-Nach neun Doppelblöcken, also 54 Zügen, sind die entscheidenden vier
-Koordinaten wieder genau dieselben. Ihre Aktualisierung benötigt weder
-die absolute Zeit noch höhere Koeffizienten. Induktion beweist deshalb
+After nine paired blocks, or 54 turns, the four deciding coordinates are
+exactly the same again. Their update requires neither the absolute time
+nor higher coefficients. Induction therefore proves
 
 \[
-a_{t+54}=a_t\qquad\text{für alle }t\ge48.
+a_{t+54}=a_t\qquad\text{for all }t\ge48.
 \]
 
-Der dauerhaft wiederholte Block ab diesem Index ist
+The permanently repeating block beginning at this index is
 
 ```text
 BACCAB ACBBCA BCAACB ACBBCA CBAABC ABCCBA CBAABC BACCAB CABBAC
 ```
 
-Damit ist die unendliche Periodizität bewiesen, nicht nur ein weiteres
-endliches Stück berechnet.
+This proves infinite periodicity, rather than merely computing another
+finite segment.
 
-### 3.3 Kleinste Periode und Anfangsindex
+### 3.3 Least period and starting index
 
-Die vorangehenden Zeichen stimmen ebenfalls überein: a_47 = a_101 = C.
-Also beginnt die Periodizität bereits bei Index 47, dem 48. Glied.
-Noch einen Schritt früher gilt aber a_46 = B und a_100 = A.
+The preceding symbols also agree: a_47 = a_101 = C. Periodicity therefore
+already begins at index 47, the 48th term. One step earlier, however,
+a_46 = B and a_100 = A.
 
-Der angegebene 54erblock ist primitiv. Jeder echte Teiler von 54 teilt
-entweder 18 oder 27; beide möglichen übergeordneten Teilperioden scheitern
-bereits am ersten Zeichen, denn der Block beginnt mit B, während seine
-Zeichen an den nullbasierten Positionen 18 und 27 jeweils A sind.
-Jede kleinste Periode eines 54-periodischen unendlichen Wortes teilt 54.
-Folglich ist die kleinste Periode genau 54.
+The displayed 54-symbol block is primitive. Every proper divisor of 54
+divides either 18 or 27; both of these candidate subperiods already fail
+at the first symbol, since the block begins with B whereas its symbols
+at zero-based positions 18 and 27 are both A. The least period of any
+54-periodic infinite word divides 54. Hence the least period is exactly
+54.
 
-Auch ein größerer Periodenwert könnte den Beginn nicht vor Index 47
-verschieben: Jede Periode dieses schließlich primitiven 54-periodischen
-Restes ist ein Vielfaches von 54, und die entsprechende Restposition
-nach Index 46 enthält stets A statt B. Die minimale Vorlauflänge ist
-damit 47.
+Nor could a larger period move the starting point before index 47:
+every period of this tail with primitive period 54 is a multiple of 54,
+and the corresponding tail position after index 46 always contains A
+instead of B. The minimal preperiod length is therefore 47.
 
-## 4. Allgemeines Zwei-Zyklen-Kriterium
+## 4. General two-cycle criterion
 
-Für größere N müssen selbst die ersten vier Momentdifferenzen nicht
-als vollständiger Zustand wiederkehren. Einzelne Koordinaten dürfen
-driften, ohne dass sich die Entscheidungen ändern. Dafür genügt das
-folgende stärkere Kriterium.
+For larger N, even the first four moment differences need not return as
+a complete state. Individual coordinates may drift without changing the
+decisions. The following stronger criterion suffices.
 
-**Satz.** Gegeben seien ein verifiziertes Greedy-Präfix und ein
-vorgeschlagener wiederholter Block der Länge L. Fixiere eine Phase dieses
-Blocks und einen dort erforderlichen Vergleich zweier Spieler i, j.
-Sei F_k(z) die Differenz G_j−G_i an dieser Phase nach k Wiederholungen
-des vorgeschlagenen Blocks, zunächst als formal vorgeschriebene Folge
-berechnet. Dann gilt
+**Theorem.** Given a verified greedy prefix and a proposed repeating block
+of length L, fix a phase of this block and a comparison between two
+players i, j required at that phase. Let F_k(z) be the difference G_j−G_i
+at this phase after k repetitions of the proposed block, initially
+computed for the prescribed sequence without assuming that it follows
+the greedy rule. Then
 
 \[
 F_{k+1}(z)=(1+z)^L F_k(z)+C(z),
 \]
 
-wobei C(z) nicht von k abhängt.
+where C(z) does not depend on k.
 
-Sei d der kleinste Grad, in dem F_0 oder F_1 einen von null
-verschiedenen Koeffizienten besitzt. Setze
+Let d be the smallest degree at which F_0 or F_1 has a nonzero
+coefficient. Set
 
 \[
 a=[z^d]F_0(z),\qquad b=[z^d]\bigl(F_1(z)-F_0(z)\bigr).
 \]
 
-Dann sind alle niedrigeren Koeffizienten für jedes k null, und
+Then all lower coefficients are zero for every k, and
 
 \[
 [z^d]F_k(z)=a+kb.
 \]
 
-Insbesondere bleibt der Vergleich für alle k ≥ 0 strikt richtig,
-wenn a ≥ 0, b ≥ 0 und F_0 bereits strikt positiv im lexikografischen
-Sinn ist. Hierbei können a und b nicht beide null sein, weil d
-gerade als erster auftretender Grad definiert wurde.
+In particular, the comparison remains strictly correct for every k ≥ 0
+if a ≥ 0, b ≥ 0, and F_0 is already strictly positive in the lexicographic
+sense. Here a and b cannot both be zero, because d was defined as the
+first degree that occurs.
 
-**Beweis.** Während der nächsten L Züge altern alle alten Beiträge um L;
-das multipliziert sie mit (1+z)^L. Die während dieser L Züge neu
-hinzukommenden Beiträge besitzen an der betrachteten Phase immer
-dieselben Alter und Spielerzuordnungen. Ihre Differenz ist daher ein
-festes C(z). Das beweist die Rekursion.
+**Proof.** During the next L turns, every old contribution ages by L;
+this multiplies it by (1+z)^L. The contributions added during those L
+turns always have the same ages and player assignments at the phase
+under consideration. Their difference is therefore a fixed C(z). This
+proves the recurrence.
 
-Da der konstante Koeffizient von (1+z)^L gleich 1 ist, ist diese
-Rekursion bezüglich der Koeffizienten dreieckig. Für jeden Grad j < d
-sind die Koeffizienten in F_0 und F_1 null. Induktiv über j folgt
-C_j = 0 und anschließend F_k,j = 0 für alle k. Auf Grad d bleibt daher
-nur die additive Rekursion
+Since the constant coefficient of (1+z)^L is 1, this recurrence is
+triangular in its coefficients. For every degree j < d, the coefficients
+in F_0 and F_1 are zero. Induction on j gives C_j = 0 and then F_k,j = 0
+for every k. At degree d, only the additive recurrence remains:
 
 \[
 F_{k+1,d}=F_{k,d}+C_d,
 \qquad C_d=F_{1,d}-F_{0,d}=b.
 \]
 
-Sie ergibt a+kb. Ist a > 0, ist dieser Ausdruck unter b ≥ 0 immer
-positiv. Ist a = 0, muss b > 0 sein; dann entscheidet dieser Grad für
-jedes k ≥ 1, und für k = 0 gilt die separat überprüfte Positivität von
-F_0. Höhere Koeffizienten können einen bereits strikt positiven ersten
-Koeffizienten nicht umkehren. ∎
+It yields a+kb. If a > 0, this expression is always positive when b ≥ 0.
+If a = 0, then b > 0; this degree decides the comparison for every k ≥ 1,
+while for k = 0 the separately checked positivity of F_0 applies.
+Higher coefficients cannot reverse an already strictly positive first
+coefficient. ∎
 
-### Anwendung auf die tatsächliche Greedy-Folge
+### Application to the actual greedy sequence
 
-Der vorgeschlagene periodische Rest ist zunächst nur ein Kandidat.
-Überprüft man das Kriterium für alle erforderlichen Vergleiche an jeder
-Phase, folgt durch Induktion über die Züge, dass die echte Greedy-Regel
-immer genau diesen Kandidaten erzeugt. Es liegt daher kein Zirkelschluss
-durch die angenommene Wiederholung vor.
+The proposed periodic tail is initially only a candidate. Checking the
+criterion for every required comparison at every phase implies, by
+induction on the turns, that the actual greedy rule always produces
+exactly this candidate. The prescribed repetition therefore introduces
+no circular reasoning.
 
-Wegen des Doppelblock-Lemmas reicht es, an jeder Blockgrenze die
-N−1 benachbarten Spieler der vorgeschlagenen Permutation zu vergleichen.
-Diese Vergleiche bestimmen die vollständige strikte Ordnung. Die
-Umkehrung in der zweiten Hälfte folgt bereits aus dem Lemma.
+By the paired-block lemma, it suffices to compare the N−1 adjacent
+players of the proposed permutation at each block boundary. These
+comparisons determine the entire strict order. The reversal in the
+second half already follows from the lemma.
 
-**Zwei simulierte Wiederholungen allein reichen nicht.** Entscheidend
-ist die bewiesene Formel a+kb und insbesondere das Vorzeichen b ≥ 0.
-Beispielsweise sehen die Werte 2 und 1 für die ersten zwei Wiederholungen
-noch richtig aus; die zugehörige Formel 2−k scheitert später.
+**Two simulated repetitions alone are not enough.** The decisive ingredient
+is the proved formula a+kb, particularly the sign condition b ≥ 0.
+For example, the values 2 and 1 look correct for the first two
+repetitions, but the corresponding formula 2−k fails later.
 
-## 5. Exakte Zertifikate für 3 ≤ N ≤ 24
+## 5. Exact certificates for 3 ≤ N ≤ 24
 
-Der Prüfer `fair_share_verify.py` und die Daten
-`fair_share_certificates.json` gehören zu dieser Ausarbeitung.
+The verifier `fair_share_verify.py` and the data in
+`fair_share_certificates.json` accompany this document.
 
-Er rekonstruiert für jede Spielerzahl den Anfang aus dem Nullzustand,
-überprüft dabei jeden benötigten Vergleich bis Grad 4, berechnet den
-vorgeschlagenen Rest zweimal und prüft danach die Ungleichungen des
-Zwei-Zyklen-Satzes. Alle Zahlen sind Python-Ganzzahlen beliebiger Größe.
-Es gibt weder Gleitkommazahlen noch eine numerische Wahl eines kleinen p.
+For each number of players, the verifier reconstructs the prefix from
+the zero state, checks every required comparison through degree 4,
+computes the proposed tail twice, and then checks the inequalities of
+the two-cycle theorem. All numbers are arbitrary-precision Python
+integers. No floating-point numbers or numerical choice of a small p
+are used.
 
-Die Blockzertifikate beweisen zunächst einen ausreichenden Startindex und
-eine gültige Periode. Zusätzlich bestimmt der Prüfer die kleinste Periode
-des zyklischen Wortes mit der exakten Präfixfunktion. Beim Rekonstruieren
-des Anfangs vergleicht er jeden Zug mit der rückwärts fortgesetzten
-periodischen Endfolge. Eins plus der letzte abweichende Index ist die
-minimale Vorlauflänge. Denn jede andere spätere Periode muss ein
-Vielfaches der kleinsten Endperiode sein und würde an diesem letzten
-abweichenden Index denselben falschen Buchstaben verlangen.
+The block certificates initially prove a sufficient starting index and
+a valid period. The verifier additionally determines the least period
+of the cyclic word using the exact prefix function. While reconstructing
+the prefix, it compares every turn with the periodic tail extended
+backwards. One plus the last differing index is the minimal preperiod
+length: every other eventual period must be a multiple of the least
+tail period and would require the same incorrect symbol at that last
+differing index.
 
-Alle Längen in der Tabelle zählen einzelne Züge. Die Vorlauflänge ist
-zugleich der nullbasierte Index, an dem die permanente Periode beginnt.
+All lengths in the table count individual turns. The preperiod length
+is also the zero-based index at which the permanent periodic tail begins.
 
-| N | Minimale Vorlauflänge | Kleinste Periode | Start des Blockzertifikats |
+| N | Minimal preperiod length | Least period | Block certificate start |
 |---:|---:|---:|---:|
 | 3 | 47 | 54 | 48 |
 | 4 | 46 | 192 | 48 |
@@ -400,160 +397,160 @@ zugleich der nullbasierte Index, an dem die permanente Periode beginnt.
 | 23 | 309612 | 63480 | 309626 |
 | 24 | 50652467 | 532224 | 50652480 |
 
-Ausführung mit Python 3, ohne Zusatzpakete:
+Run with Python 3, without additional packages:
 
 ```sh
 python3 fair_share_verify.py fair_share_certificates.json
 ```
 
-Nur ausgewählte Fälle:
+To check only selected cases:
 
 ```sh
 python3 fair_share_verify.py fair_share_certificates.json 3 4 15
 ```
 
-Der aufwendige Teil ist die Rekonstruktion langer Vorläufe. Die Prüfung
-des unendlichen Restes selbst benötigt für jeden Fall lediglich zwei
-vorgeschriebene Wiederholungen und die bewiesene Koeffizientenformel.
+The expensive part is reconstructing long prefixes. Verifying the
+infinite tail itself requires only two prescribed repetitions and the
+proved coefficient formula for each case.
 
-Der beigefügte Prüfbericht `fair_share_verification.json` enthält die
-Ergebnisse des separat geschriebenen Zwei-Zyklen-Prüfers. Die
-Zertifikatsuche benutzte eine andere Implementierung mit exakten
-Polynomen in der Wiederholungszahl. Zusätzlich wurden N = 3 und N = 4
-unabhängig über volle Polynome beziehungsweise symbolische Summen
-gegengeprüft.
+The accompanying report `fair_share_verification.json` contains the
+results of the separately written two-cycle verifier. The certificate
+search used a different implementation with exact polynomials in the
+repetition count. In addition, N = 3 and N = 4 were independently
+cross-checked using full polynomials and symbolic sums, respectively.
 
-Für N = 24 ergibt die unabhängige Prüfung insbesondere eine minimale
-Vorlauflänge von **50652467 Zügen** und eine kleinste Periode von
-**532224 Zügen**. Die permanente Periode beginnt also mit dem
-50652468. Zug bei Zählung ab eins. Bei dieser Greedy-Regel ist der
-Vorlauf für 24 Spieler damit keineswegs kurz.
+For N = 24, the independent check gives a minimal preperiod length of
+**50652467 turns** and a least period of **532224 turns**. The permanent
+periodic tail therefore begins with turn 50652468 when counting from
+one. Under this greedy rule, the preperiod for 24 players is therefore
+far from short.
 
-## 6. Eine scheinbare Schleife, die später bricht
+## 6. An apparent loop that eventually breaks
 
-Bei N = 15 findet man ab Index 30600 einen Kandidaten mit Länge 8100.
-Er wird 25-mal vollständig wiederholt und sieht deshalb sehr stabil
-aus. Trotzdem endet diese Wiederholung später.
+For N = 15, a candidate block of length 8100 appears starting at index
+30600. It repeats completely 25 times and therefore looks very stable.
+Nevertheless, this repetition eventually ends.
 
-An Phase 219 der 270 Doppelblöcke des Kandidaten entscheidet der
-vierte Alterskoeffizient über die Reihenfolge der nullbasierten Spieler
-8 und 5. Unter der hypothetischen ewigen Wiederholung ist die
-entscheidende Differenz
+At phase 219 of the candidate's 270 paired blocks, the fourth age
+coefficient determines the order of players 8 and 5, labelled from
+zero. Under the hypothetical infinite repetition, the deciding
+difference is
 
 \[
 30317118-1215000k.
 \]
 
-Für k = 0, ..., 24 ist sie positiv, für k = 25 negativ. Höhere
-Koeffizienten können dieses Vorzeichen nicht ändern, da alle
-niedrigeren Differenzen null sind. Tatsächlich liegt die erste
-Abweichung vom vorgeschlagenen Wort an Index
+It is positive for k = 0, ..., 24 and negative for k = 25. Higher
+coefficients cannot change this sign because all lower differences
+are zero. In fact, the first deviation from the proposed word occurs
+at index
 
 \[
 30\bigl(1020+25\cdot270+219\bigr)=239670.
 \]
 
-Der Kandidat verlangt dort Spieler 8, die echte Greedy-Regel wählt
-Spieler 5. Die später zertifizierte Periode beträgt 48600, mit einem
-ausreichenden Startindex 330750.
+The candidate requires player 8 there, whereas the actual greedy rule
+selects player 5. The subsequently certified period is 48600, with a
+sufficient starting index of 330750.
 
-Das widerlegt **diesen vorgeschlagenen 8100erblock**, nicht die
-schließliche Periodizität für N = 15. Es zeigt konkret, warum auch
-zahlreiche beobachtete Wiederholungen keinen Unendlichkeitsbeweis
-ersetzen. Die Angaben beziehen sich auf die hier exakt berechnete
-Folge; es wird nicht unterstellt, dass das Video genau diesen Block
-als endgültige Periode ausweist.
+This refutes **this proposed 8100-turn block**, not eventual periodicity
+for N = 15. It gives a concrete reason why even many observed
+repetitions cannot replace an infinite-continuation proof. These
+statements concern the sequence computed exactly here; they do not
+assume that the video identifies this particular block as the final
+period.
 
-## 7. Was für beliebiges N bereits gilt und was noch fehlt
+## 7. What is already known for arbitrary N, and what is missing
 
-Für jede Spielerzahl gibt es einen allgemeinen endlichen Anteil der
-Dynamik. Betrachte an Doppelblockgrenzen die sortierten zweiten
-Momente. Ziehe ihr Minimum ab und teile durch 2. Diese Unterschiede
-sind ganzzahlig. Die Ranggewichte, nach Abzug eines gemeinsamen Terms
-und Division durch 2, sind
+For every number of players, part of the dynamics is governed by a
+general finite state space. Consider the sorted second moments at
+paired-block boundaries. Subtract their minimum and divide by 2.
+These differences are integers. After subtracting a common term and
+dividing by 2, the rank weights are
 
 \[
 w_r=\frac{(N-1-r)(N-r)}2,
 \qquad 0\le r<N.
 \]
 
-Die kleinste aktuelle Last bekommt das größte Gewicht usw.
-Bei gleichen Lasten beeinflusst die Entscheidung höherer Momente zwar
-die Spielernamen, aber nicht das entstehende unbeschriftete Multiset.
-Die sortierte, normalisierte Folgelast ist daher eine deterministische
-Funktion der aktuellen sortierten, normalisierten Last.
+The smallest current load receives the largest weight, and so on.
+When loads are equal, the higher moments affect the player labels
+but not the resulting unlabelled multiset. The next sorted, normalized
+load vector is therefore a deterministic function of the current
+sorted, normalized load vector.
 
-Setze M = N(N−1)/2. Die Spannweite der Lasten bleibt höchstens M.
-Denn für zwei geordnete Lasten ℓ_i ≤ ℓ_j sind die Gewichte umgekehrt
-geordnet, w_i ≥ w_j; die neue Differenz ist
+Set M = N(N−1)/2. The spread of the loads remains at most M.
+Indeed, for two ordered loads ℓ_i ≤ ℓ_j, the weights are ordered
+oppositely, w_i ≥ w_j. The new difference is
 
 \[
 (\ell_i+w_i)-(\ell_j+w_j)
 =-(\ell_j-\ell_i)+(w_i-w_j),
 \]
 
-und liegt zwischen der negativen alten Spannweite und M. Die neue
-Spannweite überschreitet somit das Maximum aus alter Spannweite und M
-nicht. Zu Beginn ist sie null.
+which lies between the negative old spread and M. The new spread
+therefore does not exceed the maximum of the old spread and M.
+Initially, it is zero.
 
-Es gibt folglich höchstens
+Consequently, there are at most
 
 \[
 \binom{M+N-1}{N-1}
 \]
 
-sortierte, normalisierte Zustände: Der erste Eintrag ist null, die
-übrigen N−1 Einträge stammen nicht absteigend aus {0,...,M}.
-Diese **unbeschriftete Konfiguration der zweiten Momente** wird daher
-für jedes N schließlich periodisch.
+sorted, normalized states: the first entry is zero, and the remaining
+N−1 entries are a nondecreasing sequence of values from {0,...,M}.
+This **unlabelled configuration of second moments** is therefore
+eventually periodic for every N.
 
-Der fehlende Schritt betrifft die Namen der Spieler bei Gleichständen.
-Diese Entscheidungen hängen von höheren Momenten ab. Aus einem
-periodischen Multiset zweiter Momente folgt keine periodische Folge
-von Spielernamen. Schon N = 2 zeigt, dass das Übergehen dieser
-Unterscheidung einen falschen Beweis erzeugen würde.
+The missing step concerns player labels when ties occur. These
+decisions depend on higher moments. A periodic multiset of second
+moments does not imply a periodic sequence of player labels. Already
+N = 2 shows that ignoring this distinction would produce an invalid
+proof.
 
-Um die allgemeine Vermutung zu beweisen, benötigt man beispielsweise
-einen Satz, der für jedes N ≥ 3 das Erreichen eines gültigen
-Periodizitätszertifikats garantiert. Ein solcher Satz wird hier nicht
-hergeleitet. Die exakten Einzelfallbeweise und das Zertifizierungskriterium
-sind vollständig; der universelle Existenzschritt bleibt offen.
+To prove the general conjecture, one could, for example, establish a
+theorem guaranteeing that a valid periodicity certificate is eventually
+reached for every N ≥ 3. No such theorem is derived here. The exact
+individual-case proofs and the certification criterion are complete;
+the universal existence step remains open.
 
-## 8. Literatur und historische Einordnung
+## 8. Literature and historical context
 
-Eine Suche bis 2026-11-26 lieferte keinen veröffentlichten Beweis für
-alle N ≥ 3. Das ist eine Aussage über das Rechercheergebnis, kein
-Beweis dafür, dass kein solcher Text existiert.
+A search through 2026-11-26 found no published proof for all N ≥ 3.
+This describes the outcome of the search; it does not prove that no
+such text exists.
 
-- Joshua N. Cooper und Aaron M. Dutle, *Greedy Galois Games*,
+- Joshua N. Cooper and Aaron M. Dutle, *Greedy Galois Games*,
   American Mathematical Monthly 120 (2013), 441–451.
   [arXiv:1110.1137](https://arxiv.org/abs/1110.1137),
-  [Autorenfassung](https://people.math.sc.edu/cooper/ThueMorseDueling.pdf).
-  Der einschlägige bewiesene Grenzwertsatz behandelt zwei Spieler.
-- [OEIS A287150](https://oeis.org/A287150): die Dreispielerfolge.
-  Der gelesene Eintrag beschreibt die Periodizität als Beobachtung der
-  ersten 5000 Glieder und nennt den 54erblock ab dem 48. Glied.
+  [authors' version](https://people.math.sc.edu/cooper/ThueMorseDueling.pdf).
+  The relevant proved limiting theorem concerns two players.
+- [OEIS A287150](https://oeis.org/A287150): the three-player sequence.
+  The entry consulted describes periodicity as an observation of the
+  first 5000 terms and identifies the 54-term block beginning at the
+  48th term.
 - kram1032, [*What's the fairest turn sequence for n players?*](https://math.stackexchange.com/questions/2078609/whats-the-fairest-turn-sequence-for-n-players),
-  Mathematics Stack Exchange: die konkrete Koeffizientenregel und
-  ihre programmatische Umsetzung.
-- Anders Kaseorg, Kommentar von 2012-11-01 unter Zachary Abels
+  Mathematics Stack Exchange: the explicit coefficient rule and its
+  implementation.
+- Anders Kaseorg, comment dated 2012-11-01 on Zachary Abel's
   [*Dueling Dilettantes*](https://blog.zacharyabel.com/2012/02/dueling-dilettantes/):
-  meldet bereits die beobachteten Perioden 54, 192, 500 und 864 für
-  drei bis sechs Spieler. Die Dokumentation reicht somit weiter
-  zurück als der OEIS-Eintrag von 2017.
-- A. Zabolotskii, *Плохие стрелки* (»Schlechte Schützen«), Kvant 2022,
-  Nr. 7, S. 22–24,
-  [offizielle Artikelseite](https://www.kvant.digital/issues/2022/7/zabolotskiy-plohie_strelki-99fb3197/),
+  already reports observed periods 54, 192, 500, and 864 for three to
+  six players. The documented history therefore predates the OEIS
+  entry from 2017.
+- A. Zabolotskii, *Плохие стрелки* (*Bad Shots*), Kvant 2022,
+  no. 7, pp. 22–24,
+  [official article page](https://www.kvant.digital/issues/2022/7/zabolotskiy-plohie_strelki-99fb3197/),
   [DOI:10.4213/kvant20220702](https://doi.org/10.4213/kvant20220702).
-  Der Beitrag stellt die Periodizität für drei und mehr Spieler
-  ausdrücklich als offene Aufgabe dar. Dies beschreibt den Stand
-  des Artikels von 2022.
-- Tanya Khovanova und Tejo Madhavarapu, *Fair Duels after a False Start*,
+  The article explicitly poses periodicity for three or more players
+  as an open problem. This describes the state reported in the 2022
+  article.
+- Tanya Khovanova and Tejo Madhavarapu, *Fair Duels after a False Start*,
   [arXiv:2610.00880v1](https://arxiv.org/html/2610.00880v1), 2026-10-01.
-  Satz 1.1 behandelt zwei Spieler mit vorgegebenem endlichem Anfang,
-  der weder ein Thue–Morse-Präfix noch dessen Komplement ist.
-  Er ist kein Satz für beliebig viele Spieler.
+  Theorem 1.1 concerns two players with a prescribed finite prefix
+  that is neither a Thue–Morse prefix nor its complement. It is not
+  a theorem for arbitrarily many players.
 
-Die vorliegenden Einzelfallbeweise sind mit dieser historischen
-Einordnung vereinbar: Ein endliches exaktes Zertifikat kann einen
-bestimmten Fall lösen, ohne die allgemeine Existenzbehauptung zu lösen.
+The individual-case proofs presented here are consistent with this
+historical context: a finite exact certificate can settle a particular
+case without settling the general existence claim.
