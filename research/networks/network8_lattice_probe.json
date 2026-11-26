@@ -1,0 +1,653 @@
+[
+  {
+    "n": 4,
+    "component": [
+      1,
+      3
+    ],
+    "reference": 1,
+    "period_blocks": 24,
+    "vertices": 48,
+    "edges": 52,
+    "modulus": 1536,
+    "charges": [
+      0,
+      1024
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 2
+  },
+  {
+    "n": 5,
+    "component": [
+      0,
+      2
+    ],
+    "reference": 0,
+    "period_blocks": 50,
+    "vertices": 100,
+    "edges": 108,
+    "modulus": 200,
+    "charges": [
+      0,
+      194
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 4
+  },
+  {
+    "n": 5,
+    "component": [
+      3,
+      4
+    ],
+    "reference": 3,
+    "period_blocks": 50,
+    "vertices": 100,
+    "edges": 108,
+    "modulus": 200,
+    "charges": [
+      0,
+      12
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 4
+  },
+  {
+    "n": 6,
+    "component": [
+      2,
+      4
+    ],
+    "reference": 2,
+    "period_blocks": 72,
+    "vertices": 144,
+    "edges": 148,
+    "modulus": 15552,
+    "charges": [
+      0,
+      2592
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 2
+  },
+  {
+    "n": 8,
+    "component": [
+      2,
+      3
+    ],
+    "reference": 2,
+    "period_blocks": 32,
+    "vertices": 64,
+    "edges": 68,
+    "modulus": 28672,
+    "charges": [
+      0,
+      17824
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 2
+  },
+  {
+    "n": 8,
+    "component": [
+      0,
+      1,
+      6
+    ],
+    "reference": 0,
+    "period_blocks": 32,
+    "vertices": 96,
+    "edges": 104,
+    "modulus": 4096,
+    "charges": [
+      0,
+      3218,
+      1170
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 4
+  },
+  {
+    "n": 9,
+    "component": [
+      2,
+      5
+    ],
+    "reference": 2,
+    "period_blocks": 270,
+    "vertices": 540,
+    "edges": 560,
+    "modulus": 17496,
+    "charges": [
+      0,
+      17424
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 10
+  },
+  {
+    "n": 9,
+    "component": [
+      3,
+      8
+    ],
+    "reference": 3,
+    "period_blocks": 270,
+    "vertices": 540,
+    "edges": 552,
+    "modulus": 34992,
+    "charges": [
+      0,
+      7306
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 6
+  },
+  {
+    "n": 10,
+    "component": [
+      1,
+      2
+    ],
+    "reference": 1,
+    "period_blocks": 80,
+    "vertices": 160,
+    "edges": 164,
+    "modulus": 473600,
+    "charges": [
+      0,
+      447260
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 2
+  },
+  {
+    "n": 10,
+    "component": [
+      4,
+      5
+    ],
+    "reference": 4,
+    "period_blocks": 80,
+    "vertices": 160,
+    "edges": 164,
+    "modulus": 428800,
+    "charges": [
+      0,
+      349912
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 2
+  },
+  {
+    "n": 10,
+    "component": [
+      0,
+      6,
+      7,
+      9
+    ],
+    "reference": 0,
+    "period_blocks": 80,
+    "vertices": 320,
+    "edges": 332,
+    "modulus": 6400,
+    "charges": [
+      0,
+      2918,
+      1216,
+      3476
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 6
+  },
+  {
+    "n": 12,
+    "component": [
+      7,
+      10,
+      11
+    ],
+    "reference": 7,
+    "period_blocks": 216,
+    "vertices": 648,
+    "edges": 660,
+    "modulus": 165888,
+    "charges": [
+      0,
+      152004,
+      10196
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 6
+  },
+  {
+    "n": 14,
+    "component": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reference": 0,
+    "period_blocks": 1176,
+    "vertices": 16464,
+    "edges": 16764,
+    "modulus": 1568,
+    "charges": [
+      0,
+      232,
+      930,
+      670,
+      1480,
+      1218,
+      1056,
+      218,
+      458,
+      700,
+      430,
+      970,
+      572,
+      568
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 150
+  },
+  {
+    "n": 15,
+    "component": [
+      5,
+      8
+    ],
+    "reference": 5,
+    "period_blocks": 1620,
+    "vertices": 3240,
+    "edges": 3348,
+    "modulus": 135000,
+    "charges": [
+      0,
+      57882
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 54
+  },
+  {
+    "n": 15,
+    "component": [
+      10,
+      14
+    ],
+    "reference": 10,
+    "period_blocks": 1620,
+    "vertices": 3240,
+    "edges": 3312,
+    "modulus": 405000,
+    "charges": [
+      0,
+      307948
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 36
+  },
+  {
+    "n": 15,
+    "component": [
+      0,
+      1,
+      9
+    ],
+    "reference": 0,
+    "period_blocks": 1620,
+    "vertices": 4860,
+    "edges": 4908,
+    "modulus": 270000,
+    "charges": [
+      0,
+      86332,
+      17304
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 24
+  },
+  {
+    "n": 16,
+    "component": [
+      2,
+      5
+    ],
+    "reference": 2,
+    "period_blocks": 2112,
+    "vertices": 4224,
+    "edges": 4248,
+    "modulus": 196608,
+    "charges": [
+      0,
+      117938
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 12
+  },
+  {
+    "n": 16,
+    "component": [
+      4,
+      15
+    ],
+    "reference": 4,
+    "period_blocks": 2112,
+    "vertices": 4224,
+    "edges": 4248,
+    "modulus": 196608,
+    "charges": [
+      0,
+      177420
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 12
+  },
+  {
+    "n": 16,
+    "component": [
+      6,
+      9
+    ],
+    "reference": 6,
+    "period_blocks": 2112,
+    "vertices": 4224,
+    "edges": 4248,
+    "modulus": 196608,
+    "charges": [
+      0,
+      90198
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 12
+  },
+  {
+    "n": 16,
+    "component": [
+      7,
+      10,
+      11
+    ],
+    "reference": 7,
+    "period_blocks": 2112,
+    "vertices": 6336,
+    "edges": 6384,
+    "modulus": 196608,
+    "charges": [
+      0,
+      119428,
+      148746
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 24
+  },
+  {
+    "n": 18,
+    "component": [
+      1,
+      7
+    ],
+    "reference": 1,
+    "period_blocks": 1512,
+    "vertices": 3024,
+    "edges": 3036,
+    "modulus": 1119744,
+    "charges": [
+      0,
+      155768
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 6
+  },
+  {
+    "n": 18,
+    "component": [
+      4,
+      14
+    ],
+    "reference": 4,
+    "period_blocks": 1512,
+    "vertices": 3024,
+    "edges": 3048,
+    "modulus": 31104,
+    "charges": [
+      0,
+      10518
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 12
+  },
+  {
+    "n": 18,
+    "component": [
+      8,
+      12
+    ],
+    "reference": 8,
+    "period_blocks": 1512,
+    "vertices": 3024,
+    "edges": 3036,
+    "modulus": 1119744,
+    "charges": [
+      0,
+      400066
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 6
+  },
+  {
+    "n": 18,
+    "component": [
+      3,
+      5,
+      10
+    ],
+    "reference": 3,
+    "period_blocks": 1512,
+    "vertices": 4536,
+    "edges": 4572,
+    "modulus": 31104,
+    "charges": [
+      0,
+      10098,
+      21714
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 18
+  },
+  {
+    "n": 19,
+    "component": [
+      4,
+      17
+    ],
+    "reference": 4,
+    "period_blocks": 3120,
+    "vertices": 6240,
+    "edges": 6432,
+    "modulus": 2888,
+    "charges": [
+      0,
+      1732
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 96
+  },
+  {
+    "n": 21,
+    "component": [
+      14,
+      15
+    ],
+    "reference": 14,
+    "period_blocks": 630,
+    "vertices": 1260,
+    "edges": 1272,
+    "modulus": 518616,
+    "charges": [
+      0,
+      160068
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 6
+  },
+  {
+    "n": 21,
+    "component": [
+      1,
+      5,
+      20
+    ],
+    "reference": 1,
+    "period_blocks": 630,
+    "vertices": 1890,
+    "edges": 1926,
+    "modulus": 24696,
+    "charges": [
+      0,
+      17460,
+      3010
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 18
+  },
+  {
+    "n": 23,
+    "component": [
+      3,
+      21
+    ],
+    "reference": 3,
+    "period_blocks": 1380,
+    "vertices": 2760,
+    "edges": 2796,
+    "modulus": 4232,
+    "charges": [
+      0,
+      3898
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 18
+  },
+  {
+    "n": 23,
+    "component": [
+      16,
+      19
+    ],
+    "reference": 16,
+    "period_blocks": 1380,
+    "vertices": 2760,
+    "edges": 2808,
+    "modulus": 4232,
+    "charges": [
+      0,
+      2776
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 24
+  },
+  {
+    "n": 24,
+    "component": [
+      1,
+      3,
+      6,
+      11,
+      13,
+      15,
+      17
+    ],
+    "reference": 1,
+    "period_blocks": 11088,
+    "vertices": 77616,
+    "edges": 77910,
+    "modulus": 18432,
+    "charges": [
+      0,
+      17310,
+      12482,
+      11072,
+      15928,
+      1196,
+      12798
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 147
+  },
+  {
+    "n": 24,
+    "component": [
+      0,
+      2,
+      8,
+      10,
+      12,
+      18,
+      19,
+      20
+    ],
+    "reference": 0,
+    "period_blocks": 11088,
+    "vertices": 88704,
+    "edges": 89040,
+    "modulus": 18432,
+    "charges": [
+      0,
+      10630,
+      16374,
+      7038,
+      8368,
+      16342,
+      8076,
+      7216
+    ],
+    "collision_pairs": [],
+    "distinct_charges": true,
+    "comparator_checks": 168
+  }
+]

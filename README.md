@@ -10,10 +10,12 @@ English is the canonical language for the documentation. The [full proof](fair_s
 
 ## Research status
 
-- **Established for each `N = 3, …, 24`:** an exact finite certificate proves the proposed tail follows the greedy rule for every future repetition.
+- **Established for each `N = 3, …, 64`:** the exact structural checker certifies an eventual lower-moment regime and distinct conserved fourth-moment charges. This proves eventual periodicity. The earlier `N = 3, …, 24` word certificates additionally verify explicit least periods and minimal preperiods. See [structural proofs](research/STRUCTURE_PROOFS.md).
 - **Written out by hand for `N = 3`:** the proof exhibits a closed nine-block cycle, giving least period 54 after 47 initial terms.
 - **General reduction for every `N ≥ 2` and every fixed moment depth:** the unlabelled moment dynamics eventually has a polynomial form with repeating phases. Consequently, the labelled sequence is eventually periodic **if and only if** some finite moment depth eventually separates every player pair. See [the finite-depth theorem](FINITE_DEPTH.md). The sufficient depth may depend on `N`; its existence for every `N ≥ 3` remains unproved.
 - **Arithmetic criterion for closed two-player groups:** a nonmonomial parity ratio bounds their required comparison depth. A tie away from the global mean is a simpler sufficient test. The [exact experiments](research/STRUCTURE_EXPERIMENTS.md) establish this criterion for 54 components, covering all 988 of their tie phases. This proves those components' eventual periodicity, not the full sequences for their player counts.
+- **Arithmetic criterion for interacting groups of any size:** [integer graph charges](research/NETWORK_CHARGES.md) are conserved under all compatible routing. Distinct initial charges exclude all future ties at the next moment. This is the criterion used in the new structural proofs, including a component of size 56 for `N = 60`.
+- **General restriction on period lengths:** if an eventual period exists, every prime factor of its least individual-turn period is at most `N`. At separating depth `d`, that least period divides `2N · lcm(1,…,N)^d`. See [PERIOD_BOUND.md](PERIOD_BOUND.md).
 - **Not established:** eventual periodicity for every integer `N > 2`, or guaranteed termination of a search for certificates.
 - **Verification level:** a mathematical soundness argument plus an executable Python checker using arbitrary-precision integers. No Lean formalization is included.
 
@@ -36,6 +38,21 @@ python3 fair_share_verify.py fair_share_certificates.json
 ```
 
 Each successful case emits one JSON object. A wrong or unresolved comparison aborts verification. The checker reconstructs the greedy prefix from zero rather than trusting a supplied initial state; it rejects any noninitial tie unresolved by the moments it carries.
+
+The structural checker does not require an explicit eventual player word. It discovers and proves the lower numerical regime, reconstructs the actual prefix, and verifies the conserved charges:
+
+```sh
+# New cases, without constructing their full eventual words
+python3 research/structure_certificates.py 25 30 60
+
+# Reproduce the complete structural range
+python3 research/structure_certificates.py --range 3 64 --cap 1000000
+
+# Negative control: reports an inconclusive charge test
+python3 research/structure_certificates.py 2
+```
+
+Run ordinary Python, without `-O`. A search cap or an equal-charge group is reported as unproved, never as an aperiodicity result. These structural proofs do not calculate least periods or minimal preperiods for the new cases.
 
 ## Selected results
 
@@ -90,16 +107,21 @@ The complete derivation, including the initial degree-four tie for `N = 3`, is i
 | [NEXT_STEPS.md](NEXT_STEPS.md) | The unresolved mathematical step and a possible Lean formalization plan. |
 | [RESEARCH_LOG.md](RESEARCH_LOG.md) | Intermediate proof attempts, checked lemmas, counterexamples, and historical-source updates. |
 | [FINITE_DEPTH.md](FINITE_DEPTH.md) | Polynomial normal form for every fixed moment degree; eventual periodicity is equivalent to eventual bounded comparison depth. |
+| [PERIOD_BOUND.md](PERIOD_BOUND.md) | A depth-dependent period bound and the theorem excluding prime factors larger than N from the least period. |
 | [TIE_DYNAMICS.md](TIE_DYNAMICS.md) | Detailed worked reduction through degree four and the stronger degree-four separation conjecture. |
 | [research/BINARY_COMPONENTS.md](research/BINARY_COMPONENTS.md) | Closed comparison groups, exact research scripts, and a targeted binary-component case inside `N = 78`. |
 | [research/PARITY_OBSTRUCTION.md](research/PARITY_OBSTRUCTION.md) | A rigorous finite-depth criterion for closed binary components, including variable forcing. |
 | [research/PARITY_RESONANCE.md](research/PARITY_RESONANCE.md) and [research/MEAN_OBSTRUCTION.md](research/MEAN_OBSTRUCTION.md) | The occupancy meaning of the exceptional parity case and a sufficient test using the global mean. |
 | [research/STRUCTURE_EXPERIMENTS.md](research/STRUCTURE_EXPERIMENTS.md) | Reproducible checks, exact scope, and the larger comparison networks that remain to be treated. |
+| [research/NETWORK_CHARGES.md](research/NETWORK_CHARGES.md) | Integer centering, graph potentials, conserved residues, and their relation to higher-depth component refinement. |
+| [research/STRUCTURE_PROOFS.md](research/STRUCTURE_PROOFS.md) | Exact eventual-periodicity proofs for N=3,...,64 and the structural checker's soundness. |
+| [research/INTERACTING_COMPONENTS.md](research/INTERACTING_COMPONENTS.md) | Exact two-gate models, reusable drift and residue lemmas, and counterexamples to overly broad extensions. |
+| [research/BINARY_RESONANCE.md](research/BINARY_RESONANCE.md) | A common recurrent affine permutation, the period-two occupancy exclusion, and remaining binary obstacles. |
 
 ## Continuing the work
 
 The current main target is to prove that, for each fixed `N ≥ 3`, some finite degree `d(N)` eventually resolves every comparison. The [general reduction](FINITE_DEPTH.md) proves that this is equivalent to the desired periodicity. Degree four remains a stronger sufficient conjecture, but the reduction now works at every fixed degree.
 
-The binary criterion handles closed groups of two players. Larger groups are a real remaining obstacle: [persistent pairwise ties can connect three labels for `N = 8` and all fourteen labels for `N = 14`](research/THIRD_COMPONENTS.md). The next step is to extend the arithmetic argument to these interacting comparison networks and understand the exceptional binary resonance.
+The charge criterion now handles interacting groups of arbitrary size. The missing universal step is to prove that the **canonical** history forces sufficient charge separation, at degree four or after finitely many refinements. The special origin is material: explicit altered prefixes and formal initial states defeat several broader versions of the claim. The [research log](RESEARCH_LOG.md) records these failed routes and the current arithmetic target.
 
 Lean would be useful for formally verifying the certificate criterion and its connection to the original greedy rule. It is not required to reproduce the current results, and formalizing the existing finite cases would not prove the universal conjecture. See [next steps](NEXT_STEPS.md).

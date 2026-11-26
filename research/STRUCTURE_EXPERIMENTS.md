@@ -2,6 +2,8 @@
 
 Research record, 2026-11-26. All scripts use Python's standard library and exact integer or rational arithmetic. Run ordinary Python, without `-O`, because assertions are part of these research checks.
 
+This note records the earlier binary-component scan. The later [arbitrary-size charge method and structural proofs](STRUCTURE_PROOFS.md) establish complete eventual-periodicity results for N=3,...,64. The limits below remain the limits of the binary scan by itself.
+
 ## 1. Coverage and what is established
 
 The second-moment transport scan completed every N from 25 through 259: **235 complete base graphs**. Its original requested range extended to 400, but N=260 reached the cap of 100000 base states. No result for N=260 or every N up to 400 is claimed. The default reproduction range now stops at the completed endpoint 259.

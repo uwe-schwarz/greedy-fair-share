@@ -4,7 +4,7 @@ The [English proof](fair_share_proof.md) is the canonical version. Update it fir
 
 ## 1. Isolate the missing universal theorem
 
-The available certificates prove eventual periodicity separately for every `N = 3, …, 24`. The open target is
+The available word certificates prove eventual periodicity separately for every `N = 3, …, 24`, and the newer [structural certificates](research/STRUCTURE_PROOFS.md) extend the complete result through `N = 64`. The open target is
 
 $$
 \forall N\ge3,\quad\exists H,L>0,\quad
@@ -41,7 +41,7 @@ The [physical interpretation](research/PARITY_RESONANCE.md) shows that this mono
 
 The next mathematical tasks are:
 
-1. **Treat networks of changing pairs.** The persistent third-moment comparison graph already contains a component of size three for N=8 and one of size fourteen for N=14. Every instantaneous tie in these examples has size two, but the same player can meet different partners. A fixed pair's union of turns is then no longer independent of the other comparisons. We need an invariant or arithmetic argument for the whole interacting component. The [exact graph calculations](research/THIRD_COMPONENTS.md) give small concrete cases for testing such a lemma.
+1. **Prove canonical charge separation.** The [integer graph-charge theorem](research/NETWORK_CHARGES.md) now supplies an invariant for an interacting component of any size. It separates every component in the exact structural checks through N=64. The missing step is to derive sufficient separation from the canonical zero-origin history for arbitrary N, rather than checking a finite list of networks. Equal charges are inconclusive and may require another degree or a different invariant.
 2. **Resolve the exceptional closed binary case.** Prove that the canonical integer dynamics cannot produce the mean-level, phase-aligned occupancy resonance, or show that integer information beyond parity still bounds its depth. Exhaustive checks of the complete integer state spaces for N=3,...,7 find no binary mean ties. An explicit rational N=4 counterexample shows why a proof must retain integrality or canonical reachability. This remains a conjectural structural step.
 3. **Test degree four without assuming it.** Carry additional moment coefficients whenever degree four ties. Record the first deciding degree, the component, and the complete return map. A degree-four tie challenges the stronger bound; it does not refute eventual periodicity. The correct target is a finite bound depending on N.
 
@@ -58,6 +58,8 @@ The fourth rank weight is a strictly convex quadratic function of the second ran
 The binary false-start paper offers another model for the missing step. Its coefficient-cancellation process eventually leaves a nonzero arithmetic remainder for a non-Thue–Morse prefix. An analogous obstruction for a recurring multiplayer tie group would be useful. Its theorem cannot be applied merely by deleting other players' turns, because deletion changes the time exponents. See Khovanova and Madhavarapu, [*Fair Duels after a False Start*](https://arxiv.org/html/2610.00880v1), Theorems 1.1 and 4.6.
 
 The new all-fixed-degree induction has completed the normal-form part of this route. The work left is to bound the depth of the unresolved comparison networks, not to reprove the reduction at each degree.
+
+The [period theorem](PERIOD_BOUND.md) adds a universal restriction: if depth d separates the players, the least turn period divides `2N * lcm(1,...,N)^d`. In particular an eventual least period has no prime factor greater than N. This controls the possible period factors without establishing a bound on d.
 
 ## 3. Preserve exact certification when exploring further
 

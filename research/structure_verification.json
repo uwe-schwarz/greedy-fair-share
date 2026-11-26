@@ -1,0 +1,3223 @@
+{
+  "date": "2026-11-26",
+  "scope": "Exact structural proofs for every integer N=3..64; N=2 is an inconclusive control",
+  "deciding_degree": 4,
+  "least_periods_or_minimal_preperiods_computed": false,
+  "search_caps": {
+    "initial_blocks": 200000,
+    "raised_to_blocks": 1000000,
+    "raised_for_N": [
+      60,
+      62,
+      64
+    ]
+  },
+  "cases": [
+    {
+      "n": 2,
+      "lower_regime_start_blocks": 4,
+      "lower_period_blocks": 4,
+      "base_preperiod": 0,
+      "base_period": 2,
+      "discovery_blocks": 6,
+      "components": [
+        {
+          "slots": [
+            0,
+            1
+          ],
+          "size": 2,
+          "modulus": 64,
+          "potentials": {
+            "0": 0,
+            "1": 0
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 0,
+          "charges": {
+            "0": 0,
+            "1": 0
+          },
+          "unresolved_charge_classes": [
+            [
+              1,
+              0
+            ]
+          ],
+          "all_distinct": false,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": false,
+      "verdict": "INCONCLUSIVE: equal charges remain"
+    },
+    {
+      "n": 3,
+      "lower_regime_start_blocks": 12,
+      "lower_period_blocks": 3,
+      "base_preperiod": 3,
+      "base_period": 3,
+      "discovery_blocks": 15,
+      "components": [
+        {
+          "slots": [
+            0,
+            1,
+            2
+          ],
+          "size": 3,
+          "modulus": 0,
+          "potentials": {
+            "0": 0,
+            "1": -378,
+            "2": -438
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": -816,
+          "charges": {
+            "0": 1716,
+            "1": -378,
+            "2": -522
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 4,
+      "lower_regime_start_blocks": 15,
+      "lower_period_blocks": 12,
+      "base_preperiod": 3,
+      "base_period": 4,
+      "discovery_blocks": 19,
+      "components": [
+        {
+          "slots": [
+            1,
+            2
+          ],
+          "size": 2,
+          "modulus": 1536,
+          "potentials": {
+            "1": 0,
+            "2": 1492
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 1492,
+          "charges": {
+            "1": 534,
+            "3": 1046
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 5,
+      "lower_regime_start_blocks": 63,
+      "lower_period_blocks": 25,
+      "base_preperiod": 3,
+      "base_period": 5,
+      "discovery_blocks": 68,
+      "components": [
+        {
+          "slots": [
+            0,
+            1
+          ],
+          "size": 2,
+          "modulus": 200,
+          "potentials": {
+            "0": 0,
+            "1": 104
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 104,
+          "charges": {
+            "0": 54,
+            "2": 42
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            2,
+            3
+          ],
+          "size": 2,
+          "modulus": 200,
+          "potentials": {
+            "2": 0,
+            "3": 148
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 148,
+          "charges": {
+            "3": 114,
+            "4": 138
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 6,
+      "lower_regime_start_blocks": 98,
+      "lower_period_blocks": 36,
+      "base_preperiod": 14,
+      "base_period": 6,
+      "discovery_blocks": 104,
+      "components": [
+        {
+          "slots": [
+            1,
+            5
+          ],
+          "size": 2,
+          "modulus": 15552,
+          "potentials": {
+            "1": 0,
+            "5": 15144
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 15144,
+          "charges": {
+            "2": 13164,
+            "4": 2796
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 7,
+      "lower_regime_start_blocks": 30,
+      "lower_period_blocks": 12,
+      "base_preperiod": 6,
+      "base_period": 6,
+      "discovery_blocks": 36,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 8,
+      "lower_regime_start_blocks": 110,
+      "lower_period_blocks": 16,
+      "base_preperiod": 10,
+      "base_period": 2,
+      "discovery_blocks": 112,
+      "components": [
+        {
+          "slots": [
+            0,
+            3,
+            4
+          ],
+          "size": 3,
+          "modulus": 4096,
+          "potentials": {
+            "0": 0,
+            "3": 2568,
+            "4": 3865
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 6433,
+          "charges": {
+            "0": 3025,
+            "1": 391,
+            "6": 2439
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            5,
+            7
+          ],
+          "size": 2,
+          "modulus": 28672,
+          "potentials": {
+            "5": 0,
+            "7": 10672
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 10672,
+          "charges": {
+            "2": 5512,
+            "3": 12488
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 9,
+      "lower_regime_start_blocks": 251,
+      "lower_period_blocks": 135,
+      "base_preperiod": 8,
+      "base_period": 9,
+      "discovery_blocks": 260,
+      "components": [
+        {
+          "slots": [
+            0,
+            5
+          ],
+          "size": 2,
+          "modulus": 34992,
+          "potentials": {
+            "0": 0,
+            "5": 17676
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 17676,
+          "charges": {
+            "3": 18848,
+            "8": 33460
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            1,
+            4
+          ],
+          "size": 2,
+          "modulus": 17496,
+          "potentials": {
+            "1": 0,
+            "4": 1736
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 1736,
+          "charges": {
+            "2": 7952,
+            "5": 7808
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 10,
+      "lower_regime_start_blocks": 170,
+      "lower_period_blocks": 40,
+      "base_preperiod": 20,
+      "base_period": 10,
+      "discovery_blocks": 180,
+      "components": [
+        {
+          "slots": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "size": 4,
+          "modulus": 6400,
+          "potentials": {
+            "0": 0,
+            "3": 5372,
+            "5": 3744,
+            "6": 3200
+          },
+          "aggregate_divisor": 4,
+          "potential_sum": 12316,
+          "charges": {
+            "0": 2111,
+            "6": 983,
+            "7": 575,
+            "9": 3215
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            4,
+            9
+          ],
+          "size": 2,
+          "modulus": 473600,
+          "potentials": {
+            "4": 0,
+            "9": 379066
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 379066,
+          "charges": {
+            "1": 310407,
+            "2": 257727
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            7,
+            8
+          ],
+          "size": 2,
+          "modulus": 428800,
+          "potentials": {
+            "7": 0,
+            "8": 356478
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 356478,
+          "charges": {
+            "4": 115049,
+            "5": 386073
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 11,
+      "lower_regime_start_blocks": 83,
+      "lower_period_blocks": 48,
+      "base_preperiod": 13,
+      "base_period": 2,
+      "discovery_blocks": 85,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 12,
+      "lower_regime_start_blocks": 449,
+      "lower_period_blocks": 72,
+      "base_preperiod": 17,
+      "base_period": 6,
+      "discovery_blocks": 455,
+      "components": [
+        {
+          "slots": [
+            0,
+            7,
+            9
+          ],
+          "size": 3,
+          "modulus": 165888,
+          "potentials": {
+            "0": 0,
+            "7": 144336,
+            "9": 24195
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 168531,
+          "charges": {
+            "7": 113399,
+            "10": 71747,
+            "11": 143987
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 13,
+      "lower_regime_start_blocks": 76,
+      "lower_period_blocks": 36,
+      "base_preperiod": 13,
+      "base_period": 9,
+      "discovery_blocks": 85,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 14,
+      "lower_regime_start_blocks": 5789,
+      "lower_period_blocks": 196,
+      "base_preperiod": 21,
+      "base_period": 14,
+      "discovery_blocks": 5803,
+      "components": [
+        {
+          "slots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "size": 14,
+          "modulus": 21952,
+          "potentials": {
+            "0": 0,
+            "1": 19642,
+            "2": 15834,
+            "3": 11312,
+            "4": 9660,
+            "5": 20874,
+            "6": 9002,
+            "7": 5362,
+            "8": 12306,
+            "9": 9856,
+            "10": 7504,
+            "11": 490,
+            "12": 2100,
+            "13": 672
+          },
+          "aggregate_divisor": 14,
+          "potential_sum": 124614,
+          "charges": {
+            "0": 14525,
+            "1": 17773,
+            "2": 5593,
+            "3": 1953,
+            "4": 13293,
+            "5": 9625,
+            "6": 7357,
+            "7": 17577,
+            "8": 20937,
+            "9": 2373,
+            "10": 20545,
+            "11": 6153,
+            "12": 581,
+            "13": 525
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 15,
+      "lower_regime_start_blocks": 820,
+      "lower_period_blocks": 270,
+      "base_preperiod": 25,
+      "base_period": 15,
+      "discovery_blocks": 835,
+      "components": [
+        {
+          "slots": [
+            5,
+            11,
+            12
+          ],
+          "size": 3,
+          "modulus": 810000,
+          "potentials": {
+            "5": 0,
+            "11": 85278,
+            "12": 645594
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 730872,
+          "charges": {
+            "0": 192740,
+            "1": 451736,
+            "9": 244652
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            7,
+            8
+          ],
+          "size": 2,
+          "modulus": 810000,
+          "potentials": {
+            "7": 0,
+            "8": 488340
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 488340,
+          "charges": {
+            "10": 662882,
+            "14": 468778
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            13,
+            14
+          ],
+          "size": 2,
+          "modulus": 135000,
+          "potentials": {
+            "13": 0,
+            "14": 7308
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 7308,
+          "charges": {
+            "5": 73464,
+            "8": 54228
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 16,
+      "lower_regime_start_blocks": 2091,
+      "lower_period_blocks": 704,
+      "base_preperiod": 27,
+      "base_period": 16,
+      "discovery_blocks": 2107,
+      "components": [
+        {
+          "slots": [
+            1,
+            4,
+            12
+          ],
+          "size": 3,
+          "modulus": 589824,
+          "potentials": {
+            "1": 0,
+            "4": 568041,
+            "12": 211782
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 779823,
+          "charges": {
+            "7": 454925,
+            "10": 223385,
+            "11": 311339
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            3,
+            5
+          ],
+          "size": 2,
+          "modulus": 393216,
+          "potentials": {
+            "3": 0,
+            "5": 289598
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 289598,
+          "charges": {
+            "6": 158219,
+            "9": 338615
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            8,
+            10
+          ],
+          "size": 2,
+          "modulus": 393216,
+          "potentials": {
+            "8": 0,
+            "10": 344386
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 344386,
+          "charges": {
+            "2": 103085,
+            "5": 338961
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            9,
+            15
+          ],
+          "size": 2,
+          "modulus": 393216,
+          "potentials": {
+            "9": 0,
+            "15": 370452
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 370452,
+          "charges": {
+            "4": 227178,
+            "15": 188802
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 17,
+      "lower_regime_start_blocks": 498,
+      "lower_period_blocks": 462,
+      "base_preperiod": 36,
+      "base_period": 66,
+      "discovery_blocks": 564,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 18,
+      "lower_regime_start_blocks": 1124,
+      "lower_period_blocks": 252,
+      "base_preperiod": 44,
+      "base_period": 18,
+      "discovery_blocks": 1142,
+      "components": [
+        {
+          "slots": [
+            3,
+            6
+          ],
+          "size": 2,
+          "modulus": 1119744,
+          "potentials": {
+            "3": 0,
+            "6": 323022
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 323022,
+          "charges": {
+            "1": 802465,
+            "7": 1114001
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            5,
+            8,
+            14
+          ],
+          "size": 3,
+          "modulus": 93312,
+          "potentials": {
+            "5": 0,
+            "8": 34908,
+            "14": 27303
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 62211,
+          "charges": {
+            "3": 9659,
+            "5": 39953,
+            "10": 74801
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            7,
+            10
+          ],
+          "size": 2,
+          "modulus": 1119744,
+          "potentials": {
+            "7": 0,
+            "10": 175770
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 175770,
+          "charges": {
+            "8": 631793,
+            "12": 312181
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            9,
+            13
+          ],
+          "size": 2,
+          "modulus": 62208,
+          "potentials": {
+            "9": 0,
+            "13": 7046
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 7046,
+          "charges": {
+            "4": 48167,
+            "14": 6995
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 19,
+      "lower_regime_start_blocks": 3565,
+      "lower_period_blocks": 3120,
+      "base_preperiod": 29,
+      "base_period": 52,
+      "discovery_blocks": 3617,
+      "components": [
+        {
+          "slots": [
+            9,
+            18
+          ],
+          "size": 2,
+          "modulus": 5776,
+          "potentials": {
+            "9": 0,
+            "18": 1352
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 1352,
+          "charges": {
+            "4": 3368,
+            "17": 1056
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 20,
+      "lower_regime_start_blocks": 831,
+      "lower_period_blocks": 720,
+      "base_preperiod": 39,
+      "base_period": 18,
+      "discovery_blocks": 849,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 21,
+      "lower_regime_start_blocks": 5315,
+      "lower_period_blocks": 315,
+      "base_preperiod": 23,
+      "base_period": 21,
+      "discovery_blocks": 5336,
+      "components": [
+        {
+          "slots": [
+            3,
+            16,
+            17
+          ],
+          "size": 3,
+          "modulus": 74088,
+          "potentials": {
+            "3": 0,
+            "16": 45090,
+            "17": 8646
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 53736,
+          "charges": {
+            "1": 60402,
+            "5": 38694,
+            "20": 69432
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            10,
+            12
+          ],
+          "size": 2,
+          "modulus": 518616,
+          "potentials": {
+            "10": 0,
+            "12": 380112
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 380112,
+          "charges": {
+            "14": 168492,
+            "15": 488628
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 22,
+      "lower_regime_start_blocks": 867,
+      "lower_period_blocks": 792,
+      "base_preperiod": 51,
+      "base_period": 12,
+      "discovery_blocks": 879,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 23,
+      "lower_regime_start_blocks": 2274,
+      "lower_period_blocks": 690,
+      "base_preperiod": 20,
+      "base_period": 23,
+      "discovery_blocks": 2297,
+      "components": [
+        {
+          "slots": [
+            6,
+            7
+          ],
+          "size": 2,
+          "modulus": 8464,
+          "potentials": {
+            "6": 0,
+            "7": 4744
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 4744,
+          "charges": {
+            "3": 6426,
+            "21": 5758
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            11,
+            21
+          ],
+          "size": 2,
+          "modulus": 8464,
+          "potentials": {
+            "11": 0,
+            "21": 6928
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 6928,
+          "charges": {
+            "16": 6456,
+            "19": 3544
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 24,
+      "lower_regime_start_blocks": 13061,
+      "lower_period_blocks": 528,
+      "base_preperiod": 101,
+      "base_period": 24,
+      "discovery_blocks": 13085,
+      "components": [
+        {
+          "slots": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            10,
+            13
+          ],
+          "size": 7,
+          "modulus": 18432,
+          "potentials": {
+            "0": 0,
+            "3": 4867,
+            "4": 13040,
+            "5": 14923,
+            "6": 12984,
+            "10": 6756,
+            "13": 15344
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 67914,
+          "charges": {
+            "1": 11672,
+            "3": 3818,
+            "6": 6886,
+            "11": 15448,
+            "13": 12576,
+            "15": 1612,
+            "17": 9098
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            2,
+            7,
+            14,
+            15,
+            16,
+            17,
+            19,
+            20
+          ],
+          "size": 8,
+          "modulus": 18432,
+          "potentials": {
+            "2": 0,
+            "7": 8624,
+            "14": 1320,
+            "15": 9264,
+            "16": 11232,
+            "17": 12080,
+            "19": 5440,
+            "20": 768
+          },
+          "aggregate_divisor": 8,
+          "potential_sum": 48728,
+          "charges": {
+            "0": 5113,
+            "2": 16425,
+            "8": 7081,
+            "10": 6121,
+            "12": 16761,
+            "18": 6825,
+            "19": 14425,
+            "20": 7545
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 25,
+      "lower_regime_start_blocks": 523,
+      "lower_period_blocks": 210,
+      "base_preperiod": 28,
+      "base_period": 15,
+      "discovery_blocks": 538,
+      "components": [
+        {
+          "slots": [
+            4,
+            20
+          ],
+          "size": 2,
+          "modulus": 10000,
+          "potentials": {
+            "4": 0,
+            "20": 636
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 636,
+          "charges": {
+            "7": 7590,
+            "21": 1774
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 26,
+      "lower_regime_start_blocks": 2311,
+      "lower_period_blocks": 176,
+      "base_preperiod": 45,
+      "base_period": 22,
+      "discovery_blocks": 2333,
+      "components": [
+        {
+          "slots": [
+            7,
+            8,
+            24
+          ],
+          "size": 3,
+          "modulus": 41890368,
+          "potentials": {
+            "7": 0,
+            "8": 7081677,
+            "24": 10534476
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 17616153,
+          "charges": {
+            "2": 39219,
+            "12": 26448591,
+            "22": 39676773
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            14,
+            15
+          ],
+          "size": 2,
+          "modulus": 27926912,
+          "potentials": {
+            "14": 0,
+            "15": 0
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 0,
+          "charges": {
+            "14": 25734898,
+            "21": 2192014
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            18,
+            21
+          ],
+          "size": 2,
+          "modulus": 27926912,
+          "potentials": {
+            "18": 0,
+            "21": 6687828
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 6687828,
+          "charges": {
+            "10": 4559232,
+            "16": 16679852
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 27,
+      "lower_regime_start_blocks": 185,
+      "lower_period_blocks": 108,
+      "base_preperiod": 41,
+      "base_period": 18,
+      "discovery_blocks": 203,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 28,
+      "lower_regime_start_blocks": 7151,
+      "lower_period_blocks": 6720,
+      "base_preperiod": 47,
+      "base_period": 48,
+      "discovery_blocks": 7199,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 29,
+      "lower_regime_start_blocks": 628,
+      "lower_period_blocks": 156,
+      "base_preperiod": 30,
+      "base_period": 13,
+      "discovery_blocks": 641,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 30,
+      "lower_regime_start_blocks": 13230,
+      "lower_period_blocks": 1620,
+      "base_preperiod": 60,
+      "base_period": 30,
+      "discovery_blocks": 13260,
+      "components": [
+        {
+          "slots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            23,
+            24,
+            26,
+            27,
+            28,
+            29
+          ],
+          "size": 27,
+          "modulus": 194400,
+          "potentials": {
+            "0": 0,
+            "1": 45306,
+            "2": 38961,
+            "3": 3321,
+            "4": 103491,
+            "5": 132273,
+            "7": 15201,
+            "8": 95526,
+            "9": 27486,
+            "10": 132786,
+            "11": 183249,
+            "12": 59184,
+            "13": 192213,
+            "14": 33885,
+            "15": 183627,
+            "16": 121230,
+            "17": 97038,
+            "18": 60939,
+            "19": 133407,
+            "20": 184383,
+            "21": 61965,
+            "23": 187272,
+            "24": 31077,
+            "26": 48789,
+            "27": 44415,
+            "28": 145152,
+            "29": 73548
+          },
+          "aggregate_divisor": 27,
+          "potential_sum": 2435724,
+          "charges": {
+            "0": 126642,
+            "1": 134148,
+            "2": 124104,
+            "3": 180642,
+            "4": 64164,
+            "6": 145056,
+            "7": 166548,
+            "8": 40512,
+            "9": 138090,
+            "10": 154074,
+            "11": 161688,
+            "12": 66270,
+            "13": 35544,
+            "14": 186150,
+            "15": 90570,
+            "16": 25230,
+            "18": 13296,
+            "19": 40026,
+            "20": 6438,
+            "21": 88194,
+            "22": 84792,
+            "23": 86628,
+            "24": 84522,
+            "25": 122160,
+            "26": 44616,
+            "28": 149430,
+            "29": 59142
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 31,
+      "lower_regime_start_blocks": 1085,
+      "lower_period_blocks": 528,
+      "base_preperiod": 73,
+      "base_period": 22,
+      "discovery_blocks": 1107,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 32,
+      "lower_regime_start_blocks": 28042,
+      "lower_period_blocks": 512,
+      "base_preperiod": 74,
+      "base_period": 32,
+      "discovery_blocks": 28074,
+      "components": [
+        {
+          "slots": [
+            0,
+            11,
+            30
+          ],
+          "size": 3,
+          "modulus": 16384,
+          "potentials": {
+            "0": 0,
+            "11": 13697,
+            "30": 2975
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 16672,
+          "charges": {
+            "2": 7048,
+            "3": 3160,
+            "17": 5888
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            2,
+            4,
+            17,
+            19,
+            22
+          ],
+          "size": 5,
+          "modulus": 16384,
+          "potentials": {
+            "2": 0,
+            "4": 8022,
+            "17": 12845,
+            "19": 12629,
+            "22": 801
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 34297,
+          "charges": {
+            "9": 8783,
+            "20": 15237,
+            "21": 6635,
+            "27": 10489,
+            "29": 6479
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            3,
+            5,
+            15
+          ],
+          "size": 3,
+          "modulus": 16384,
+          "potentials": {
+            "3": 0,
+            "5": 3269,
+            "15": 86
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 3355,
+          "charges": {
+            "8": 14083,
+            "19": 8863,
+            "28": 6467
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            6,
+            14
+          ],
+          "size": 2,
+          "modulus": 425738240,
+          "potentials": {
+            "6": 0,
+            "14": 406521674
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 406521674,
+          "charges": {
+            "13": 159914311,
+            "31": 285040495
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            8,
+            28,
+            29
+          ],
+          "size": 3,
+          "modulus": 16384,
+          "potentials": {
+            "8": 0,
+            "28": 10366,
+            "29": 12725
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 23091,
+          "charges": {
+            "1": 15257,
+            "5": 10335,
+            "7": 469
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            10,
+            23,
+            24
+          ],
+          "size": 3,
+          "modulus": 16384,
+          "potentials": {
+            "10": 0,
+            "23": 4547,
+            "24": 2130
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 6677,
+          "charges": {
+            "4": 16131,
+            "11": 7655,
+            "23": 2305
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            12,
+            20
+          ],
+          "size": 2,
+          "modulus": 425738240,
+          "potentials": {
+            "12": 0,
+            "20": 30354654
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 30354654,
+          "charges": {
+            "0": 410028113,
+            "22": 411093713
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            13,
+            21,
+            27
+          ],
+          "size": 3,
+          "modulus": 16384,
+          "potentials": {
+            "13": 0,
+            "21": 2618,
+            "27": 9042
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 11660,
+          "charges": {
+            "6": 922,
+            "14": 11596,
+            "30": 8590
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            16,
+            18,
+            26
+          ],
+          "size": 3,
+          "modulus": 16384,
+          "potentials": {
+            "16": 0,
+            "18": 13784,
+            "26": 3694
+          },
+          "aggregate_divisor": 1,
+          "potential_sum": 17478,
+          "charges": {
+            "16": 3322,
+            "18": 14818,
+            "25": 13534
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 33,
+      "lower_regime_start_blocks": 7178,
+      "lower_period_blocks": 3366,
+      "base_preperiod": 83,
+      "base_period": 33,
+      "discovery_blocks": 7211,
+      "components": [
+        {
+          "slots": [
+            1,
+            8
+          ],
+          "size": 2,
+          "modulus": 50599296,
+          "potentials": {
+            "1": 0,
+            "8": 38388112
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 38388112,
+          "charges": {
+            "5": 4774972,
+            "21": 7436212
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            15,
+            25
+          ],
+          "size": 2,
+          "modulus": 3162456,
+          "potentials": {
+            "15": 0,
+            "25": 2794536
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 2794536,
+          "charges": {
+            "0": 1124744,
+            "26": 2405632
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 34,
+      "lower_regime_start_blocks": 1661,
+      "lower_period_blocks": 1440,
+      "base_preperiod": 77,
+      "base_period": 144,
+      "discovery_blocks": 1805,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 35,
+      "lower_regime_start_blocks": 926,
+      "lower_period_blocks": 702,
+      "base_preperiod": 68,
+      "base_period": 26,
+      "discovery_blocks": 952,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 36,
+      "lower_regime_start_blocks": 5420,
+      "lower_period_blocks": 2520,
+      "base_preperiod": 56,
+      "base_period": 18,
+      "discovery_blocks": 5438,
+      "components": [
+        {
+          "slots": [
+            0,
+            4,
+            27,
+            34
+          ],
+          "size": 4,
+          "modulus": 746496,
+          "potentials": {
+            "0": 0,
+            "4": 469108,
+            "27": 530740,
+            "34": 585508
+          },
+          "aggregate_divisor": 4,
+          "potential_sum": 1585356,
+          "charges": {
+            "4": 215199,
+            "6": 422543,
+            "13": 400647,
+            "14": 362239
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            9,
+            10,
+            35
+          ],
+          "size": 3,
+          "modulus": 3359232,
+          "potentials": {
+            "9": 0,
+            "10": 3239181,
+            "35": 1257612
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 4496793,
+          "charges": {
+            "7": 3108035,
+            "8": 1203095,
+            "19": 1269773
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 37,
+      "lower_regime_start_blocks": 1187,
+      "lower_period_blocks": 896,
+      "base_preperiod": 67,
+      "base_period": 112,
+      "discovery_blocks": 1299,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 38,
+      "lower_regime_start_blocks": 8726,
+      "lower_period_blocks": 6240,
+      "base_preperiod": 86,
+      "base_period": 24,
+      "discovery_blocks": 8750,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 39,
+      "lower_regime_start_blocks": 15644,
+      "lower_period_blocks": 2772,
+      "base_preperiod": 101,
+      "base_period": 33,
+      "discovery_blocks": 15677,
+      "components": [
+        {
+          "slots": [
+            15,
+            16
+          ],
+          "size": 2,
+          "modulus": 73008,
+          "potentials": {
+            "15": 0,
+            "16": 72696
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 72696,
+          "charges": {
+            "15": 21902,
+            "35": 51418
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 40,
+      "lower_regime_start_blocks": 2546,
+      "lower_period_blocks": 640,
+      "base_preperiod": 50,
+      "base_period": 32,
+      "discovery_blocks": 2578,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 41,
+      "lower_regime_start_blocks": 4656,
+      "lower_period_blocks": 3108,
+      "base_preperiod": 68,
+      "base_period": 148,
+      "discovery_blocks": 4804,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 42,
+      "lower_regime_start_blocks": 115794,
+      "lower_period_blocks": 45864,
+      "base_preperiod": 84,
+      "base_period": 42,
+      "discovery_blocks": 115836,
+      "components": [
+        {
+          "slots": [
+            0,
+            39
+          ],
+          "size": 2,
+          "modulus": 1778196672,
+          "potentials": {
+            "0": 0,
+            "39": 446902406
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 446902406,
+          "charges": {
+            "38": 253367185,
+            "39": 1077927081
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            4,
+            25
+          ],
+          "size": 2,
+          "modulus": 16595712,
+          "potentials": {
+            "4": 0,
+            "25": 5984412
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 5984412,
+          "charges": {
+            "17": 14140220,
+            "20": 13066792
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            11,
+            15,
+            24
+          ],
+          "size": 3,
+          "modulus": 24893568,
+          "potentials": {
+            "11": 0,
+            "15": 13216770,
+            "24": 15383856
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 28600626,
+          "charges": {
+            "1": 17606014,
+            "28": 14169958,
+            "32": 14304106
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            12,
+            14
+          ],
+          "size": 2,
+          "modulus": 16595712,
+          "potentials": {
+            "12": 0,
+            "14": 8333318
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 8333318,
+          "charges": {
+            "12": 6047861,
+            "23": 2214533
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            17,
+            23
+          ],
+          "size": 2,
+          "modulus": 16595712,
+          "potentials": {
+            "17": 0,
+            "23": 7708984
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 7708984,
+          "charges": {
+            "8": 14605396,
+            "22": 10877044
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            18,
+            20,
+            36
+          ],
+          "size": 3,
+          "modulus": 24893568,
+          "potentials": {
+            "18": 0,
+            "20": 23477775,
+            "36": 19774902
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 43252677,
+          "charges": {
+            "11": 14661025,
+            "13": 8988991,
+            "27": 7778011
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            27,
+            30
+          ],
+          "size": 2,
+          "modulus": 1771084224,
+          "potentials": {
+            "27": 0,
+            "30": 258816730
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 258816730,
+          "charges": {
+            "4": 618496449,
+            "14": 893771045
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 43,
+      "lower_regime_start_blocks": 3525,
+      "lower_period_blocks": 2646,
+      "base_preperiod": 123,
+      "base_period": 378,
+      "discovery_blocks": 3903,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 44,
+      "lower_regime_start_blocks": 10230,
+      "lower_period_blocks": 9900,
+      "base_preperiod": 120,
+      "base_period": 30,
+      "discovery_blocks": 10260,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 45,
+      "lower_regime_start_blocks": 19315,
+      "lower_period_blocks": 2700,
+      "base_preperiod": 55,
+      "base_period": 45,
+      "discovery_blocks": 19360,
+      "components": [
+        {
+          "slots": [
+            13,
+            44
+          ],
+          "size": 2,
+          "modulus": 65610000,
+          "potentials": {
+            "13": 0,
+            "44": 61790364
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 61790364,
+          "charges": {
+            "20": 611376,
+            "36": 3208260
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            15,
+            32
+          ],
+          "size": 2,
+          "modulus": 43740000,
+          "potentials": {
+            "15": 0,
+            "32": 20768920
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 20768920,
+          "charges": {
+            "0": 6558362,
+            "24": 16412718
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            31,
+            34
+          ],
+          "size": 2,
+          "modulus": 21870000,
+          "potentials": {
+            "31": 0,
+            "34": 9041736
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 9041736,
+          "charges": {
+            "15": 7170564,
+            "34": 5657700
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            42,
+            43
+          ],
+          "size": 2,
+          "modulus": 327078000,
+          "potentials": {
+            "42": 0,
+            "43": 219472
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 219472,
+          "charges": {
+            "26": 319161220,
+            "44": 7697308
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 46,
+      "lower_regime_start_blocks": 16871,
+      "lower_period_blocks": 14040,
+      "base_preperiod": 203,
+      "base_period": 36,
+      "discovery_blocks": 16907,
+      "components": [
+        {
+          "slots": [
+            27,
+            31
+          ],
+          "size": 2,
+          "modulus": 65816064,
+          "potentials": {
+            "27": 0,
+            "31": 19509960
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 19509960,
+          "charges": {
+            "17": 55091060,
+            "20": 57031108
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 47,
+      "lower_regime_start_blocks": 12309,
+      "lower_period_blocks": 3444,
+      "base_preperiod": 91,
+      "base_period": 41,
+      "discovery_blocks": 12350,
+      "components": [
+        {
+          "slots": [
+            11,
+            16
+          ],
+          "size": 2,
+          "modulus": 1027626800,
+          "potentials": {
+            "11": 0,
+            "16": 396488664
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 396488664,
+          "charges": {
+            "25": 514446864,
+            "35": 116691272
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            14,
+            17
+          ],
+          "size": 2,
+          "modulus": 334672336,
+          "potentials": {
+            "14": 0,
+            "17": 259116280
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 259116280,
+          "charges": {
+            "4": 42938464,
+            "29": 32617592
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            18,
+            19
+          ],
+          "size": 2,
+          "modulus": 334672336,
+          "potentials": {
+            "18": 0,
+            "19": 331765956
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 331765956,
+          "charges": {
+            "37": 18203644,
+            "41": 319375072
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 48,
+      "lower_regime_start_blocks": 42106,
+      "lower_period_blocks": 2592,
+      "base_preperiod": 202,
+      "base_period": 48,
+      "discovery_blocks": 42154,
+      "components": [
+        {
+          "slots": [
+            1,
+            2
+          ],
+          "size": 2,
+          "modulus": 36864,
+          "potentials": {
+            "1": 0,
+            "2": 0
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 0,
+          "charges": {
+            "4": 22606,
+            "14": 14258
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            3,
+            4,
+            6,
+            7,
+            8,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            22,
+            23,
+            27,
+            29,
+            31,
+            32,
+            33,
+            34,
+            35,
+            38,
+            40,
+            41,
+            42,
+            44,
+            45,
+            47
+          ],
+          "size": 27,
+          "modulus": 497664,
+          "potentials": {
+            "3": 0,
+            "4": 189216,
+            "6": 172260,
+            "7": 413046,
+            "8": 103923,
+            "11": 342495,
+            "12": 486486,
+            "13": 400113,
+            "14": 386289,
+            "15": 134163,
+            "18": 186732,
+            "22": 312903,
+            "23": 251775,
+            "27": 330399,
+            "29": 400140,
+            "31": 245700,
+            "32": 22032,
+            "33": 332370,
+            "34": 282339,
+            "35": 458136,
+            "38": 486837,
+            "40": 310554,
+            "41": 220671,
+            "42": 63396,
+            "44": 172449,
+            "45": 27432,
+            "47": 60831
+          },
+          "aggregate_divisor": 27,
+          "potential_sum": 6792687,
+          "charges": {
+            "1": 257613,
+            "2": 170619,
+            "5": 356325,
+            "7": 355677,
+            "9": 216303,
+            "10": 76227,
+            "11": 384729,
+            "12": 495159,
+            "13": 495321,
+            "16": 69207,
+            "17": 88539,
+            "18": 171645,
+            "19": 188817,
+            "21": 337965,
+            "22": 492513,
+            "24": 43395,
+            "26": 398769,
+            "27": 480471,
+            "30": 109707,
+            "32": 409623,
+            "33": 122019,
+            "38": 281535,
+            "39": 148965,
+            "42": 372849,
+            "43": 203019,
+            "44": 84273,
+            "45": 330621
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            19,
+            46
+          ],
+          "size": 2,
+          "modulus": 36864,
+          "potentials": {
+            "19": 0,
+            "46": 2422
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 2422,
+          "charges": {
+            "20": 22557,
+            "41": 11885
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            24,
+            36
+          ],
+          "size": 2,
+          "modulus": 36864,
+          "potentials": {
+            "24": 0,
+            "36": 12092
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 12092,
+          "charges": {
+            "6": 20296,
+            "47": 4476
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            25,
+            26
+          ],
+          "size": 2,
+          "modulus": 36864,
+          "potentials": {
+            "25": 0,
+            "26": 18066
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 18066,
+          "charges": {
+            "23": 14737,
+            "46": 4061
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 49,
+      "lower_regime_start_blocks": 9884,
+      "lower_period_blocks": 9100,
+      "base_preperiod": 134,
+      "base_period": 130,
+      "discovery_blocks": 10014,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 50,
+      "lower_regime_start_blocks": 58277,
+      "lower_period_blocks": 42000,
+      "base_preperiod": 77,
+      "base_period": 50,
+      "discovery_blocks": 58327,
+      "components": [
+        {
+          "slots": [
+            8,
+            14,
+            22
+          ],
+          "size": 3,
+          "modulus": 75000000,
+          "potentials": {
+            "8": 0,
+            "14": 40186962,
+            "22": 16790541
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 56977503,
+          "charges": {
+            "0": 43629243,
+            "16": 48781245,
+            "38": 612009
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            33,
+            40
+          ],
+          "size": 2,
+          "modulus": 25000000,
+          "potentials": {
+            "33": 0,
+            "40": 12493400
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 12493400,
+          "charges": {
+            "7": 3346430,
+            "39": 9160170
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            39,
+            49
+          ],
+          "size": 2,
+          "modulus": 50000000,
+          "potentials": {
+            "39": 0,
+            "49": 5089450
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 5089450,
+          "charges": {
+            "3": 24745091,
+            "23": 20165459
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 51,
+      "lower_regime_start_blocks": 140166,
+      "lower_period_blocks": 14850,
+      "base_preperiod": 81,
+      "base_period": 45,
+      "discovery_blocks": 140211,
+      "components": [
+        {
+          "slots": [
+            6,
+            50
+          ],
+          "size": 2,
+          "modulus": 28090800,
+          "potentials": {
+            "6": 0,
+            "50": 6668128
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 6668128,
+          "charges": {
+            "2": 21620038,
+            "6": 27893434
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            11,
+            49
+          ],
+          "size": 2,
+          "modulus": 62424,
+          "potentials": {
+            "11": 0,
+            "49": 4704
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 4704,
+          "charges": {
+            "17": 5072,
+            "45": 52648
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            12,
+            14,
+            35,
+            48
+          ],
+          "size": 4,
+          "modulus": 124848,
+          "potentials": {
+            "12": 0,
+            "14": 34040,
+            "35": 8000,
+            "48": 111672
+          },
+          "aggregate_divisor": 4,
+          "potential_sum": 153712,
+          "charges": {
+            "3": 52722,
+            "10": 111818,
+            "29": 62594,
+            "36": 118546
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            13,
+            47
+          ],
+          "size": 2,
+          "modulus": 62424,
+          "potentials": {
+            "13": 0,
+            "47": 47432
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 47432,
+          "charges": {
+            "9": 7714,
+            "40": 7278
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            25,
+            29,
+            38
+          ],
+          "size": 3,
+          "modulus": 187272,
+          "potentials": {
+            "25": 0,
+            "29": 32040,
+            "38": 96222
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 128262,
+          "charges": {
+            "4": 134848,
+            "21": 107086,
+            "32": 4348
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            26,
+            27
+          ],
+          "size": 2,
+          "modulus": 62424,
+          "potentials": {
+            "26": 0,
+            "27": 28948
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 28948,
+          "charges": {
+            "19": 38492,
+            "22": 57408
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            30,
+            33
+          ],
+          "size": 2,
+          "modulus": 62424,
+          "potentials": {
+            "30": 0,
+            "33": 21392
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 21392,
+          "charges": {
+            "1": 10484,
+            "27": 30548
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            39,
+            44,
+            46
+          ],
+          "size": 3,
+          "modulus": 187272,
+          "potentials": {
+            "39": 0,
+            "44": 44526,
+            "46": 84774
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 129300,
+          "charges": {
+            "26": 143480,
+            "38": 131888,
+            "50": 157148
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 52,
+      "lower_regime_start_blocks": 58773,
+      "lower_period_blocks": 55440,
+      "base_preperiod": 93,
+      "base_period": 72,
+      "discovery_blocks": 58845,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 53,
+      "lower_regime_start_blocks": 2062,
+      "lower_period_blocks": 858,
+      "base_preperiod": 138,
+      "base_period": 26,
+      "discovery_blocks": 2088,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 54,
+      "lower_regime_start_blocks": 39806,
+      "lower_period_blocks": 1620,
+      "base_preperiod": 116,
+      "base_period": 54,
+      "discovery_blocks": 39860,
+      "components": [
+        {
+          "slots": [
+            22,
+            47
+          ],
+          "size": 2,
+          "modulus": 839808,
+          "potentials": {
+            "22": 0,
+            "47": 451714
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 451714,
+          "charges": {
+            "14": 371175,
+            "24": 16919
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 55,
+      "lower_regime_start_blocks": 13460,
+      "lower_period_blocks": 12600,
+      "base_preperiod": 125,
+      "base_period": 35,
+      "discovery_blocks": 13495,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 56,
+      "lower_regime_start_blocks": 7811,
+      "lower_period_blocks": 7560,
+      "base_preperiod": 107,
+      "base_period": 36,
+      "discovery_blocks": 7847,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 57,
+      "lower_regime_start_blocks": 137106,
+      "lower_period_blocks": 59850,
+      "base_preperiod": 78,
+      "base_period": 57,
+      "discovery_blocks": 137163,
+      "components": [
+        {
+          "slots": [
+            10,
+            21
+          ],
+          "size": 2,
+          "modulus": 168896016,
+          "potentials": {
+            "10": 0,
+            "21": 165048680
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 165048680,
+          "charges": {
+            "44": 57576370,
+            "46": 115166982
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            12,
+            27
+          ],
+          "size": 2,
+          "modulus": 168896016,
+          "potentials": {
+            "12": 0,
+            "27": 74554816
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 74554816,
+          "charges": {
+            "39": 72848862,
+            "41": 21492338
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            17,
+            55
+          ],
+          "size": 2,
+          "modulus": 168896016,
+          "potentials": {
+            "17": 0,
+            "55": 158559652
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 158559652,
+          "charges": {
+            "21": 131599662,
+            "38": 47632718
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            18,
+            37,
+            56
+          ],
+          "size": 3,
+          "modulus": 168896016,
+          "potentials": {
+            "18": 0,
+            "37": 70565562,
+            "56": 79995558
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 150561120,
+          "charges": {
+            "5": 109829960,
+            "26": 52594016,
+            "47": 24806936
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            19,
+            23,
+            41
+          ],
+          "size": 3,
+          "modulus": 168896016,
+          "potentials": {
+            "19": 0,
+            "23": 126101682,
+            "41": 91736946
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 217838628,
+          "charges": {
+            "19": 52902660,
+            "20": 116756736,
+            "40": 119190024
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 58,
+      "lower_regime_start_blocks": 15033,
+      "lower_period_blocks": 14790,
+      "base_preperiod": 107,
+      "base_period": 34,
+      "discovery_blocks": 15067,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 59,
+      "lower_regime_start_blocks": 44931,
+      "lower_period_blocks": 37170,
+      "base_preperiod": 91,
+      "base_period": 59,
+      "discovery_blocks": 44990,
+      "components": [
+        {
+          "slots": [
+            19,
+            36
+          ],
+          "size": 2,
+          "modulus": 96938888,
+          "potentials": {
+            "19": 0,
+            "36": 78712588
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 78712588,
+          "charges": {
+            "9": 64268702,
+            "11": 50896486
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 60,
+      "lower_regime_start_blocks": 373908,
+      "lower_period_blocks": 9600,
+      "base_preperiod": 168,
+      "base_period": 60,
+      "discovery_blocks": 373968,
+      "components": [
+        {
+          "slots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            22,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            38,
+            39,
+            40,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "size": 56,
+          "modulus": 230400,
+          "potentials": {
+            "0": 0,
+            "1": 50512,
+            "2": 13000,
+            "3": 16192,
+            "4": 55600,
+            "5": 176544,
+            "6": 149664,
+            "7": 84304,
+            "8": 168320,
+            "9": 177160,
+            "10": 192520,
+            "11": 80216,
+            "12": 171024,
+            "13": 58824,
+            "14": 81144,
+            "15": 178728,
+            "16": 220936,
+            "17": 145944,
+            "18": 167888,
+            "19": 189816,
+            "20": 64944,
+            "22": 86248,
+            "24": 185120,
+            "25": 36648,
+            "26": 173584,
+            "27": 228448,
+            "28": 144136,
+            "29": 205808,
+            "30": 20016,
+            "31": 26296,
+            "32": 100536,
+            "33": 70672,
+            "34": 166888,
+            "35": 72720,
+            "36": 130392,
+            "38": 229016,
+            "39": 97264,
+            "40": 95456,
+            "42": 198456,
+            "43": 118112,
+            "44": 113936,
+            "45": 48208,
+            "46": 175392,
+            "47": 189560,
+            "48": 102752,
+            "49": 143984,
+            "50": 200144,
+            "51": 190248,
+            "52": 73568,
+            "53": 84456,
+            "54": 44072,
+            "55": 206384,
+            "56": 9616,
+            "57": 183920,
+            "58": 119096,
+            "59": 82464
+          },
+          "aggregate_divisor": 8,
+          "potential_sum": 6796896,
+          "charges": {
+            "0": 74082,
+            "2": 209442,
+            "4": 17698,
+            "5": 209922,
+            "6": 187170,
+            "7": 148130,
+            "8": 196722,
+            "9": 205490,
+            "10": 58306,
+            "11": 175218,
+            "12": 131522,
+            "13": 128690,
+            "14": 57650,
+            "15": 1298,
+            "16": 97474,
+            "18": 17842,
+            "19": 64050,
+            "20": 106578,
+            "21": 5666,
+            "22": 2018,
+            "23": 96306,
+            "24": 50194,
+            "25": 192242,
+            "26": 139506,
+            "27": 199330,
+            "28": 215170,
+            "29": 219090,
+            "30": 131186,
+            "31": 196690,
+            "32": 122690,
+            "33": 142162,
+            "34": 73730,
+            "35": 52498,
+            "36": 142354,
+            "37": 92242,
+            "38": 184450,
+            "39": 126658,
+            "40": 132082,
+            "41": 89266,
+            "42": 8034,
+            "43": 175474,
+            "45": 57266,
+            "46": 99058,
+            "47": 225570,
+            "48": 216978,
+            "49": 39010,
+            "50": 209202,
+            "51": 49170,
+            "52": 167810,
+            "53": 52306,
+            "54": 14658,
+            "55": 135346,
+            "56": 75810,
+            "57": 13954,
+            "58": 218514,
+            "59": 115330
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 61,
+      "lower_regime_start_blocks": 32920,
+      "lower_period_blocks": 11544,
+      "base_preperiod": 64,
+      "base_period": 888,
+      "discovery_blocks": 33808,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 62,
+      "lower_regime_start_blocks": 402699,
+      "lower_period_blocks": 327600,
+      "base_preperiod": 99,
+      "base_period": 60,
+      "discovery_blocks": 402759,
+      "components": [
+        {
+          "slots": [
+            4,
+            22
+          ],
+          "size": 2,
+          "modulus": 73804800,
+          "potentials": {
+            "4": 0,
+            "22": 37060774
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 37060774,
+          "charges": {
+            "24": 65410389,
+            "45": 45138437
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            7,
+            8,
+            49
+          ],
+          "size": 3,
+          "modulus": 110707200,
+          "potentials": {
+            "7": 0,
+            "8": 37409862,
+            "49": 23585421
+          },
+          "aggregate_divisor": 3,
+          "potential_sum": 60995283,
+          "charges": {
+            "46": 90120399,
+            "47": 47244141,
+            "59": 23054577
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            9,
+            28
+          ],
+          "size": 2,
+          "modulus": 984064,
+          "potentials": {
+            "9": 0,
+            "28": 412518
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 412518,
+          "charges": {
+            "5": 555845,
+            "12": 15701
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        },
+        {
+          "slots": [
+            53,
+            60
+          ],
+          "size": 2,
+          "modulus": 984064,
+          "potentials": {
+            "53": 0,
+            "60": 661520
+          },
+          "aggregate_divisor": 2,
+          "potential_sum": 661520,
+          "charges": {
+            "13": 966078,
+            "20": 340530
+          },
+          "unresolved_charge_classes": [],
+          "all_distinct": true,
+          "forced_split_by_aggregate": false
+        }
+      ],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 63,
+      "lower_regime_start_blocks": 35165,
+      "lower_period_blocks": 21384,
+      "base_preperiod": 65,
+      "base_period": 108,
+      "discovery_blocks": 35273,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    },
+    {
+      "n": 64,
+      "lower_regime_start_blocks": 226343,
+      "lower_period_blocks": 225420,
+      "base_preperiod": 413,
+      "base_period": 510,
+      "discovery_blocks": 226853,
+      "components": [],
+      "all_components_separated": true,
+      "verdict": "PROVED EVENTUALLY PERIODIC"
+    }
+  ]
+}
