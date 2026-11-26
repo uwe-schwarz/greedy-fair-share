@@ -1,0 +1,339 @@
+{
+  "date": "2026-11-26",
+  "method": "independent exact integer prefix replay and two-cycle all-future certificate",
+  "all_listed_cases_proved": true,
+  "general_all_N_theorem_proved": false,
+  "total_certified_cycle_comparisons": 494314,
+  "results": [
+    {
+      "adjacent_comparisons": 18,
+      "certified_from_index": 48,
+      "deciding_degree_counts": {
+        "2": 12,
+        "3": 6,
+        "4": 0
+      },
+      "least_period_turns": 54,
+      "minimal_preperiod_terms": 47,
+      "n": 3,
+      "period_turns": 54,
+      "positive_slope_comparisons": 0,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 72,
+      "certified_from_index": 48,
+      "deciding_degree_counts": {
+        "2": 54,
+        "3": 16,
+        "4": 2
+      },
+      "least_period_turns": 192,
+      "minimal_preperiod_terms": 46,
+      "n": 4,
+      "period_turns": 192,
+      "positive_slope_comparisons": 0,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 200,
+      "certified_from_index": 590,
+      "deciding_degree_counts": {
+        "2": 150,
+        "3": 42,
+        "4": 8
+      },
+      "least_period_turns": 500,
+      "minimal_preperiod_terms": 588,
+      "n": 5,
+      "period_turns": 500,
+      "positive_slope_comparisons": 0,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 360,
+      "certified_from_index": 1200,
+      "deciding_degree_counts": {
+        "2": 276,
+        "3": 82,
+        "4": 2
+      },
+      "least_period_turns": 864,
+      "minimal_preperiod_terms": 1197,
+      "n": 6,
+      "period_turns": 864,
+      "positive_slope_comparisons": 0,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 72,
+      "certified_from_index": 210,
+      "deciding_degree_counts": {
+        "2": 64,
+        "3": 8,
+        "4": 0
+      },
+      "least_period_turns": 168,
+      "minimal_preperiod_terms": 207,
+      "n": 7,
+      "period_turns": 168,
+      "positive_slope_comparisons": 0,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 224,
+      "certified_from_index": 2432,
+      "deciding_degree_counts": {
+        "2": 176,
+        "3": 42,
+        "4": 6
+      },
+      "least_period_turns": 512,
+      "minimal_preperiod_terms": 2429,
+      "n": 8,
+      "period_turns": 512,
+      "positive_slope_comparisons": 2,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 2160,
+      "certified_from_index": 14472,
+      "deciding_degree_counts": {
+        "2": 1920,
+        "3": 224,
+        "4": 16
+      },
+      "least_period_turns": 4860,
+      "minimal_preperiod_terms": 14468,
+      "n": 9,
+      "period_turns": 4860,
+      "positive_slope_comparisons": 0,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 720,
+      "certified_from_index": 5380,
+      "deciding_degree_counts": {
+        "2": 640,
+        "3": 70,
+        "4": 10
+      },
+      "least_period_turns": 1600,
+      "minimal_preperiod_terms": 5374,
+      "n": 10,
+      "period_turns": 1600,
+      "positive_slope_comparisons": 2,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 480,
+      "certified_from_index": 770,
+      "deciding_degree_counts": {
+        "2": 408,
+        "3": 72,
+        "4": 0
+      },
+      "least_period_turns": 1056,
+      "minimal_preperiod_terms": 764,
+      "n": 11,
+      "period_turns": 1056,
+      "positive_slope_comparisons": 48,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 2376,
+      "certified_from_index": 66264,
+      "deciding_degree_counts": {
+        "2": 2088,
+        "3": 282,
+        "4": 6
+      },
+      "least_period_turns": 5184,
+      "minimal_preperiod_terms": 66258,
+      "n": 12,
+      "period_turns": 5184,
+      "positive_slope_comparisons": 0,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 432,
+      "certified_from_index": 1014,
+      "deciding_degree_counts": {
+        "2": 380,
+        "3": 52,
+        "4": 0
+      },
+      "least_period_turns": 936,
+      "minimal_preperiod_terms": 1007,
+      "n": 13,
+      "period_turns": 936,
+      "positive_slope_comparisons": 24,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 15288,
+      "certified_from_index": 4380124,
+      "deciding_degree_counts": {
+        "2": 14028,
+        "3": 1110,
+        "4": 150
+      },
+      "least_period_turns": 32928,
+      "minimal_preperiod_terms": 4380121,
+      "n": 14,
+      "period_turns": 32928,
+      "positive_slope_comparisons": 42,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 22680,
+      "certified_from_index": 330750,
+      "deciding_degree_counts": {
+        "2": 21168,
+        "3": 1398,
+        "4": 114
+      },
+      "least_period_turns": 48600,
+      "minimal_preperiod_terms": 330741,
+      "n": 15,
+      "period_turns": 48600,
+      "positive_slope_comparisons": 216,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 31680,
+      "certified_from_index": 2822048,
+      "deciding_degree_counts": {
+        "2": 29568,
+        "3": 2052,
+        "4": 60
+      },
+      "least_period_turns": 67584,
+      "minimal_preperiod_terms": 2822039,
+      "n": 16,
+      "period_turns": 67584,
+      "positive_slope_comparisons": 132,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 7392,
+      "certified_from_index": 1224,
+      "deciding_degree_counts": {
+        "2": 7007,
+        "3": 385,
+        "4": 0
+      },
+      "least_period_turns": 15708,
+      "minimal_preperiod_terms": 1219,
+      "n": 17,
+      "period_turns": 15708,
+      "positive_slope_comparisons": 301,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 25704,
+      "certified_from_index": 2781684,
+      "deciding_degree_counts": {
+        "2": 24108,
+        "3": 1554,
+        "4": 42
+      },
+      "least_period_turns": 54432,
+      "minimal_preperiod_terms": 2781674,
+      "n": 18,
+      "period_turns": 54432,
+      "positive_slope_comparisons": 252,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 56160,
+      "certified_from_index": 432250,
+      "deciding_degree_counts": {
+        "2": 50040,
+        "3": 6024,
+        "4": 96
+      },
+      "least_period_turns": 118560,
+      "minimal_preperiod_terms": 432243,
+      "n": 19,
+      "period_turns": 118560,
+      "positive_slope_comparisons": 1920,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 13680,
+      "certified_from_index": 3760,
+      "deciding_degree_counts": {
+        "2": 12160,
+        "3": 1520,
+        "4": 0
+      },
+      "least_period_turns": 28800,
+      "minimal_preperiod_terms": 3752,
+      "n": 20,
+      "period_turns": 28800,
+      "positive_slope_comparisons": 880,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 12600,
+      "certified_from_index": 19032678,
+      "deciding_degree_counts": {
+        "2": 11880,
+        "3": 696,
+        "4": 24
+      },
+      "least_period_turns": 26460,
+      "minimal_preperiod_terms": 19032663,
+      "n": 21,
+      "period_turns": 26460,
+      "positive_slope_comparisons": 90,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 16632,
+      "certified_from_index": 3168,
+      "deciding_degree_counts": {
+        "2": 15444,
+        "3": 1188,
+        "4": 0
+      },
+      "least_period_turns": 34848,
+      "minimal_preperiod_terms": 3156,
+      "n": 22,
+      "period_turns": 34848,
+      "positive_slope_comparisons": 726,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 30360,
+      "certified_from_index": 309626,
+      "deciding_degree_counts": {
+        "2": 28800,
+        "3": 1518,
+        "4": 42
+      },
+      "least_period_turns": 63480,
+      "minimal_preperiod_terms": 309612,
+      "n": 23,
+      "period_turns": 63480,
+      "positive_slope_comparisons": 360,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    },
+    {
+      "adjacent_comparisons": 255024,
+      "certified_from_index": 50652480,
+      "deciding_degree_counts": {
+        "2": 236544,
+        "3": 18165,
+        "4": 315
+      },
+      "least_period_turns": 532224,
+      "minimal_preperiod_terms": 50652467,
+      "n": 24,
+      "period_turns": 532224,
+      "positive_slope_comparisons": 84,
+      "result": "PROVED FOR EVERY FUTURE REPETITION"
+    }
+  ]
+}

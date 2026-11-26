@@ -1,0 +1,22 @@
+name: Verify certificates
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Exact verification for N = 3..24
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Verify every infinite-tail certificate
+        run: python3 fair_share_verify.py fair_share_certificates.json
