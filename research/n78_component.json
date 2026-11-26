@@ -1,0 +1,89 @@
+{
+  "scope": "One closed binary comparison component; not the full N=78 sequence",
+  "n": 78,
+  "base_preperiod_blocks": 309,
+  "base_period_blocks": 72,
+  "component_phase_0_ranks": [
+    6,
+    7
+  ],
+  "fixed_player_labels_A_B": [
+    46,
+    27
+  ],
+  "first_comparison_block": 309,
+  "return_blocks": 6,
+  "return_turns": 936,
+  "same_rank_paths_at_every_comparison": true,
+  "rank_path_A_B": [
+    [
+      6,
+      7
+    ],
+    [
+      71,
+      70
+    ],
+    [
+      47,
+      45
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      70,
+      71
+    ],
+    [
+      45,
+      47
+    ]
+  ],
+  "initial_D_coefficients_z_0_to_8": [
+    0,
+    0,
+    0,
+    2971800,
+    95006987238,
+    1574555708954289,
+    18036615477170836526,
+    161390150962066357107162,
+    1206954427439942217002542158
+  ],
+  "H_coefficients_z_0_to_8": [
+    0,
+    0,
+    0,
+    -936,
+    -20003256,
+    -9375130518,
+    -2476273256340,
+    -473408506061595,
+    -72109126660447149
+  ],
+  "returns_to_first_third_moment_zero": 3175,
+  "first_third_moment_zero_block": 19359,
+  "first_third_moment_zero_turn": 3020004,
+  "D_at_zero_coefficients_z_0_to_8": [
+    0,
+    0,
+    0,
+    0,
+    4448685071838,
+    8940188678715292839,
+    10082418244480487107801826,
+    8081037372344463848527065495177,
+    5058937699816135558324202225744743623
+  ],
+  "fourth_moment_decides": true,
+  "two_return_fourth_coefficient_step": 876096,
+  "ratio_at_zero": "741447511973/146016",
+  "further_two_return_steps_to_strict_cycle": 5077851,
+  "nonzero_fourth_residue": 122142,
+  "sufficient_component_stabilization_block": 60953571,
+  "sufficient_component_stabilization_turn": 9508757076,
+  "valid_component_period_blocks": 24,
+  "valid_component_period_turns": 3744
+}

@@ -12,6 +12,7 @@ English is the canonical language for the documentation. The [full proof](fair_s
 
 - **Established for each `N = 3, …, 24`:** an exact finite certificate proves the proposed tail follows the greedy rule for every future repetition.
 - **Written out by hand for `N = 3`:** the proof exhibits a closed nine-block cycle, giving least period 54 after 47 initial terms.
+- **General reduction for every `N ≥ 2`:** the unlabelled moment dynamics through degree four eventually has a polynomial form with repeating phases. Eventual strictness through degree four would therefore imply labelled periodicity. See [moment dynamics](TIE_DYNAMICS.md) for the proof and the remaining separation conjecture.
 - **Not established:** eventual periodicity for every integer `N > 2`, or guaranteed termination of a search for certificates.
 - **Verification level:** a mathematical soundness argument plus an executable Python checker using arbitrary-precision integers. No Lean formalization is included.
 
@@ -86,9 +87,11 @@ The complete derivation, including the initial degree-four tie for `N = 3`, is i
 | [fair_share_certificates.json](fair_share_certificates.json) | Certificates for `N = 3, …, 24` and the temporary `N = 15` cycle example. |
 | [fair_share_verification.json](fair_share_verification.json) | Recorded results of independent verification. |
 | [NEXT_STEPS.md](NEXT_STEPS.md) | The unresolved mathematical step and a possible Lean formalization plan. |
+| [TIE_DYNAMICS.md](TIE_DYNAMICS.md) | General moment reduction through degree four, a conditional periodicity theorem, and the precise remaining separation problem. |
+| [research/BINARY_COMPONENTS.md](research/BINARY_COMPONENTS.md) | Closed comparison groups, exact research scripts, and a targeted binary-component case inside `N = 78`. |
 
 ## Continuing the work
 
-The main mathematical gap is control of higher-moment tie breaking for arbitrary `N`. The sorted, normalized second-moment configuration is eventually periodic for every `N`; this does not yet determine a periodic sequence of player names.
+The current main target is an eventual separation theorem: for every `N ≥ 3`, show that no two players keep the same second, third, and fourth moments at arbitrarily late paired-block boundaries. The [new reduction](TIE_DYNAMICS.md) proves that this condition would imply the desired periodicity. The condition is sufficient and remains unproved; if degree four does not suffice, the reduction must be extended to higher moments.
 
 Lean would be useful for formally verifying the certificate criterion and its connection to the original greedy rule. It is not required to reproduce the current results, and formalizing the existing finite cases would not prove the universal conjecture. See [next steps](NEXT_STEPS.md).
